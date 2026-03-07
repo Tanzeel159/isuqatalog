@@ -6,3 +6,12 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Runtime data (SQLite DB is auto-created)
+data/
+
+# Editor agent skills
+.agents/
+
+# Stale scaffold (not part of the app)
+Update/
