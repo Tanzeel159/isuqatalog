@@ -1,0 +1,168 @@
+{
+    "handbook_metadata": {
+        "title": "Human Computer Interaction Interdepartmental Graduate Program Graduate Student Handbook",
+        "academic_year": "2025-2026",
+        "organization": "VRAC Research Center, Iowa State University",
+        "last_update": "9/11/2025",
+        "website": "http://www.vrac.iastate.edu/hci/"
+    },
+    "administration": {
+        "director_of_graduate_education": {
+            "name": "Cody Fleming",
+            "office": "1620 Howe Hall",
+            "phone": "515-294-6938",
+            "email": "flemingc@iastate.edu"
+        },
+        "program_coordinator": {
+            "name": "Tiffany Kayser",
+            "office": "1620 Howe Hall",
+            "phone": "515-294-2089",
+            "email": "tlkayser@iastate.edu"
+        },
+        "vrac_director": {
+            "name": "Eliot Winer",
+            "office": "1620 Howe Hall",
+            "email": "ewiner@iastate.edu"
+        },
+        "supervisory_committee": [
+            {
+                "name": "Evrim Baran",
+                "department": "School of Education",
+                "email": "ebaran@iastate.edu"
+            },
+            {
+                "name": "Mary Fornoff",
+                "department": "Psychology",
+                "email": "mfornoff@iastate.edu"
+            },
+            {
+                "name": "Stephen Gilbert",
+                "department": "Industrial & Manufacturing Systems Engineering",
+                "email": "gilbert@iastate.edu"
+            },
+            {
+                "name": "Nir Keren",
+                "department": "Agricultural and Biosystems Engineering",
+                "email": "nir@iastate.edu"
+            }
+        ],
+        "student_group_president": {
+            "name": "Natasha Lambert",
+            "term": "2025-2026 Academic Year"
+        }
+    },
+    "program_overview": {
+        "introduction": "The Interdepartmental Graduate Program in Human Computer Interaction (HCI) is an interdisciplinary academic program created to foster research excellence in HCI at Iowa State University. The program offers exceptional opportunities for graduate study across a broad spectrum of disciplines.",
+        "learning_goals": [
+            "Design and evaluate systems with a user-centered design lens.",
+            "Participate in a multidisciplinary product development team.",
+            "Choose and apply an appropriate user-centered design approach.",
+            "Identify key players and organizations in HCI.",
+            "Use theories and models in the HCI field.",
+            "Describe emerging technology trends."
+        ],
+        "faculty_and_research": {
+            "description": "The HCI program involves over 80 nationally and internationally known faculty members who participate in a wide range of collaborative projects within 32 academic areas of focus."
+        }
+    },
+    "admissions": {
+        "requirements": [
+            "4-year bachelor's degree (or equivalent). 3-year degrees from India, Bangladesh, Canada (excluding Quebec), Nepal, and Pakistan are not accepted.",
+            "Direct-entry Ph.D. allowed without master's degree.",
+            "GRE recommended but not required.",
+            "Portfolio optional but welcome.",
+            "English proficiency test required for non-native English speakers (waiver available for degrees from English-only countries)."
+        ],
+        "other_info": "Students seeking transfer from another graduate major at ISU must reapply through Admissions. Co-major options are available."
+    },
+    "degree_programs": {
+        "offered_degrees": [
+            "Doctor of Philosophy (Ph.D.) - On-Campus Only",
+            "Master of Science (M.S.) Thesis - On-Campus Only",
+            "Master of Science (M.S.) Creative Component - On-Campus Only",
+            "Master of Human Computer Interaction (M.H.C.I.) - Distance/Online",
+            "Graduate Certificate - Distance/Online",
+            "Double Degree - On-Campus Only"
+        ],
+        "scholarly_document_fee": {
+            "description": "Previously known as Thesis Fee. Valid for dissertations, theses, and creative components.",
+            "amount": "$145 (one-time)",
+            "effective_from": "June 12, 2025 Board of Regents approval"
+        }
+    },
+    "graduate_college_milestones": {
+        "english_requirement_ept": {
+            "who": "On-campus M.S. & PhD",
+            "when": "First semester at Iowa State"
+        },
+        "academic_plan_committee": {
+            "ms_thesis_phd": "Recommended during second semester.",
+            "ms_creative_component": "See specific link info.",
+            "mhci": "See specific link info.",
+            "certificate": "See specific link info."
+        },
+        "preliminary_oral_exam": {
+            "who": "Ph.D.",
+            "requirements": [
+                "Academic Plan approved at least 3 months prior.",
+                "Request submitted before exam date.",
+                "Exam date at least 6 months before final examination."
+            ]
+        },
+        "graduation_application": {
+            "who": "All degrees",
+            "when": "By the beginning of the semester of graduation."
+        },
+        "final_oral_exam_defense": {
+            "ms_thesis_phd": "At least three weeks before exam date. No earlier than semester after AP approval (MS). At least 6 months after prelim exam (PhD).",
+            "ms_creative_component": "See specific link info."
+        }
+    },
+    "policies": {
+        "english_requirement": {
+            "description": "Students whose primary language is not English and not in distance-only programs must meet ISU English language requirement.",
+            "ept_test": "English Placement Test (EPT) evaluates proficiency. One-time opportunity, free for students. Consists of Writing (EPT-W) and Oral Communication (EPT-OC). Failure leads to ESL course placement."
+        },
+        "grading": {
+            "minimum_grade_ap": "C",
+            "probation_policy": "See Graduate College Handbook Chapter 5, Section 5.2.5"
+        },
+        "courses": {
+            "undergraduate_on_pos": "See Graduate College Handbook Chapter 5, Section 5.1.2",
+            "expired_courses": "See Graduate College Handbook Chapter 6, Section 6.3.4",
+            "transfer_courses": "See Graduate College Handbook Chapter 6, Section 6.3.8"
+        }
+    },
+    "graduate_assistantships": {
+        "description": "Stipends provided by major professors, governed by university/departmental policies. Responsibilities determined by major professor.",
+        "appointment": "Graduate Assistantship Letter of Intent signed in Workday. Generally half-time basis (maximum).",
+        "remote_work": "International remote work not permitted unless at designated location or explicitly required.",
+        "termination": "By mutual consent or for reasons in Graduate College Handbook 8.9."
+    },
+    "rights_and_responsibilities": {
+        "expectations": "Commitment to academic endeavors, steady progress, and ethical practices.",
+        "governing_policies": [
+            "Board of Regents' Uniform Rules of Personal Conduct",
+            "Student Code of Conduct",
+            "University regulations",
+            "University's Sexual Misconduct, Sexual Assault, Sexual Harassment, Stalking, and Intimate Partner Violence Involving Students Policy",
+            "University's Discrimination and Harassment Policy"
+        ]
+    },
+    "general_information": {
+        "international_student_cpt": "Internship requires completing tasks for approval. Includes eligibility check, course enrollment, CPT process, and final report.",
+        "student_organizations": {
+            "hci_student_group": "Student-led organization fostering community, lectures, workshops, and social events.",
+            "gpss": "Graduate and Professional Student Senate. HCI has two senator positions elected by HCI Student Group."
+        },
+        "travel": {
+            "funding_sources": [
+                "Major Professor/Grant funds",
+                "Professional Advancement Grants (PAG) by GPSS",
+                "HCI Travel Funds (requires paper/poster presentation)"
+            ]
+        },
+        "leave_of_absence": "Arranged between student and major professor. See Graduate College Handbook Chapter 2.4.",
+        "disputes_and_grievances": "Mediation by VRAC Director and/or HCI DOGE. Formal appeals available through University avenues (Graduate College Handbook Chapter 8.5)."
+    }
+}

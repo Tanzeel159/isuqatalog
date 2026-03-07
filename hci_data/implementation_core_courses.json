@@ -1,0 +1,134 @@
+{
+    "requirement_info": {
+        "description": "All HCI students are required to complete an implementation or programming course as part of the core curriculum. There are seven approved Implementation Core Courses.",
+        "total_approved_courses": 7
+    },
+    "categories": {
+        "limited_coding_experience": [
+            {
+                "code": "HCI 5400X",
+                "name": "Internet-Based Methods, Extended Reality, and Machine Learning for Use in Engineering Design and Data Analysis"
+            },
+            {
+                "code": "HCI 5840",
+                "name": "Python Application Development in HCI"
+            }
+        ],
+        "programming_experience": [
+            {
+                "code": "HCI/ComS/CprE 5750",
+                "name": "Computational Perception"
+            },
+            {
+                "code": "HCI/ME 5800",
+                "name": "Virtual Environments, Virtual Worlds, and Applications"
+            },
+            {
+                "code": "ME 5570",
+                "name": "Computer Graphics and Geometric Modeling"
+            },
+            {
+                "code": "HCI/ME 5250",
+                "name": "Optimization Methods for Complex Designs"
+            },
+            {
+                "code": "ComS 5010X",
+                "name": "Computational Methods I"
+            }
+        ]
+    },
+    "course_details": [
+        {
+            "code": "HCI 5400X",
+            "name": "Internet-Based Methods, Extended Reality, and Machine Learning for Use in Engineering Design and Data Analysis",
+            "target_audience": "Students who have limited or no coding experience",
+            "prerequisites": "No programming experience required. No prerequisite course required.",
+            "offered": "Every Fall semester",
+            "description": "Extensive overview of developing and deploying internet-based computational resources for engineering applications. Relational databases, server and client-side web programming, and their use with traditional engineering software (i.e. computer-aided design and finite-element modeling). Extended reality (XR) technologies and machine learning / artificial intelligence for use in internet-based solutions.",
+            "course_outline": [
+                {
+                    "section": "Section I – Infrastructure Issues",
+                    "topics": "Basics of computer networking, server/client architecture and functionality, client-server applications, basic security concepts."
+                },
+                {
+                    "section": "Section II – Internet-based Systems and visualization",
+                    "topics": "Design, creation, and deployment of engineering software systems over the Internet. Platform independence, collaboration concepts. Developing applications using typical protocols, languages, and databases. AI for development/deployment speed up. Visualization of engineering design data using XR methods and tools."
+                },
+                {
+                    "section": "Section III – Data Analysis",
+                    "topics": "Development, storage, and querying of large, multi-dimensional datasets. Database models (XML, SQL, hierarchical, non-relational). Importing/exporting data, data conversion. Machine learning and AI tools for data processing and analysis (course project)."
+                }
+            ]
+        },
+        {
+            "code": "HCI 5840",
+            "name": "Python Application Development in HCI",
+            "target_audience": "Students with no programming experience (prerequisite might be required).",
+            "prerequisites": "Students with no programming/Python knowledge must take HCI 5740: Computational Implementation and Prototyping. Prerequisite can be waived for students with prior experience via pre-test (contact HCI Program Coordinator).",
+            "offered": "Online, asynchronously every Summer term and Fall semester. (Prereq HCI 5740 offered every Spring semester).",
+            "learning_outcomes": [
+                "Develop a large Python project of your choosing over multiple stages.",
+                "Write project design documents ('specs'), Python code + detailed documentation.",
+                "Stages: idea, specification, prototyping and implementation (including debugging, testing, refactoring) and documenting.",
+                "Deliverables: demo-able final product, user and programmer documentation."
+            ],
+            "tools": "Git versioning, Visual Studio Code IDE, Jupyter - maybe combine with R.",
+            "description": "Implement Python code and write design documents ('specs') and complement their code with sufficiently detailed documentation in development of a large Python project of the student's choosing. Typical development process: idea, specification, prototyping and implementation (including debugging, testing, refactoring) and documentation and result in a demo-able final product."
+        },
+        {
+            "code": "HCI/ComS/CprE 5750",
+            "name": "Computational Perception",
+            "target_audience": "Students with advanced programming skills",
+            "offered": "Spring semester",
+            "recommended_background": "Previous exposure to at least 2-3 of the following fields: statistics, linear algebra, computer vision, artificial intelligence, signal processing, human-computer interaction.",
+            "topics": "Overview of computational perception, Matlab and openCV tutorials, Basic image processing, Image filtering, Color and movement detection, Tracking techniques (Kalman filters, particle filters), Face detection and recognition (eigenfaces, cascades, neural network-based), Audio processing and speech segmentation, DFT and FFT, IDFT and IFFT, Signal spectrum, Audio filtering, Auditory feature extraction, Sound classification and recognition, The sense of self, Hidden Markov models for activity/speech recognition, Gesture recognition.",
+            "description": "This class covers statistical and algorithmic methods for sensing, recognizing, and interpreting the activities of people by a computer. Focus on machine perception techniques that facilitate and augment human-computer interaction. Goal: introduce computational perception on theoretical and practical levels. Participation in small groups to design, implement, and evaluate a prototype of a HCI system."
+        },
+        {
+            "code": "HCI/ME 5800",
+            "name": "Virtual Environments, Virtual Worlds, and Application",
+            "target_audience": "Students with programming experience",
+            "prerequisites": "Knowledge of Unity programming or learn Unity programming before enrolling.",
+            "offered": "Spring semester",
+            "goals_and_objectives": [
+                "Knowledgeable about VR and AR field (HCI aspects of design, software, hardware, current uses).",
+                "Summarize important concepts in VR and AR.",
+                "Summarize basics of developing a VR application.",
+                "Summarize HCI aspects of VR application design.",
+                "Develop real-world VR applications."
+            ],
+            "description": "A systematic introduction to the underpinnings of Virtual Environments (VE), Virtual Worlds, advanced displays and immersive technologies; and an overview of some of the applications areas particularly virtual engineering."
+        },
+        {
+            "code": "ME 5570",
+            "name": "Computer Graphics and Geometric Modeling",
+            "target_audience": "Students with advanced programming skills. Programming experience in C, C++, basic knowledge in Linear Algebra.",
+            "offered": "Spring semester, even years",
+            "description": "Fundamentals of computer graphics technology. Data structures. Parametric curve and surface modeling. Solid model representations. Applications in engineering design, analysis, and manufacturing.",
+            "topics": "Introduction/overview of computer graphics, basic elements (polylines, text, filled regions, raster images), display devices, input primitives and devices; Intro to OpenGL, Basics of graphics programming, development of basic 2D graphics tools; Viewports and clipping; Window to Viewport transformation, World Coordinates; Relative Drawing; Drawing 2D shapes; Intro to parametric curves; Vector math review; Parametric lines and planes; Homogeneous coordinates; Intersections of lines and planes; Affine transformations in 2D and 3D; Changing coordinate systems, manipulating current transformations; Modeling with Polygonal meshes; Normal Vectors; Viewing Transformations; Perspective Projections; View Volume Clipping; Camera manipulation; Rendering and types of shading; Light Sources; Material Properties; Simple hidden surface removal; Texturing; Shadows; Curves and Surfaces; Bezier and Nurbs; Ray Tracing."
+        },
+        {
+            "code": "HCI/ME 5250",
+            "name": "Optimization Methods for Complex Designs",
+            "target_audience": "Students with programming experience",
+            "prerequisites": "Engr 160, Math 265, and some computer programming experience.",
+            "offered": "Spring semester",
+            "description": "Optimization involves finding the 'best' according to specified criteria (e.g., minimum cost, maximum efficiency). Covers range of optimization methods from traditional non-linear to modern evolutionary methods (Genetic Algorithms, Particle Swarm Optimization). Explores application in design problems across disciplines (mechanical systems, biomedical imaging, path planning). Students will gain basic knowledge of numerical optimization algorithms, understanding of strengths/weaknesses, and write code/use off-the-shelf routines. Includes case-studies of real-world situations.",
+            "application_areas": "Design optimization for Multidisciplinary Design Optimization and Concurrent Engineering. Critical for complex systems designs with physical constraints and other impact areas (cost, time)."
+        },
+        {
+            "code": "ComS 5010X",
+            "name": "Computational Methods I",
+            "target_audience": "Students with programming experience (implied by content/context)",
+            "prerequisites": "Trigonometry or Calculus; background in Math equivalent to MATH 1650 and background in Computer Science equivalent to COMS 2270",
+            "description": "Design of data structures and algorithms with an object-oriented programming methodology. Abstract data type specification and correctness. Collections including lists, stacks, queues, trees and hash tables. Searching and Sorting. Discrete mathematics concepts as applied to computer science. Basics of logic, set theory, functions, relations, combinatorics. Proof techniques such as induction and recursion.",
+            "learning_outcomes": [
+                "Read, write, and modify Python programs",
+                "Understand and use conditionals, iteration, and recursion",
+                "Understand and use fundamental data structures (lists, stacks, queues, trees, and hash tables)",
+                "Understand and use sorting and searching algorithms"
+            ],
+            "website": "https://www.cs.iastate.edu/courses/coms-5010x"
+        }
+    ]
+}

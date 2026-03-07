@@ -1,0 +1,72 @@
+{
+    "phd_program_timeline": [
+        {
+            "step": 1,
+            "title": "ACADEMIC PLAN COMMITTEE (APC)",
+            "description": "Group of graduate faculty who guide and evaluate the student.",
+            "requirements": "See Graduate College Committee requirements.",
+            "timing": "Encouraged to complete as early as possible.",
+            "constraint": "Must be approved BEFORE academic plan can be reviewed.",
+            "instructions_location": "Graduate Student Committee Hub"
+        },
+        {
+            "step": 2,
+            "title": "ACADEMIC PLAN",
+            "description": "List of courses taken and planned to meet degree requirements.",
+            "timing": "Recommended during second semester.",
+            "approval_deadline": "Must be approved by Graduate College, committee, and DOGE at least 3 calendar months before preliminary oral exam.",
+            "instructions_location": "Graduate College website > Academic Plan (POSC Replacement)"
+        },
+        {
+            "step": 3,
+            "title": "PRELIMINARY ORAL EXAM",
+            "timing": "Must be completed at least six months before the final oral exam.",
+            "instructions_location": "Graduate College website > Oral Examinations"
+        },
+        {
+            "step": 4,
+            "title": "APPLY FOR PROGRAM COMPLETION",
+            "action": "Check Workday transcript for unresolved grades (I, N, NP, F).",
+            "instructions_location": "Graduate College website > Program Completion"
+        },
+        {
+            "step": 5,
+            "title": "FORMAT CHECK",
+            "action": "Review Thesis/Dissertation Format Requirements or meet with Center for Communication Excellence (CCE).",
+            "timing": "Before requesting final oral exam."
+        },
+        {
+            "step": 6,
+            "title": "FINAL ORAL EXAM REQUEST",
+            "action": "Confirm date/time/location with major professor(s) and committee members.",
+            "submission_deadline": "Must be submitted three weeks prior to exam date.",
+            "instructions_location": "Graduate College website > Oral Examinations"
+        },
+        {
+            "step": 7,
+            "title": "OPEN YOUR DISSERTATION ACCOUNT WITH ProQUEST",
+            "action": "Input title of dissertation for Commencement Program.",
+            "deadline": "No later than the deadline date.",
+            "scholarly_document_fee": {
+                "name": "Scholarly Document Fee (formerly Thesis Fee)",
+                "amount": "$145",
+                "charged_to": "U-bill",
+                "details": "One-time fee for students submitting dissertation/thesis/creative component to digital repository."
+            }
+        },
+        {
+            "step": 8,
+            "title": "GRADUATE APPROVAL FORM and RESULTS OF FINAL ORAL EXAM",
+            "action": "Review and approval of final dissertation format/content by major professor(s) and DOGE(s).",
+            "requirement": "Graduate Student Approval Form needed by Thesis Office.",
+            "notification": "Graduate College must be notified that conditions have been met by deadline date.",
+            "instructions_location": "Graduate College website > Oral Examinations > Graduate Approval Form"
+        },
+        {
+            "step": 9,
+            "title": "UPLOAD AND SUBMIT YOUR FINAL DISSERTATION to ProQUEST/UMI",
+            "requirement": "Must be approved by Graduate College before graduation.",
+            "post_completion": "Congratulations! Ceremony and diploma distribution info on Graduation and Commencement website."
+        }
+    ]
+}

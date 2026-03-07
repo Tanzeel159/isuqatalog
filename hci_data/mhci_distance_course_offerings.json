@@ -1,0 +1,208 @@
+{
+    "program_info": {
+        "name": "M.H.C.I. Distance Program - Course Offerings",
+        "description": "These courses are designed for students enrolled in the Human Computer Interaction, M.H.C.I. (Distance) program, also known as the online Master of Human Computer Interaction.",
+        "contact_email": "HCI@iastate.edu",
+        "general_notes": [
+            "Courses may be taken in any order; students are not required to complete core courses first.",
+            "All courses listed below are offered online.",
+            "Most courses are asynchronous; a few are synchronous.",
+            "Courses are typically offered in the semester indicated."
+        ]
+    },
+    "course_offerings": {
+        "fall_semester": [
+            {
+                "type": "Design Core Courses",
+                "course": "HCI/PSYCH 5210 - Cognitive Psychology of Human Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Courses",
+                "course": "HCI 5840 - Python Application Development in HCI",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Courses",
+                "course": "HCI/ME 5400X - Internet-Based Methods, Extended Reality, and Machine Learning for Use in Engineering Design and Data Analysis",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Courses",
+                "course": "HCI/ARTGR 5890 - Design and Ethics",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Courses",
+                "course": "HCI/MIS 6550 - Organizational and Social Implications of Human Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Courses",
+                "course": "HCI/EDUC 5040: Evaluating Technology-based Learning Environments",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Courses",
+                "course": "HCI/ARCH 5790X - Methods for Interdisciplinary Research",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Electives",
+                "course": "HCI 5900 - Special Topics: Managing UX Teams and Delivering Design Systems",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Electives",
+                "course": "HCI/ANTHR 5260 - Design Ethnography",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Electives",
+                "course": "HCI 5960 - Emerging Practices in Human Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Electives",
+                "course": "IE 5770 - Human Factors",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Electives",
+                "course": "HCI/IE 6810 - Cognitive Engineering",
+                "credits": 3
+            }
+        ],
+        "spring_semester": [
+            {
+                "type": "Design Core Courses",
+                "course": "IE 5720 - Design and Evaluation of Human-Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Courses",
+                "course": "HCI/COMS/CPRE 5750 - Computational Perception",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Courses",
+                "course": "HCI/ME 5800 - Virtual Environments, Virtual Worlds, and Application",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Courses",
+                "course": "HCI 5890/ARTGR 5890 - Design and Ethics",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Courses",
+                "course": "HCI 5300X - Perspectives in HCI",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Courses",
+                "course": "HCI/PSYCH 5220 - Scientific Methods in Human Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Courses",
+                "course": "HCI 5230X - Qualitative Research Methods in HCI",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Electives",
+                "course": "HCI/EDUC 5100: Foundations of Game-Based Learning",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Electives",
+                "course": "HCI/ME 5250 - Optimization Methods for Complex Designs",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Electives",
+                "course": "HCI 5740 - Computational Implementation and Prototyping in HCI",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Electives",
+                "course": "HCI/ARTGR 5500X - User Experience Methodologies",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Electives",
+                "course": "HCI/EDUC 6030 - Advanced Learning Environments Design",
+                "credits": 3
+            }
+        ],
+        "summer_semester": [
+            {
+                "type": "Design Core Courses",
+                "course": "HCI 5950 - Visual Design of HCI",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Courses",
+                "course": "HCI 5840 - Python Application Development in HCI",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Courses",
+                "course": "HCI 5890/ARTGR 5890 - Design and Ethics",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Courses",
+                "course": "DSNS 5010 - Introduction to Research Design",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Electives",
+                "course": "HCI 5870 - Models and Theories in Human Computer Interaction",
+                "credits": 3
+            }
+        ],
+        "other_courses_catalog": [
+            {
+                "course": "HCI 5150 - Statistical Natural Language Processing",
+                "status": "not currently offered"
+            },
+            {
+                "course": "HCI 5200 - Computational Analysis of English",
+                "status": "currently offered but only face-to-face/in-person"
+            },
+            {
+                "course": "HCI 5710 - Augmented Reality",
+                "status": "not currently offered"
+            },
+            {
+                "course": "HCI 5850 - Developmental Robotics",
+                "status": "not currently offered"
+            },
+            {
+                "course": "HCI 5900 - Special Topics",
+                "status": "offered in various semesters on trending HCI topics"
+            },
+            {
+                "course": "HCI 5910 - Seminar in Human Computer Interaction",
+                "status": "not currently offered"
+            },
+            {
+                "course": "HCI 5990 - Creative Component",
+                "note": "this course is for HCI Master of Science (MS) creative component students"
+            },
+            {
+                "course": "HCI/EDUC 6080 - Social Media and Education",
+                "status": "not currently offered"
+            },
+            {
+                "course": "HCI 6970 - HCI Internship",
+                "note": "this course is for on-campus international HCI students only"
+            },
+            {
+                "course": "HCI 6990 - Research",
+                "note": "this course is for HCI MS Thesis or PhD students only"
+            }
+        ]
+    }
+}

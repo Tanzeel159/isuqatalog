@@ -1,0 +1,38 @@
+{
+    "student_wellness_resources": {
+        "introduction": "The HCI Graduate Program and Iowa State University want to support HCI students both in and out of the classroom.",
+        "primary_resource": {
+            "name": "Cyclone Support",
+            "description": "Visit for more information on the following topics.",
+            "url": "https://cyclonesupport.iastate.edu/"
+        },
+        "categories": {
+            "safety_and_emergency": [
+                "Mental Health Crisis",
+                "Emergencies and Personal Safety",
+                "Workplace Safety"
+            ],
+            "report_a_problem": [
+                "Sexual Misconduct; Discrimination",
+                "Harassment or Retaliation",
+                "Reporting Tools"
+            ],
+            "support_resources_get_started": [
+                "Depression, Anxiety and Other Mental Health",
+                "Need Access to Food",
+                "Personal Finance",
+                "Academic Success Navigator",
+                "Medical Services",
+                "Alcohol and/or Drug Use",
+                "Sexual Assault Resources",
+                "Technology",
+                "Grief, Loss, and Death of a Loved One",
+                "Interpersonal Conflict",
+                "Wellbeing (sleep, stress, etc)",
+                "Accommodation",
+                "Unsure where to start >> student assistance"
+            ],
+            "additional_resources": "Additional Support Resources"
+        }
+    }
+}

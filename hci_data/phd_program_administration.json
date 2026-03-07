@@ -1,0 +1,44 @@
+{
+    "phd_program_administration": {
+        "general_requirements": [
+            "Develop Academic Plan (AP) and Academic Plan Committee (APC)",
+            "Pass Preliminary Exam",
+            "Pass Final Oral Exam",
+            "Meet coursework and other general requirements"
+        ],
+        "major_professor": {
+            "role": "Mentor in all aspects of graduate study (research, professional development, funding).",
+            "requirements": "Must be HCI affiliated faculty.",
+            "policy_update_2023_06_16": "Must have a doctoral degree. If not, a co-major professor with a Ph.D. is required.",
+            "resources": [
+                "Resource by Dr. Stephen Gilbert for advising common concerns",
+                "Graduate College Handbook section 6.4.1"
+            ]
+        },
+        "committee_selection": {
+            "timing": {
+                "recommended": "During second semester",
+                "deadline": "No later than end of first semester of second year"
+            },
+            "composition_requirements": {
+                "total_members": "At least 5 members of Graduate College Faculty",
+                "hci_members": "At least 3 members (including major/co-major professor) from HCI faculty",
+                "outside_member": "One member must be outside the major (not an HCI faculty member)"
+            },
+            "instructions_location": "Graduate Student Committee Hub"
+        },
+        "academic_plan": {
+            "definition": "List of courses taken or planned to meet degree requirements.",
+            "process": "Developed by student and major professor, approved by APC.",
+            "submission_timing": "As early as possible.",
+            "approval_deadline_for_prelim": "Must be approved by DOGE in Workday at least 3 calendar months before preliminary oral examination.",
+            "changes": "Allowable; approved by Graduate College, major professor, committee, and DOGE in Workday.",
+            "instructions_location": "Complete your Academic Plan as a Graduate Student"
+        },
+        "expired_credits": {
+            "policy": "HCI Graduate Program accepts expired courses on specific Academic Plans.",
+            "reference": "Graduate College Handbook, Chapter 6.3.4",
+            "instructions_location": "Petition to Use Expired Credits Toward a Graduate Degree"
+        }
+    }
+}

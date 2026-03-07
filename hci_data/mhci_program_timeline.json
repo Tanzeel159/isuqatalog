@@ -1,0 +1,60 @@
+{
+    "mhci_program_timeline": {
+        "program_name": "Human-Computer Interaction, M.H.C.I (Distance)",
+        "aka": "Online Master of Human Computer Interaction",
+        "deadlines_resource": "Fall 2025, Spring 2026, and Summer 2026 graduation deadline dates",
+        "support_contact": {
+            "context": "Questions about Workday Tasks",
+            "email": "gcol_workday@iastate.edu"
+        },
+        "steps": [
+            {
+                "step_number": 1,
+                "title": "ACADEMIC PLAN COMMITTEE (APC)",
+                "details": "MHCI distance students have one committee member: the HCI Program Director, Cody Fleming.",
+                "status": "Task is already completed for all MHCI students upon completion of their first semester.",
+                "next_action": "Begin working on the Academic Plan task."
+            },
+            {
+                "step_number": 2,
+                "title": "ACADEMIC PLAN",
+                "description": "List of courses taken and planned to meet degree requirements (10 courses/30 credits).",
+                "deadline": "Must be approved by the semester/term before graduation.",
+                "when_to_complete": "As soon as the AP Committee has been approved.",
+                "transfer_credits": {
+                    "policy_link": "Transfer Course Policy",
+                    "process_name": "Add External Transfer Credits to Your Graduate Academic Plan"
+                },
+                "instructions_location": "Completing your Academic Plan (POSC Replacement)",
+                "warning": "STOP: Do not complete Step #3 until you receive notification that your academic plan has been approved."
+            },
+            {
+                "step_number": 3,
+                "title": "APPLY FOR PROGRAM COMPLETION",
+                "description": "Application for the intended semester/term of graduation.",
+                "deadlines": {
+                    "fall_2025_graduation": "September 10, 2025",
+                    "spring_2026_graduation": "February 4, 2026",
+                    "summer_2026_graduation": "June 3, 2026"
+                },
+                "data_entry_note": "Date entered should be the last date of the graduation semester. Contact Tiffany if unknown.",
+                "instructions_location": "Apply for Program Completion"
+            },
+            {
+                "step_number": 4,
+                "title": "COURSEWORK ONLY FINAL CHECK",
+                "description": "Final check that student has completed all courses on their Academic Plan.",
+                "deadlines": {
+                    "fall_2025_graduation": "September 12, 2025",
+                    "spring_2026_graduation": "February 6, 2026",
+                    "summer_2026_graduation": "June 5, 2026"
+                },
+                "instructions_location": "Coursework Only Final Check"
+            }
+        ],
+        "post_completion": {
+            "message": "Congratulations on your academic achievement in completing your Master of Human Computer Interaction degree!",
+            "resources": "Information on ceremony and diploma distribution found on Graduation & Commencement website."
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "coordinator_info": {
+        "name": "Tiffany Kayser",
+        "role": "HCI Graduate Program Coordinator",
+        "contact": {
+            "office": "1620 Howe Hall in the VRAC Research Center",
+            "email": "tlkayser@iastate.edu",
+            "phone": "515-294-2089"
+        },
+        "professional_background": {
+            "isu_start_date": "August 2007",
+            "role_start_date": "March 2018",
+            "education": "Bachelor of Arts degree in Advertising, Iowa State University",
+            "experience": [
+                "Marketing director for a health care company (almost 4 years)",
+                "Coordinator for continuing education for tax and law professionals at ISU (11 years)"
+            ]
+        },
+        "personal_bio": {
+            "origin": "Born and raised in Iowa",
+            "residence": "South of Ames with husband and two daughters",
+            "interests": [
+                "Traveling",
+                "Staying active",
+                "Being outdoors"
+            ]
+        },
+        "message": "Hello! I am the HCI Graduate Program Coordinator. I have been in this role since March of 2018. I have been working at Iowa State University since August 2007. Please use me as a resource, and reach out any time with questions."
+    },
+    "source_metadata": {
+        "reference_image": "2023.01.04-12.38.28-6720 x 4480 - canvas.jpg"
+    }
+}

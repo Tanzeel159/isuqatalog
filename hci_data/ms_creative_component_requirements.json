@@ -1,0 +1,276 @@
+{
+    "program_info": {
+        "title": "Capstone MS in HCI Student Degree Requirements and Program Timeline",
+        "academic_advisor": {
+            "name": "Tiffany Kayser",
+            "email": "tlkayser@iastate.edu",
+            "role": "HCI Graduate Program Coordinator",
+            "responsibilities": "Primary contact for questions, monitors degree progress, assists with situations."
+        },
+        "path": "Path #2: Master of Science in HCI Creative Component/Capstone Project"
+    },
+    "academic_policies": {
+        "minimum_gpa": 3.0,
+        "english_proficiency": {
+            "required_for": "Non-native English speakers",
+            "test": "English Placement Test (EPT)",
+            "notes": "Limited exemptions apply"
+        }
+    },
+    "degree_requirements": {
+        "total_credits": 30,
+        "breakdown": [
+            {
+                "category": "Core Courses",
+                "credits": 12,
+                "description": "One course from each of the core course categories (Design, Implementation, Phenomena, Evaluation)."
+            },
+            {
+                "category": "General Electives",
+                "credits": 15,
+                "description": "General electives should be 5000 and 6000-level courses."
+            },
+            {
+                "category": "Research Credits",
+                "credits": 3,
+                "course": "HCI 5990, HCI Creative Component/Capstone Class",
+                "enrollment_note": "Tiffany will assist with enrollment. Must have approved APC and Academic Plan to enroll.",
+                "presentation_note": "Presented in Final Oral Exam/Defense in graduating semester."
+            }
+        ],
+        "user_feedback_requirement": {
+            "requirement": "All creative component projects must include gathering feedback data from at least 5 users (typically by interview, survey, or observation).",
+            "appeal_process": "Student may appeal to DOGE for review if 5 users are not achieved."
+        }
+    },
+    "timeline": {
+        "first_and_second_semesters": {
+            "actions": [
+                "Register for courses",
+                "Work toward completing degree requirements"
+            ]
+        },
+        "during_second_semester": {
+            "constraint": "Before completing 18 credits",
+            "required_workday_tasks": [
+                "Committee Membership",
+                "Academic Plan"
+            ]
+        },
+        "third_semester": {
+            "actions": [
+                "Meet with advisor to review final graduation requirements"
+            ]
+        },
+        "final_semester": {
+            "advisor_support": [
+                "Schedule and submit final oral exam request",
+                "Complete Graduate Student Approval Form",
+                "Upload and submit final creative component to ISU Digital Repository"
+            ]
+        }
+    },
+    "detailed_semester_timeline": {
+        "first_semester": {
+            "tasks": [],
+            "notes": "No required administrative tasks"
+        },
+        "second_semester": {
+            "tasks": [
+                {
+                    "task": "AP Committee / Committee Membership",
+                    "delivery": "Instructions and due date sent via email"
+                },
+                {
+                    "task": "Academic Plan",
+                    "delivery": "Instructions and due date sent via email",
+                    "requirements": {
+                        "courses_listed": 10,
+                        "total_credits": 30
+                    }
+                }
+            ]
+        },
+        "third_or_fourth_semester": {
+            "tasks": [
+                {
+                    "task": "Register for HCI 5990",
+                    "notes": "May enroll in either third or fourth semester"
+                }
+            ]
+        },
+        "third_semester": {
+            "tasks": [
+                {
+                    "task": "Apply for Program Completion",
+                    "required": true,
+                    "notes": "Required to apply for graduation; instructions and dates will be shared"
+                }
+            ]
+        },
+        "fourth_or_graduating_semester": {
+            "constraints": [
+                "Must be registered for at least one credit during the final oral exam term"
+            ],
+            "tasks": [
+                {
+                    "task": "Email milestone documents to committee",
+                    "deadline": "Two weeks before final oral exam"
+                },
+                {
+                    "task": "Prepare for final oral exam",
+                    "resource": "Final oral exam preparation instructions"
+                },
+                {
+                    "task": "Final Oral Exam / Defense",
+                    "description": "Presentation of creative component or capstone project",
+                    "scheduling": "Date determined by HCI Program Director"
+                },
+                {
+                    "task": "Share final creative component document",
+                    "delivery": "Instructions provided separately"
+                },
+                {
+                    "task": "Upload final creative component document",
+                    "destination": "ISU Digital Repository",
+                    "delivery": "Instructions provided separately"
+                }
+            ]
+        }
+    },
+    "creative_component_capstone_details": {
+        "course_code": "HCI 5990",
+        "title": "Creative Component/Capstone Course",
+        "website": "https://sites.google.com/iastate.edu/hci5990/home",
+        "objective": "Demonstrate mastery of learning outcomes (user-centered design, research, communication, ethical/societal implications) via a large-scale system design project.",
+        "class_experience": {
+            "format": "No regular class meeting. Email is primary communication.",
+            "project_type": "Develop a digital system from start to prototype and create a website presenting the project.",
+            "process": "Follow steps of typical product development with milestones (design thinking reports, academic references).",
+            "grading": "Based solely on project milestones."
+        },
+        "project_examples": [
+            "https://dr.lib.iastate.edu/handle/20.500.12876/105669",
+            "https://dr.lib.iastate.edu/handle/20.500.12876/105674",
+            "https://dr.lib.iastate.edu/handle/20.500.12876/105665"
+        ],
+        "enrollment_requirements": [
+            "Completion of all core HCI courses",
+            "Academic Plan Committee must reflect major professor in Workday (Committee Member: Cody Fleming, Type: Graduate Major Professor)",
+            "Academic Plan must be completed and approved in Workday (Min 10 courses/30 credits)"
+        ],
+        "final_oral_exam": {
+            "title": "Oral Presentation: Your Final Oral Exam/Defense",
+            "format": "Design Pitch",
+            "audience": "Two committee members/HCI faculty (acting as R&D managers)",
+            "scenario": "Convince managers you are a competent designer deserving of continued funding. Not a business plan, but a design justification.",
+            "duration": "30 minutes presentation + 30 minutes questions",
+            "slides_content_requirements": [
+                "The design problem and target users",
+                "Approach to the solution (strategy/technique)",
+                "Actual solution (mockup)",
+                "User feedback / evaluation data (methods, results, reaction/reflection)"
+            ],
+            "evaluation_criteria": [
+                "Presentation within 30-minute limit",
+                "Clear articulation of problem, solution, mockup, and feedback",
+                "Response to questions demonstrating depth/breadth of knowledge"
+            ],
+            "outcomes": {
+                "pass": "Upload project to ISU Digital Repository (instructions emailed).",
+                "pass_with_conditions": "Additional work needed before degree finalized (e.g., comparative analysis).",
+                "fail": "Substantial revisions required; must schedule another attempt."
+            }
+        }
+    },
+    "planning_resources": {
+        "course_list": "HCI course list with term offerings",
+        "course_descriptions": "HCI course descriptions"
+    },
+    "program_completion": {
+        "application_timing": "At the time of enrolling in HCI 5990",
+        "process": "Apply for Program Completion in parallel with course enrollment"
+    },
+    "international_students": {
+        "cpt": {
+            "eligibility": {
+                "minimum_enrollment": "One academic year (Fall + Spring)",
+                "program": "Current ISU program"
+            },
+            "process_steps": [
+                "Receive internship or job offer",
+                "Attend CPT workshop in CyStart",
+                "Email advisor for permission to enroll in CPT-related course",
+                "Advisor submits CPT request with ISSO",
+                "Advisor processing",
+                "Receive ISSO email to pick up CPT authorization I-20",
+                "Begin employment only after CPT authorization and start date",
+                "Submit final internship report by advisor-provided due date"
+            ],
+            "resources": {
+                "isso_cpt_info": "ISSO website"
+            }
+        }
+    },
+    "steps_to_completion": [
+        {
+            "step_number": 1,
+            "title": "ACADEMIC PLAN COMMITTEE (APC)",
+            "description": "Group of graduate faculty or one faculty member who guides and evaluates the student. Initially, this is the HCI Program Director.",
+            "committee_members": {
+                "initial": "Stephen Gilbert (HCI Program Director)",
+                "final_semester": "Another committee member is added in the semester of graduation."
+            },
+            "when_to_complete": "Encouraged in second semester at Iowa State University.",
+            "instructions_note": "Documents mention 'Cody Fleming' as the one committee member name to use in forms.",
+            "warning": "Do not complete your Academic Plan until you receive notification that your committee has been approved."
+        },
+        {
+            "step_number": 2,
+            "title": "ACADEMIC PLAN",
+            "description": "List of courses taken and planned to meet degree requirements.",
+            "when_to_complete": "Encouraged in second semester at Iowa State University.",
+            "contact": "Contact Tiffany if you have questions about what courses should be listed.",
+            "warning": "Do not apply for program completion until your academic plan has been approved."
+        },
+        {
+            "step_number": 3,
+            "title": "APPLY FOR PROGRAM COMPLETION",
+            "description": "Application for the intended semester of graduation.",
+            "when_to_complete": "Refer to due dates. Date entered should be the last date of the term/semester.",
+            "warning": "Tiffany will assist in setting up your final oral exam."
+        },
+        {
+            "step_number": 4,
+            "title": "FINAL ORAL EXAM REQUEST",
+            "description": "Oral presentation of creative component/capstone project.",
+            "when_to_complete": "Tiffany will share the information needed to request this.",
+            "scholarly_document_fee": {
+                "full_name": "Scholarly Document Fee (formerly Thesis Fee)",
+                "amount": "$145 (one-time)",
+                "charged_to": "U-bill",
+                "details": "Includes dissertations, theses, and creative components posted to digital repository."
+            }
+        },
+        {
+            "step_number": 5,
+            "title": "GRADUATE STUDENT APPROVAL FORM",
+            "description": "Final check that student has completed all courses on Academic Plan.",
+            "when_to_complete": "You will be notified when you should submit this task in Workday."
+        },
+        {
+            "step_number": 6,
+            "title": "UPLOAD AND SUBMIT YOUR FINAL CREATIVE COMPONENT TO THE ISU DIGITAL REPOSITORY",
+            "when_to_complete": "You will be notified when you should complete this task.",
+            "instructions_location": "Found under heading 'Submitting your Creative Component to the Digital Repository'"
+        }
+    ],
+    "graduation": {
+        "requirements_verified_by": "Academic Advisor",
+        "final_steps": [
+            "Final oral exam (if required)",
+            "Graduate Student Approval Form submission",
+            "Creative component submission to ISU Digital Repository"
+        ]
+    }
+}

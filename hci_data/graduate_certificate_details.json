@@ -1,0 +1,208 @@
+{
+    "degree_requirements": {
+        "description": "The certificate consists of four graduate-level (5000 or 6000) courses (12 credit hours).",
+        "requirements": [
+            "One course from the Phenomena Core Course List (3 credits)",
+            "One course from the Implementation Core Course List (3 credits)",
+            "HCI 5210, Cognitive Psychology of Human Computer Interaction (3 credits)",
+            "One general elective course; can be any graduate-level course (3 credits)"
+        ],
+        "restrictions": [
+            "No undergraduate-level (1000, 2000, 3000, or 4000) courses will be allowed in the certificate academic plan.",
+            "No credits (at any level) taken as an ISU undergraduate student can be used toward a student's certificate degree requirements."
+        ]
+    },
+    "academic_procedures": [
+        "Graduate certificate students do not have an AP Committee.",
+        "Complete your Academic Plan the semester before you plan to graduate with your certificate.",
+        "Ensure your Academic Plan has been completed and approved in Workday.",
+        "Apply for Program Completion.",
+        "If you do not know the date that needs to be submitted for Program Completion, please contact Tiffany (HCI@iastate.edu)."
+    ],
+    "completion_process": [
+        "Student must Apply for Program Completion within two years after completing the final course in the certificate academic plan.",
+        "The Graduate College will then certify that all requirements have been completed satisfactorily and inform the Office of the Registrar after the student has applied for program completion.",
+        "The Registrar will issue an ISU graduate certificate after courses have been satisfactorily completed."
+    ],
+    "course_offerings": {
+        "general_notes": [
+            "Courses can be taken in any order. Students are not required to complete their core courses first.",
+            "All courses listed below are offered online.",
+            "The majority of courses listed below are asynchronous, but some are synchronous."
+        ],
+        "fall_semester": [
+            {
+                "type": "Design Core Course",
+                "course": "HCI 5210/ PSYCH 5210 - Cognitive Psychology of Human Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Course",
+                "course": "HCI 5840 - Python Application Development in HCI",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Course",
+                "course": "HCI 5400X - Internet-Based Methods, Extended Reality, and Machine Learning for Use in Engineering Design and Data Analysis",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Course",
+                "course": "HCI 5890/ ARTGR 5890 - Design and Ethics",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Course",
+                "course": "HCI 6550 / MIS 6550 - Organizational and Social Implications of Human Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Course",
+                "course": "HCI 5040/ EDUC 5040 - Evaluating Technology-based Learning Environments",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 5260 - Design Ethnography",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 5960 - Emerging Practices in Human Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "IE 5770 - Human Factors",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 6810/ IE 6810 - Cognitive Engineering",
+                "credits": 3
+            }
+        ],
+        "spring_semester": [
+            {
+                "type": "Design Core Course",
+                "course": "IE 5720 - Design and Evaluation of Human-Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Course",
+                "course": "COMS 5750/ CPRE 5750/ HCI 5750 - Computational Perception",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Course",
+                "course": "HCI 5800 / ME 5800 - Virtual Environments, Virtual Worlds, and Application",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Course",
+                "course": "HCI 5890/ ARTGR 5890 - Design and Ethics",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Course",
+                "course": "HCI 5300X - Perspectives in HCI",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Course",
+                "course": "HCI 5220 / PSYCH 5220 - Scientific Methods in Human Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Course",
+                "course": "HCI 5230X - Qualitative Research Methods in HCI",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 5250 / ME 5250 - Optimization Methods for Complex Designs",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 6030 / EDUC 6030 - Advanced Learning Environments Design",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 5740 - Computational Implementation and Prototyping in HCI",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "ARTGR 5500X - User Experience Methodologies",
+                "credits": 3
+            }
+        ],
+        "summer_semester": [
+            {
+                "type": "Design Core Course",
+                "course": "HCI 5950 - Visual Design of HCI",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Course",
+                "course": "HCI 5840 - Python Application Development in HCI",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Course",
+                "course": "HCI 5890/ ARTGR 5890 - Design and Ethics",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Course",
+                "course": "DSNS 5010 - Introduction to Research Design",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 5870 - Models and Theories in Human Computer Interaction",
+                "credits": 3
+            }
+        ],
+        "other_courses": [
+            {
+                "course": "HCI 5150 - Statistical Natural Language Processing",
+                "status": "not currently offered"
+            },
+            {
+                "course": "HCI 5200 - Computational Analysis of English",
+                "status": "currently offered but only face-to-face/in-person"
+            },
+            {
+                "course": "HCI 5710 - Augmented Reality",
+                "status": "not currently offered"
+            },
+            {
+                "course": "HCI 5790X - Methods for Interdisciplinary Research",
+                "status": "not currently offered"
+            },
+            {
+                "course": "HCI 5850 - Developmental Robotics",
+                "status": "not currently offered"
+            },
+            {
+                "course": "HCI 5910 - Seminar in Human Computer Interaction",
+                "status": "not currently offered"
+            },
+            {
+                "course": "HCI 5990 - Creative Component",
+                "note": "this course is for HCI Master of Science (MS) creative component students"
+            },
+            {
+                "course": "HCI 6970 - HCI Internship",
+                "note": "this course is for on-campus international HCI students only"
+            },
+            {
+                "course": "HCI 6990 - Research",
+                "note": "this course is for HCI MS Thesis or PhD students only"
+            }
+        ]
+    }
+}

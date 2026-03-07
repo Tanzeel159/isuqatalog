@@ -1,0 +1,52 @@
+{
+    "phd_exam_and_residency_requirements": {
+        "preliminary_oral_examination": {
+            "requirement": "Required by Graduate College; rigorously tests knowledge of major, minor, and supporting subject areas.",
+            "components": [
+                "Oral examination",
+                "Written portion (determined by advisor)"
+            ],
+            "scheduling_rules": {
+                "request_submission": "At least two weeks before proposed date",
+                "academic_plan_approval": "Must be approved 3 months prior to exam date (effective Jan 1, 2021)",
+                "gap_before_final_exam": "Minimum of six months must elapse between passing prelim and taking final oral exam",
+                "registration": "If taken between terms, registration can be for either the term before or after"
+            },
+            "instructions_location": "Workday Student: Request a Graduate Oral Exam"
+        },
+        "dissertation": {
+            "preparation": "Must be prepared according to Graduate College requirements."
+        },
+        "final_oral_examination": {
+            "nature": "Generally a defense of the dissertation; questions on coursework/concentration areas possible.",
+            "committee_requirement": "All members must be present throughout the entire scheduled period.",
+            "timeline": {
+                "dissertation_distribution": "At least two weeks prior to exam",
+                "request_submission": "At least three weeks prior to intended date"
+            },
+            "logistics": {
+                "scheduling": "Student arranges meeting time/place in agreement with committee",
+                "room_reservation": "Student responsibility",
+                "reporting": "Graduate College uses electronic process; committee receives email link to online form"
+            },
+            "instructions_location": "Workday Student: Request a Graduate Oral Exam"
+        },
+        "annual_reviews": {
+            "process": [
+                "Email announcement sent",
+                "Student completes web form",
+                "Non-confidential answers sent to major professor/advisor for sign-off",
+                "Confidential answers stay with HCI DOGE"
+            ]
+        },
+        "residency_requirement": {
+            "general_expectation": "Expected to be a resident at Iowa State University in Ames, Iowa.",
+            "exceptions": "Must be discussed with HCI Supervisory Committee.",
+            "credit_requirements": {
+                "total_required": 72,
+                "on_campus_minimum": "At least 36 credits must be enrolled as full-time, on campus student",
+                "dissertation_research": "All research credits must be earned from ISU under committee supervision"
+            }
+        }
+    }
+}

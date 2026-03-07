@@ -1,0 +1,160 @@
+{
+    "semester_info": {
+        "term": "Summer 2025",
+        "start_date": "Monday, May 19",
+        "notes": "Course descriptions and syllabi can be found here."
+    },
+    "courses": {
+        "design_core": [
+            {
+                "code": "HCI 5950",
+                "name": "Visual Design for HCI",
+                "credits": 3,
+                "instructor": "Bernard Canniffe",
+                "delivery_mode": "Online, asynchronous (No meeting time for Section 01 or 02)",
+                "sections": [
+                    {
+                        "section": "01",
+                        "dates": "5/19/2025 - 7/11/2025"
+                    },
+                    {
+                        "section": "02",
+                        "dates": "6/16/2025 - 8/8/2025"
+                    }
+                ],
+                "description": "Human interaction design as it applies to HCI. Aspects of audience analysis, design methodologies for creating concepts and solutions, techniques of concept prototyping, and the fundamentals of visual design such as color, type, symbolism, and grid structure. Class discussions, tutorials, and hands-on projects."
+            }
+        ],
+        "implementation_core": [
+            {
+                "code": "HCI 5840",
+                "name": "Python Application Development in HCI",
+                "credits": 3,
+                "instructor": "Chris Harding",
+                "delivery_mode": "Online, asynchronous (No meeting time)",
+                "registration_info": "Registration Permission is Required: Please contact Tiffany Kayser",
+                "prerequisites": "HCI 5740 or prior programming experience",
+                "sections": [
+                    {
+                        "section": "01",
+                        "dates": "5/19/2025 - 8/8/2025"
+                    }
+                ],
+                "description": "Implement Python code and write design documents ('specs') and complement their code with sufficiently detailed documentation in development of a large Python project of the student's choosing. Typical development process: idea, specification, prototyping and implementation (including debugging, testing, refactoring) and documentation and result in a demo-able final product."
+            }
+        ],
+        "phenomena_core": [
+            {
+                "code": "HCI 5890",
+                "name": "Design and Ethics",
+                "credits": 3,
+                "instructor": "Tina Rice",
+                "delivery_mode": "Online, asynchronous (No meeting time)",
+                "sections": [
+                    {
+                        "section": "01",
+                        "dates": "6/16/2025 - 8/8/2025"
+                    }
+                ],
+                "description": "Issues in ethics and decision-making as they relate to technology, design, design research, HCI, and the design industry."
+            }
+        ],
+        "recommended_electives": [
+            {
+                "code": "HCI 5870",
+                "name": "Models and Theories in Human Computer Interaction",
+                "credits": 3,
+                "instructor": "Rick Stone",
+                "sections": [
+                    {
+                        "section": "01",
+                        "target": "On-campus students only",
+                        "delivery_mode": "Face-to-face/on-campus",
+                        "dates": "06/16/2025 - 08/08/2025",
+                        "schedule": "Tuesdays and Thursdays | 11:00 AM - 12:50 PM"
+                    },
+                    {
+                        "section": "02",
+                        "target": "Both online and on-campus students",
+                        "delivery_mode": "Online, asynchronous (No meeting time)",
+                        "dates": "06/16/2025 - 08/08/2025"
+                    }
+                ],
+                "description": "Survey of the multidisciplinary models and theories that form the foundation of the science of Human Computer Interaction. Application of the scientific method to solve practical problems by using analyses or approaches from the behavioral and social sciences, and information and computer technology"
+            },
+            {
+                "code": "COMST 5900",
+                "name": "Special Topics: Human Computer Communication",
+                "credits": 3,
+                "instructor": "Mary Fornoff",
+                "delivery_mode": "Online, asynchronous (No meeting time)",
+                "registration_instructions": [
+                    "Submit a Prerequisite Override task for this course in Workday",
+                    "The instructor will approve your request",
+                    "Once approved, register as usual",
+                    "Contact Tiffany for questions or issues"
+                ],
+                "sections": [
+                    {
+                        "section": "1",
+                        "dates": "5/19/2025 - 7/11/2025"
+                    }
+                ],
+                "description": "This course explores verbal and nonverbal communication theories and methods in AI and robotics research, focusing on human communication. Students will gain a deeper understanding of the research process in Communication Studies",
+                "flyer": "https://iastate.box.com/s/szzzcan5ij6pn8aq4wdc1176q9pvoj56"
+            }
+        ],
+        "general_electives": [
+            {
+                "code": "ARTID 5710",
+                "name": "Advanced Visualization in Interior Design",
+                "credits": 3,
+                "instructor": "Yongyeon Cho",
+                "delivery_mode": "Online, asynchronous (No meeting time)",
+                "sections": [
+                    {
+                        "section": "01",
+                        "dates": "5/19/2025 - 7/11/2025"
+                    }
+                ],
+                "description": "Exploration of advanced-level computer visualization techniques and applications relevant to design. Introduction to the latest graphic communication software and technologies, focusing on image searching, diagramming, hybrid digital perspectives, 3D modeling, photo-realistic rendering, real-time video production, and Virtual Reality. This course will follow a lecture format, with the instructor demonstrating various techniques. A Windows-based computer is required for the proper operation of the software. Each week, students will be introduced to new applications and software relevant to Interior Design, Architecture, Graphic Design, Landscape Architecture, Industrial Design, and Human-Computer Interaction. Students are expected to watch recorded lectures, complete five short-term tutorials as course exercises, and work on a long-term course project (Microhome or another topic) based on the knowledge acquired in this course.",
+                "flyer": "https://iastate.box.com/s/6ovspja63uze25wgmygo3ehxpey3gn7c"
+            },
+            {
+                "code": "ARTID 4930-01",
+                "name": "Workshop - Artificial Intelligence Tools for Designed Environments",
+                "credits": 3,
+                "instructor": "Yongyeon Cho",
+                "delivery_mode": "Online, asynchronous (No meeting time)",
+                "registration_instructions": [
+                    "Submit a Prerequisite Override task for this course in Workday",
+                    "The instructor will approve your request",
+                    "Once approved, register as usual",
+                    "Contact Tiffany for questions or issues"
+                ],
+                "sections": [
+                    {
+                        "section": "01",
+                        "dates": "6/16/2025 - 8/8/2025"
+                    }
+                ],
+                "description": "This course explores the integration of Artificial Intelligence (AI) within designed environments, focusing on tools and technologies that enhance the design process from ideation to post-production. In addition to mastering AI tools, students will engage in responsible and design practices, including a written essay on the ethical use of AI in design. This course equips students with technical skills and the ability to communicate their design decisions critically.",
+                "flyer": "https://iastate.box.com/s/czu9ia75izkt40rw18bx0cli6cd0k0yk"
+            },
+            {
+                "code": "SOC 5100-01 / WGS 5100-01",
+                "name": "Human Trafficking",
+                "credits": 3,
+                "instructor": "Dr. Alissa Stoehr",
+                "delivery_mode": "Online, asynchronous (No meeting time)",
+                "sections": [
+                    {
+                        "section": "1",
+                        "dates": "Not specified in snippet"
+                    }
+                ],
+                "description": "see flyer"
+            }
+        ]
+    }
+}

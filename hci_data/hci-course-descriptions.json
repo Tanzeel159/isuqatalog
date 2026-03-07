@@ -1,0 +1,412 @@
+[
+    {
+        "course_code": "HCI 5040",
+        "course_name": "Evaluating Technology-based Learning Environments",
+        "offered": "Fall semester",
+        "rec_cross_listed": "EDUC",
+        "delivery": "Usually offered online, synchronous",
+        "credits": "3",
+        "type_of_course": "Evaluation Core Course",
+        "description": "Principles and procedures to plan, design, and conduct effective evaluation studies (formative, summative, usability) in different settings are studied. Opportunities to engage in real or simulated evaluation projects of substantial scope are provided. Course activities include: create evaluation instruments, develop methods with which to evaluate a product or program, conduct try-outs or usability sessions, analyze the data, report the findings, and recommendations."
+    },
+    {
+        "course_code": "ART 5080",
+        "course_name": "Computer Aided Animation and Visualization",
+        "offered": "Spring semester",
+        "notes": "Taught by the College of Design; not cross-listed with HCI.",
+        "delivery": "In-Person",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Attention given to the workflow and management of creating animation and visualizations."
+    },
+    {
+        "course_code": "PSYCH 5010",
+        "course_name": "Foundations of Behavioral Research",
+        "offered": "Fall semester",
+        "notes": "Taught by the Psychology department; not cross-listed with HCI.",
+        "delivery": "In-Person",
+        "credits": "3",
+        "type_of_course": "Evaluation Core Course",
+        "description": "Ethical issues, research design, sampling design, measurement issues, power and precision analysis, interpretation of statistical results in non-experimental, quasi-experimental, and experimental research, use of statistical packages."
+    },
+    {
+        "course_code": "EDUC 5030",
+        "course_name": "Designing Effective Learning Environments",
+        "offered": "Fall semester",
+        "notes": "Taught by the School of Education department; not cross-listed with HCI.",
+        "delivery": "Online",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Application of theories and models of instructional design. Design decision-making based on the analysis of performance problems and instructional inputs. Practical experience with the design and development of instruction and evaluation principles."
+    },
+    {
+        "course_code": "HCI 5100",
+        "course_name": "Foundations of Game-Based Learning",
+        "offered": "Spring 2026 semester",
+        "rec_cross_listed": "EDUC",
+        "delivery": "Online",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Theories, principles and best practices of utilizing games in educational environments. Topics include the theoretical foundations of learning games and game play, identity development in online environments, and assessment of learning in and out of games."
+    },
+    {
+        "course_code": "STAT 5101",
+        "course_name": "Statistical Methods for Data Analysis",
+        "notes": "Was previously listed in the course catalog as STAT 5870 - Statistical Methods for Research Workers. Can be offered in all semesters.",
+        "delivery": "In-Person",
+        "credits": "4",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Principles of data analysis and scientific inference, including estimation, hypothesis testing, and the construction of interval estimates. Statistical concepts and models, including group comparison, blocking, and linear regression. Different sections are designed for students in various disciplines, and additional methods covered may depend on the target audience. Topics covered may include basic experimental designs and analysis of variance for those designs, analysis of categorical data, logistic and log-linear regression, likelihood-based inference, and the use of simulation."
+    },
+    {
+        "course_code": "EDUC 5110",
+        "course_name": "Technology Diffusion, Leadership, and Change",
+        "offered": "Spring semester",
+        "notes": "Taught by the School of Education department; not cross-listed with HCI.",
+        "delivery": "In-Person",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Principles and practices of technology diffusion, leadership and school change. Coursework focuses on technology diffusion broadly and implications on educational contexts. Leadership frameworks and strategies for professional development and organizational change are examined, as well as new literacy practices, critical theory, and current debates in the field."
+    },
+    {
+        "course_code": "HCI 5150",
+        "course_name": "Statistical Natural Language Processing",
+        "offered": "Not currently offered",
+        "rec_cross_listed": "ENGL/LING",
+        "credits": "3",
+        "description": "Introduction to computational techniques involving human language and speech in applications such as information retrieval and extraction, automatic text categorization, word prediction, intelligent Web searching, spelling and grammar checking, speech recognition and synthesis, statistical machine translation, n-grams, POS-tagging, word-sense disambiguation, on-line lexicons and thesauri, markup languages, corpus analysis, and Python programming language."
+    },
+    {
+        "course_code": "HCI 5200",
+        "course_name": "Computational Analysis of English",
+        "offered": "Spring or Fall semesters; historically has been offered in Spring",
+        "rec_cross_listed": "ENGL/LING",
+        "delivery": "In-Person",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Concepts and practices for analysis of English by computer with emphasis on the applications of computational analysis to problems in applied linguistics such as corpus analysis and recognition of learner language in computer-assisted learning and language assessment."
+    },
+    {
+        "course_code": "HCI 5210",
+        "course_name": "Cognitive Psychology of Human Computer Interaction",
+        "offered": "Fall semester",
+        "rec_cross_listed": "PSYCH",
+        "delivery": "In-Person and Online",
+        "credits": "3",
+        "type_of_course": "Design Core Course",
+        "description": "Biological, behavioral, perceptual, cognitive and social issues relevant to human computer interactions."
+    },
+    {
+        "course_code": "HCI 5220",
+        "course_name": "Scientific Methods in Human Computer Interaction",
+        "offered": "Spring semester",
+        "rec_cross_listed": "PSYCH",
+        "delivery": "In-Person and Online",
+        "credits": "3",
+        "type_of_course": "Evaluation Core Course",
+        "description": "Basics of hypothesis testing, experimental design, analysis and interpretation of data, and the ethical principles of human research as they apply to research in human computer interaction. Offered odd-numbered years."
+    },
+    {
+        "course_code": "HCI 5230X",
+        "course_name": "Qualitative Research Methods in HCI",
+        "offered": "Spring semester",
+        "delivery": "In-Person and Online",
+        "credits": "3",
+        "type_of_course": "Evaluation Core Course",
+        "description": "Introduction to qualitative research methods specific to human computer interaction and user experience research, both from an academic perspective and applied industry perspective. Conduct, write, and critique qualitative research. Examples and projects will be drawn from human computer interaction domains, e.g., mobile apps, web applications, automated vehicle, self-checkout stations, etc. Methods include focus groups, interviews, surveys, and many others"
+    },
+    {
+        "course_code": "HCI 5250",
+        "course_name": "Optimization Methods for Complex Designs",
+        "offered": "Spring semester",
+        "rec_cross_listed": "ME",
+        "delivery": "In-Person and Online",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Optimization involves finding the 'best' according to specified criteria. Review of a range of optimization methods from traditional nonlinear to modern evolutionary methods such as Genetic algorithms. Examination of how these methods can be used to solve a wide variety of design problems across disciplines, including mechanical systems design, biomedical device design, biomedical imaging, and interaction with digital medical data. Students will gain knowledge of numerical optimization algorithms and sufficient understanding of the strengths and weaknesses of these algorithms to apply them appropriately in engineering design. Experience includes code writing and off-the-shelf routines. Numerous case-studies of real-world situations in which problems were modeled and solved using advanced optimization techniques."
+    },
+    {
+        "course_code": "HCI 5260",
+        "course_name": "Design Ethnography",
+        "offered": "Fall semester",
+        "rec_cross_listed": "ANTHR",
+        "delivery": "In-Person and Online",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "A hands-on introduction to ethnographic methods with a focus on their application in design, human computer interaction, user research, and other applied domains. Assumes no background in cross-cultural study or social science. Trains students to use ethnographic methods to conceptualize, design, build, and evaluate interactive systems and other design-oriented projects (e.g., architecture)."
+    },
+    {
+        "course_code": "STAT 5279",
+        "course_name": "Statistical Computing for Data Analysis",
+        "offered": "Spring Semester",
+        "notes": "Was previously listed in the course catalog as STAT 5860 - Introduction to Statistical Computing",
+        "delivery": "In-Person",
+        "credits": "3",
+        "type_of_course": "Evaluation Core Course",
+        "description": "Modern statistical computing. Topics may include: basic and advanced R programming; data management; spread sheets; verifying data accuracy; transferring data between software packages; data and graphical analysis with statistical software packages; algorithmic programming concepts and applications; simulation studies and resampling methods; software reliability; statistical modeling and machine learning"
+    },
+    {
+        "course_code": "ARTGR 5300",
+        "course_name": "User Engagement",
+        "offered": "Fall semester",
+        "notes": "Taught by the Graphic Design department; not cross-listed with HCI.",
+        "delivery": "In-Person",
+        "credits": "3",
+        "type_of_course": "Design Core Course",
+        "description": "The exploration and design of interface/interaction with products, systems, and technologies."
+    },
+    {
+        "course_code": "HCI 5300X",
+        "course_name": "Perspectives in HCI",
+        "offered": "Usually offered in the Spring semester",
+        "delivery": "Online",
+        "credits": "3",
+        "type_of_course": "Phenomena Core Course",
+        "description": "An exploration of different perspectives in HCI that covers: inclusive and humane design; the intersection of technology and race, gender, age, and class; technology around the world; the impact of technology on democracy; social engineering and cybersecurity; and other relevant topics students would like to explore."
+    },
+    {
+        "course_code": "ARTGR 5400",
+        "course_name": "Design for Behavioral Change",
+        "offered": "Spring semester",
+        "notes": "Taught by the Graphic Design department; not cross-listed with HCI.",
+        "delivery": "In-Person",
+        "credits": "3",
+        "type_of_course": "Phenomena Core Course",
+        "description": "The exploration and design of educational experiences and artifacts as they relate to the social, emotional, and behavioral aspects of society."
+    },
+    {
+        "course_code": "HCI 5400X",
+        "course_name": "Internet-Based Methods, Extended Reality, and Machine Learning for Use in Engineering Design and Data Analysis",
+        "offered": "Fall semester",
+        "rec_cross_listed": "ME",
+        "delivery": "In-Person and Online",
+        "credits": "3",
+        "type_of_course": "Implementation Core Course",
+        "description": "Extensive overview of developing and deploying internet-based computational resources for engineering applications. Relational databases, server and client-side web programming, and their use with traditional engineering software (i.e. computer-aided design and finite-element modeling). Extended reality (XR) technologies and machine learning / artificial intelligence for use in internet-based solutions."
+    },
+    {
+        "course_code": "HCI 5500X",
+        "course_name": "User Experience Methodologies",
+        "offered": "Spring semester",
+        "rec_cross_listed": "ARTGR",
+        "delivery": "Online",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Fundamentals of lean user experience design, discovery and process."
+    },
+    {
+        "course_code": "ME 5570",
+        "course_name": "Computer Graphics and Geometric Modeling",
+        "offered": "Spring semester, odd numbered years",
+        "notes": "Taught by the Mechanical Engineering department, not cross-listed with HCI.",
+        "rec_cross_listed": "COMS and CPRE",
+        "delivery": "In-Person",
+        "credits": "3",
+        "type_of_course": "Implementation Core Course",
+        "description": "Fundamentals of computer graphics technology. Data structures. Parametric curve and surface modeling. Solid model representations. Applications in engineering design, analysis, and manufacturing"
+    },
+    {
+        "course_code": "HCI 5710",
+        "course_name": "Augmented Reality",
+        "offered": "Not currently offered",
+        "credits": "3",
+        "description": "Fundamental technologies enabling augmented reality (AR) application development. Assessment and integration of the hardware and software systems necessary for AR including, tracking, image processing and rendering. Programming skills in C++ and GPU-based optimization are developed to enable evaluation of interaction devices and modalities afforded by AR."
+    },
+    {
+        "course_code": "IE 5720",
+        "course_name": "Design and Evaluation of Human-Computer Interaction",
+        "offered": "Spring semester",
+        "notes": "Taught by the Industrial and Manufacturing Systems (IMSE) department; not cross-listed with HCI.",
+        "delivery": "In-Person and online",
+        "credits": "3",
+        "type_of_course": "Design Core Course",
+        "description": "Human factors methods applied to interface requirements, design, prototyping, and evaluation. Concepts related to understanding user characteristics, design principles, usability analysis, methods and techniques for design and evaluation of the interface. The evaluation and design of the information presentation characteristics of a wide variety of interfaces: web sites (e-commerce), mobile applications, and information presentation systems (cockpits, instrumentation, etc.)."
+    },
+    {
+        "course_code": "HCI 5740",
+        "course_name": "Computational Implementation and Prototyping in HCI",
+        "offered": "Spring semester",
+        "delivery": "In-Person and Online",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Fundamental concepts of software programming and the practical use of the Python programming language. Assignments include user interaction and interface design, information visualization, as well as other computational HCI tools. Intended for graduate students without prior background in software development. Requires programming during class lectures."
+    },
+    {
+        "course_code": "HCI 5750",
+        "course_name": "Computational Perception",
+        "offered": "Spring semester",
+        "rec_cross_listed": "COMS and CPRE",
+        "delivery": "In-Person and Online",
+        "credits": "3",
+        "type_of_course": "Implementation Core Course",
+        "description": "This class covers statistical and algorithmic methods for sensing, recognizing, and interpreting the activities of people by a computer. This semester we will focus on machine perception techniques that facilitate and augment human-computer interaction. The main goal of the class is to introduce computational perception on both theoretical and practical levels. Participation in small groups to design, implement, and evaluate a prototype of a human-computer interaction system that uses one or more of the techniques covered in the lectures."
+    },
+    {
+        "course_code": "IE 5760",
+        "course_name": "Human Factors in Product Design",
+        "offered": "Odd years, Fall semester",
+        "notes": "Taught by the Industrial and Manufacturing Systems (IMSE) department; not cross-listed with HCI.",
+        "delivery": "In-Person",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Investigation of the human interface to consumer and industrial systems and products, providing a basis for their design and evaluation. Discussions of human factors in the product design process: modeling the human during product use; usability; human factors methods in product design evaluation; user-device interface; safety, warnings, and instructions for products; considerations for human factors in the design of products for international use."
+    },
+    {
+        "course_code": "IE 5770",
+        "course_name": "Human Factors",
+        "offered": "Fall semester",
+        "notes": "Taught by the Industrial and Manufacturing Systems (IMSE) department; not cross-listed with HCI.",
+        "delivery": "In-Person and Online",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Physical and psychological factors affecting human performance in systems. Signal detection theory, human reliability modeling, information theory, and performance shaping applied to safety, reliability, productivity, stress reduction, training, and human/equipment interface design. Laboratory assignments related to system design and operation."
+    },
+    {
+        "course_code": "HCI 5790X",
+        "course_name": "Methods Interdisciplinary Research",
+        "offered": "Currently in the Fall 2025 semester",
+        "rec_cross_listed": "ARCH",
+        "delivery": "In-Person and Online",
+        "credits": "3",
+        "description": "Introduction to qualitative, quantitative, and experimental methods for interdisciplinary research. Themes drawn from architectural history, design fields, human computer interaction, and applied social sciences; guest speakers attend to present their research methodologies. Students develop a research paper on a topic of their choice."
+    },
+    {
+        "course_code": "HCI 5800",
+        "course_name": "Virtual Environments, Virtual Worlds, and Application",
+        "offered": "Spring semester",
+        "rec_cross_listed": "ME",
+        "delivery": "In-Person and Online",
+        "credits": "3",
+        "type_of_course": "Implementation Core Course",
+        "description": "A systematic introduction to the underpinnings of Virtual Environments (VE), Virtual Worlds, advanced displays and immersive technologies; and an overview of some of the applications areas particularly virtual engineering."
+    },
+    {
+        "course_code": "HCI 5840",
+        "course_name": "Python Application Development in HCI",
+        "offered": "Summer and Fall semesters",
+        "delivery": "Online",
+        "credits": "3",
+        "type_of_course": "Implementation Core Course",
+        "description": "Implement Python code and write design documents (\"specs\") and complement their code with sufficiently detailed documentation in development of a large Python project of the student's choosing. Typical development process: idea, specification, prototyping and implementation (including debugging, testing, refactoring) and documentation and result in a demo-able final product. Fulfills the implementation requirement of the HCI program. Offered even-numbered years."
+    },
+    {
+        "course_code": "HCI 5850",
+        "course_name": "Developmental Robotics",
+        "offered": "Not currently offered",
+        "rec_cross_listed": "CPRE",
+        "credits": "3",
+        "description": "An introduction to the emerging interdisciplinary field of Developmental Robotics, which crosses the boundaries between robotics, artificial intelligence, developmental psychology, and philosophy. The main goal of this field is to create autonomous robots that are more intelligent, more adaptable, and more useful than the robots of today, which can only function in very limited domains and situations."
+    },
+    {
+        "course_code": "HCI 5870",
+        "course_name": "Models and Theories in Human Computer Interaction",
+        "offered": "Summer semester",
+        "delivery": "In-Person and Online",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Survey of the multidisciplinary models and theories that form the foundation of the science of Human Computer Interaction. Application of the scientific method to solve practical problems by using analyses or approaches from the behavioral and social sciences, and information and computer technology."
+    },
+    {
+        "course_code": "HCI 5890",
+        "course_name": "Design and Ethics",
+        "offered": "Fall, Spring and/or Summer semesters",
+        "rec_cross_listed": "ARTGR",
+        "delivery": "Online",
+        "credits": "3",
+        "type_of_course": "Phenomena Core Course",
+        "description": "Issues in ethics and decision-making as they relate to technology, design, design research, HCI, and the design industry."
+    },
+    {
+        "course_code": "HCI 5900",
+        "course_name": "Special Topics",
+        "offered": "Fall, Spring and/or Summer semesters",
+        "delivery": "Online and/or In-Person",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Investigation of problems of special interest in human computer interaction."
+    },
+    {
+        "course_code": "HCI 5910",
+        "course_name": "Seminar in Human Computer Interaction",
+        "offered": "Not currently offered",
+        "credits": "1"
+    },
+    {
+        "course_code": "HCI 5950",
+        "course_name": "Visual Design of HCI",
+        "offered": "Summer semester",
+        "delivery": "Online",
+        "credits": "3",
+        "type_of_course": "Design Core Course",
+        "description": "Human interaction design as it applies to HCI. Aspects of audience analysis, design methodologies for creating concepts and solutions, techniques of concept prototyping, and the fundamentals of visual design such as color, type, symbolism, and grid structure. Class discussions, tutorials, and hands-on projects."
+    },
+    {
+        "course_code": "HCI 5960",
+        "course_name": "Emerging Practices in Human Computer Interaction",
+        "offered": "Fall semester",
+        "delivery": "Online",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Innovative or newly emerging ideas within the HCI research field or applied industry practice, e.g., based on changing cultures or attitudes, new technologies, and new economic forces."
+    },
+    {
+        "course_code": "HCI 5990",
+        "course_name": "Creative Component",
+        "offered": "Usually in the Fall and Spring semesters",
+        "notes": "Only Master of Science in HCI Creative Component students will enroll in this research course.",
+        "credits": "3",
+        "description": "Research credit."
+    },
+    {
+        "course_code": "HCI 6030",
+        "course_name": "Advanced Learning Environments Design",
+        "offered": "Spring semester",
+        "rec_cross_listed": "EDUC",
+        "delivery": "Online",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Exploration of advanced aspects of the learning environments design process. Application of analysis, design, development and production, evaluation, implementation, and project management principles. Theory and research in educational technology provides the foundation for design decisions. Focus on current trends in learning environment design and the production and use of educational technology."
+    },
+    {
+        "course_code": "HCI 6080",
+        "course_name": "Social Media and Education",
+        "offered": "Not currently offered",
+        "rec_cross_listed": "EDUC",
+        "credits": "3",
+        "description": "Increase understanding of how social media is changing traditional concepts of identity, literacy, citizenship and more. Develop an online social presence through active social media participation."
+    },
+    {
+        "course_code": "HCI 6550",
+        "course_name": "Organizational and Social Implications of Human Computer Interaction",
+        "offered": "Fall semester",
+        "rec_cross_listed": "MIS",
+        "delivery": "In Person and Online",
+        "credits": "3",
+        "type_of_course": "Phenomena Core Course",
+        "description": "Examine opportunities and implications of information technologies and human computer interaction on social and organizational systems. Explore ethical and social issues appurtenant to human computer interaction, both from a proscriptive and prescriptive perspective. Develop informed perspective on human computer interaction. Implications on research and development programs."
+    },
+    {
+        "course_code": "HCI 6810",
+        "course_name": "Cognitive Engineering",
+        "offered": "Fall semester",
+        "rec_cross_listed": "IE",
+        "delivery": "In Person and Online",
+        "credits": "3",
+        "type_of_course": "HCI Recommended Elective",
+        "description": "Provides an overview of human cognitive capabilities and limitations in the design of products, workplaces, and large systems. Contexts vary broadly and could range from simple use of mobile devices to an air-traffic control or nuclear plant command center. Course focuses on what we can infer about users' thoughts and feelings based on what we can measure about their performance and physiological state. Covers the challenge of designing automated systems."
+    },
+    {
+        "course_code": "HCI 6970",
+        "course_name": "HCI Internship",
+        "offered": "All semesters",
+        "notes": "For international students only who want to participate in Curricular Practical Training (CPT). R credit course; does not carry numerical credit toward a student's degree. No tuition is charged for this course.",
+        "credits": "0"
+    },
+    {
+        "course_code": "HCI 6990",
+        "course_name": "Research",
+        "offered": "All semesters",
+        "notes": "Research credits for MS thesis or PhD dissertation work; these credits are not factored into the student's GPA.",
+        "credits": "1-30"
+    }
+]

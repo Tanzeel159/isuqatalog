@@ -1,0 +1,80 @@
+{
+    "tuition_2025_2026": {
+        "academic_year": "2025-2026",
+        "notes": "Based on full-time Iowa State graduate student residency. Costs per semester.",
+        "rates": {
+            "iowa_resident": {
+                "total_cost_per_semester": "$8,457.45",
+                "tuition_per_credit": "$844",
+                "tuition_flat_rate_9_plus_credits": "$7,576",
+                "total_fees": "$881.45"
+            },
+            "non_resident": {
+                "total_cost_per_semester": "$17,791.45",
+                "tuition_per_credit": "$1,882",
+                "tuition_flat_rate_9_plus_credits": "$16,910",
+                "total_fees": "$881.45"
+            },
+            "international": {
+                "total_cost_per_semester": "$18,782.45",
+                "tuition_per_credit": "$1,989",
+                "tuition_flat_rate_9_plus_credits": "$17,901",
+                "total_fees": "$881.45"
+            }
+        }
+    },
+    "assistantships": {
+        "general_policy": {
+            "tuition_assessment": "Assessed at resident tuition rate for students regarding of residency status.",
+            "responsibility": "Students responsible for fees and remaining tuition not covered by assistantship.",
+            "application": "Admission application is used; no separate application required."
+        },
+        "research_assistantships": {
+            "acronym": "RA",
+            "description": "Provided by major professor/faculty advisor from research grants.",
+            "expectations": "Perform research/related activities (20 hours/week) as directed by major professor.",
+            "contingency": "Satisfactory performance, degree progression, and fund availability."
+        },
+        "teaching_assistantships": {
+            "acronym": "TA",
+            "availability": "Inconsistent year-to-year as HCI is a program, not a department.",
+            "selection_process": "Selected by course instructor, DOGE, and VRAC director.",
+            "communication": "Email sent to current on-campus students if openings available.",
+            "eligibility": "Not offered to newly admitted students."
+        }
+    },
+    "funding_packages": {
+        "ms_thesis": {
+            "appointment": "1/2 time (20 hours/week) Graduate Research Assistantship",
+            "stipend": "Minimum semester stipend of $10,749",
+            "tuition_benefit": "75% tuition scholarship",
+            "tuition_rate_applied": "Graduate assistant tuition rate (in-state rate) for remaining tuition",
+            "fees": "Fee award (fees reduced)",
+            "insurance": "Single-student health insurance (includes prescription drug plan) at no charge (if appointed for at least 3 months)."
+        },
+        "phd": {
+            "appointment": "1/2 time (20 hours/week) Graduate Research Assistantship",
+            "stipend": "Minimum semester stipend of $10,749",
+            "tuition_benefit": "100% tuition scholarship",
+            "fees": "Fee award (fees reduced)",
+            "insurance": "Single-student health insurance (includes prescription drug plan) at no charge (if appointed for at least 3 months)."
+        }
+    },
+    "scholarships_and_employment": {
+        "scholarships": {
+            "general": "Students with RA/TA receive tuition scholarship (75% for MS, 100% for PhD).",
+            "international": "Scholarships for International Students database available.",
+            "outside": "Outside Scholarship Database available."
+        },
+        "on_campus_work": {
+            "eligibility": "All ISU students meeting job requirements.",
+            "source": "Student Employment Center / Online Job Board.",
+            "types": "Hourly positions (research, computer services, specialized fields).",
+            "approval": "All hourly graduate student employment requires Graduate College approval."
+        },
+        "off_campus_work": {
+            "source": "Online Job Board lists positions in Ames and surrounding communities.",
+            "types": "Light yard work, housework, food service, cashier, child care, farm help, etc."
+        }
+    }
+}

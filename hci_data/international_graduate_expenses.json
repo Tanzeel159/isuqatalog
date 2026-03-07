@@ -1,0 +1,47 @@
+{
+    "international_graduate_expenses_2025_2026": {
+        "target_audience": "Human Computer Interaction Students",
+        "without_assistantship": {
+            "academic_year_9_months": {
+                "tuition_and_fees": "$37,564.90",
+                "living_expenses": "$18,712",
+                "total": "$56,576.90"
+            },
+            "one_semester_4_months": {
+                "tuition_and_fees": "$18,782.45",
+                "living_expenses": "$8,316",
+                "total": "$27,098.45"
+            }
+        },
+        "with_assistantship": {
+            "notes": [
+                "Students on graduate assistantships receive resident tuition, a tuition scholarship and fee awards, and free health insurance.",
+                "Students on a graduate assistantship for the Summer term will usually register for 1 credit of research (HCI 6990)."
+            ],
+            "academic_year_9_months": {
+                "tuition_and_fees": "$16,616.90",
+                "living_expenses": "$18,712"
+            },
+            "one_semester_4_months": {
+                "tuition_and_fees": "$8,308.45",
+                "living_expenses": "$8,316"
+            },
+            "summer_3_months": {
+                "tuition_and_fees": "$1,207.25",
+                "living_expenses": "$6,237"
+            }
+        },
+        "resources": {
+            "calculator_url": "https://apps.admissions.iastate.edu/forms.php/isso_calculator"
+        },
+        "considerations": [
+            "Cost of attendance is an estimate for one year.",
+            "Estimated expenses for one academic year listed on I-20 (F-1); full program on DS-2019 (J-1).",
+            "Tuition/fees/housing charges set by Iowa Board of Regents.",
+            "Living expenses vary by lifestyle.",
+            "Estimated living expenses include room & board, books & supplies, personal expenses, and health insurance.",
+            "ISU Student & Scholar Medical Insurance Plan purchase is required for all international students (1+ credit hour); cost included in Living Expenses.",
+            "Living Expenses do NOT include international travel costs."
+        ]
+    }
+}

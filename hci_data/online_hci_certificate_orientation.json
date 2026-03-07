@@ -1,0 +1,33 @@
+{
+    "orientation_guide": {
+        "target_audience": "Online HCI Certificate Students",
+        "program_name": "HCI Graduate Program at Iowa State University",
+        "welcome_message": "We’re excited you will be joining us at Iowa State University for your HCI graduate degree!",
+        "semester_start_dates": {
+            "summer_2025": "Monday, May 19",
+            "fall_2025": "Monday, August 25"
+        },
+        "academic_advisor": {
+            "name": "Tiffany Kayser",
+            "role": "HCI Graduate Program Coordinator",
+            "responsibilities": "Primary contact for all questions, monitor degree program progress, help with situations.",
+            "contact": {
+                "email": "tlkayser@iastate.edu",
+                "phone": "515-294-2089"
+            },
+            "profile_link": "https://canvas.iastate.edu/courses/83066/pages/hci-graduate-program-coordinator?module_item_id=3734406"
+        },
+        "guide_resources": {
+            "canvas_link": "https://canvas.iastate.edu/courses/114313",
+            "topics_covered": [
+                "Onboarding As a New ISU Graduate Student",
+                "Learn more about your degree program",
+                "The University Bill (U-Bill) - view, pay, and process",
+                "Learn about your online classroom (Canvas)",
+                "Registration (when and how), Course Curriculum, Tuition and Fees",
+                "Learning goals",
+                "The HCI Student Group"
+            ]
+        }
+    }
+}

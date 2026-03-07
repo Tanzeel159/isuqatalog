@@ -1,0 +1,269 @@
+{
+    "registration_resources": [
+        {
+            "title": "Register for a course",
+            "note": "Links to an external site."
+        },
+        {
+            "title": "Drop a course",
+            "note": "this is done before the first day of classes"
+        },
+        {
+            "title": "Swap a course for a future term",
+            "note": "Links to an external site."
+        },
+        {
+            "title": "Withdraw from a course",
+            "note": "dropping a course after week one of the semester"
+        },
+        {
+            "title": "View your registered courses",
+            "note": "Links to an external site."
+        },
+        {
+            "title": "Request late schedule changes",
+            "note": "used after week one of the semester for late course adds"
+        },
+        {
+            "title": "Request Prerequisite Override for Registration",
+            "note": "if you do not have the eligibility to enroll for a class"
+        },
+        {
+            "title": "Waitlisting Overview for Students",
+            "note": "this is for students who want to register for a class that is at capacity/full; the waitlist goes away the Friday before classes start"
+        },
+        {
+            "title": "Cancelling Registration",
+            "note": "Students who plan to drop all of their registered courses prior to the first day of the term will need to initiate the Cancellation process."
+        },
+        {
+            "title": "Leave of Absence",
+            "note": "Students who wish to drop all courses after the first day of the term will need to initiate the Student Leave of Absence process."
+        }
+    ],
+    "semester_dates": {
+        "session_period": "January 20 - May 15, 2026",
+        "last_day_to_add_drop_without_approval": "Monday, January 26",
+        "last_day_to_drop_without_w": "January 26",
+        "late_schedule_change_start": "Tuesday, January 27",
+        "last_day_to_withdraw_without_extenuating_circumstances": "Friday, April 3"
+    },
+    "courses": [
+        {
+            "type": "Design Core Courses",
+            "code": "IE 5720",
+            "name": "Design and Evaluation of Human-Computer Interaction",
+            "description": "Human factors methods applied to interface requirements, design, prototyping, and evaluation. Concepts related to understanding user characteristics, design principles, usability analysis, methods and techniques for design and evaluation of the interface. The evaluation and design of the information presentation characteristics of a wide variety of interfaces: web sites (e-commerce), mobile applications, and information presentation systems (cockpits, instrumentation, etc.).",
+            "sections": {
+                "section_1_in_person_link": "https://www.myworkday.com/isu/d/inst/1$15194/15194$1337805.htmld",
+                "section_2_online_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1337804.htmld"
+            }
+        },
+        {
+            "type": "Implementation Core Courses",
+            "code": "HCI 5800",
+            "name": "Virtual Environments, Virtual Worlds, and Application",
+            "description": "A systematic introduction to the underpinnings of Virtual Environments (VE), Virtual Worlds, advanced displays and immersive technologies; and an overview of some of the applications areas particularly virtual engineering.",
+            "prerequisites": "A working knowledge of Unity programming is a prerequisite for this course. Students should acquire this skill prior to enrollment. If you do not have a foundational understanding of Unity programming, please do not enroll in this course.",
+            "sections": {
+                "section_1_in_person_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1337412.htmld",
+                "section_2_online_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1344653.htmld"
+            }
+        },
+        {
+            "type": "Implementation Core Courses",
+            "code": "HCI 5750",
+            "name": "Computational Perception",
+            "description": "This class covers statistical and algorithmic methods for sensing, recognizing, and interpreting the activities of people by a computer. We will focus on machine perception techniques that facilitate and augment human-computer interaction. The main goal of the class is to introduce computational perception on both theoretical and practical levels. Participation in small groups to design, implement, and evaluate a prototype of a human-computer interaction system that uses one or more of the techniques covered in the lectures.",
+            "prerequisites": "This course is designed for students who possess advanced programming skills.",
+            "sections": {
+                "section_1_in_person_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1336029.htmld",
+                "section_2_online_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1342672.htmld"
+            }
+        },
+        {
+            "type": "Implementation Core Courses",
+            "code": "HCI 5250-01",
+            "name": "Optimization Methods for Complex Designs",
+            "description": "Optimization involves finding the 'best' according to specified criteria. Review of a range of optimization methods from traditional nonlinear to modern evolutionary methods such as Genetic algorithms. Examination of how these methods can be used to solve a wide variety of design problems across disciplines, including mechanical systems design, biomedical device design, biomedical imaging, and interaction with digital medical data. Students will gain knowledge of numerical optimization algorithms and a sufficient understanding of the strengths and weaknesses of these algorithms to apply them appropriately in engineering design. Experience includes code writing and off-the-shelf routines. Numerous case studies of real-world situations in which problems were modeled and solved using advanced optimization techniques.",
+            "prerequisites": "Students should have taken Engr 160, Math 265, and have some computer programming experience.",
+            "sections": {
+                "section_1_in_person_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1337404.htmld",
+                "section_2_online_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1337415.htmld"
+            }
+        },
+        {
+            "type": "Implementation Core Courses",
+            "code": "ME 5570",
+            "name": "Computer Graphics and Geometric Modeling",
+            "description": "Fundamentals of computer graphics technology. Data structures. Parametric curve and surface modeling. Solid model representations. Applications in engineering design, analysis, and manufacturing.",
+            "prerequisites": "This course is for students with advanced programming skills. Programming experience in C, C++, basic knowledge in Linear Algebra.",
+            "sections": {
+                "section_1_in_person_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1344661.htmld",
+                "section_2_online_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1344604.htmld"
+            }
+        },
+        {
+            "type": "Phenomena Core Courses",
+            "code": "HCI 5300X-01",
+            "name": "Perspectives in HCI",
+            "description": "An exploration of different perspectives in HCI that covers: inclusive and humane design; the intersection of technology and race, gender, age, and class; technology around the world; the impact of technology on democracy; social engineering and cybersecurity; and other relevant topics students would like to explore.",
+            "delivery_mode": "Online asynchronous course; there are no scheduled lectures or meeting times.",
+            "sections": {
+                "workday_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1337419.htmld"
+            }
+        },
+        {
+            "type": "Phenomena Core Courses",
+            "code": "HCI 6550-01",
+            "name": "Organizational and Social Implications of Human Computer Interaction",
+            "description": "Examine opportunities and implications of information technologies and human computer interaction on social and organizational systems. Explore ethical and social issues appurtenant to human computer interaction, both from a proscriptive and prescriptive perspective. Develop informed perspective on human computer interaction. Implications on research and development programs.",
+            "delivery_mode": "Asynchronous course; there are no scheduled lectures or meeting times.",
+            "sections": {
+                "workday_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1355482.htmld"
+            }
+        },
+        {
+            "type": "Phenomena Core Courses",
+            "code": "ARTGR 5400-01",
+            "name": "Design for Behavioral Change",
+            "description": "The exploration and design of educational experiences and artifacts as they relate to the social, emotional, and behavioral aspects of society.",
+            "sections": {
+                "workday_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1334898.htmld"
+            }
+        },
+        {
+            "type": "Phenomena Core Courses",
+            "code": "ARTGR/HCI 5890-01",
+            "name": "Design and Ethics",
+            "description": "Issues in ethics and decision-making as they relate to technology, design, design research, HCI, and the design industry.",
+            "delivery_mode": "Asynchronous course; there are no scheduled lectures or meeting times.",
+            "sections": {
+                "workday_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1354149.htmld"
+            }
+        },
+        {
+            "type": "Evaluation Core Courses",
+            "code": "HCI 5220",
+            "name": "Scientific Methods in Human Computer Interaction",
+            "description": "Basics of hypothesis testing, experimental design, analysis and interpretation of data, and the ethical principles of human research as they apply to research in human computer interaction. Offered odd-numbered years.",
+            "sections": {
+                "section_1_in_person_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1334412.htmld",
+                "section_2_online_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1334213.htmld"
+            }
+        },
+        {
+            "type": "Evaluation Core Courses",
+            "code": "HCI 5230X",
+            "name": "Qualitative Research Methods in HCI",
+            "description": "Introduction to qualitative research methods specific to human computer interaction and user experience research, both from an academic perspective and applied industry perspective. Conduct, write, and critique qualitative research. Examples and projects will be drawn from human computer interaction domains, e.g., mobile apps, web applications, automated vehicle, self-checkout stations, etc. Methods include focus groups, interviews, surveys, and many others.",
+            "sections": {
+                "section_1_in_person_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1345172.htmld",
+                "section_2_online_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1345201.htmld"
+            }
+        },
+        {
+            "type": "HCI Recommended Electives",
+            "code": "HCI 5100-01",
+            "name": "Foundations of Game-based Learning",
+            "description": "Theories, principles, and best practices of utilizing games in educational environments. Topics include the theoretical foundations of learning games and game play, identity development in online environments, and assessment of learning in and out of games.",
+            "delivery_mode": "Synchronous online Course.",
+            "meeting_patterns": "check Workday",
+            "notes": "The section is offered online, and attendance is required during the assigned meeting pattern. Please follow all deadlines set by the Instructor in Canvas.",
+            "sections": {
+                "workday_class_schedule_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1344913.htmld"
+            }
+        },
+        {
+            "type": "HCI Recommended Electives",
+            "code": "HCI 6030-01",
+            "name": "Advanced Learning Environments Design",
+            "description": "Exploration of advanced aspects of the learning environments design process. Application of analysis, design, development and production, evaluation, implementation, and project management principles. Theory and research in educational technology provides the foundation for design decisions. Focus on current trends in learning environment design and the production and use of educational technology.",
+            "delivery_mode": "Synchronous online course.",
+            "meeting_patterns": "Thursdays | 5:30 PM - 7:30 PM",
+            "sections": {
+                "workday_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1339409.htmld"
+            }
+        },
+        {
+            "type": "HCI Recommended Electives",
+            "code": "HCI 5740",
+            "name": "Computational Implementation and Prototyping in HCI",
+            "description": "Fundamental concepts of software programming and the practical use of the Python programming language. Assignments include user interaction and interface design, information visualization, as well as other computational HCI tools. Intended for graduate students without prior background in software development. Requires programming during class lectures.",
+            "delivery_mode": "Asynchronous course; there are no scheduled lectures or meeting times.",
+            "sections": {
+                "section_1_in_person_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1337421.htmld",
+                "section_2_online_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1337408.htmld"
+            }
+        },
+        {
+            "type": "HCI Recommended Electives",
+            "code": "ARTGR/HCI 5500X-01",
+            "name": "User Experience Methodologies",
+            "description": "Fundamentals of lean user experience design, discovery, and process.",
+            "delivery_mode": "Synchronous online course.",
+            "meeting_patterns": "Thursdays | 5:00 PM - 8:00 PM",
+            "sections": {
+                "workday_link": "https://www.myworkday.com/isu/d/inst/1$15194/15194$1354400.htmld"
+            }
+        },
+        {
+            "type": "Research, Internship and General Elective Suggestions",
+            "code": "HCI 5990",
+            "name": "Creative Component",
+            "note": "Tiffany will contact you if you have the option to enroll"
+        },
+        {
+            "type": "Research, Internship and General Elective Suggestions",
+            "code": "HCI 6990",
+            "name": "Research",
+            "note": "for Ph.D. and MS Thesis students only"
+        },
+        {
+            "type": "Research, Internship and General Elective Suggestions",
+            "code": "HCI 6970",
+            "name": "Internship",
+            "note": "for international students only - contact Tiffany if you need to enroll"
+        },
+        {
+            "type": "Research, Internship and General Elective Suggestions",
+            "code": "ART 5400X-01",
+            "name": "Artificial Intelligence (AI) in Art and Design",
+            "description": "Artificial intelligence tools for art and design: strategies, principles, and tools for AI in visual art, applied art, and creative industry practices. The aesthetics of AI systems in creative practices. An overview of working with AI as artistic and visual communication media including using AI and machine learning applications, histories of AI in the arts, generative deep learning systems, supervised and unsupervised machine learning tasks, and integrating AI systems through art and design practices. Producing AI multimedia outputs that include a range of forms from imagery to sound.",
+            "location": "4202 SICTR - Student Innovation Center",
+            "meeting_patterns": "TR | 9:30 AM - 12:20 PM",
+            "sections": {
+                "workday_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1345616.htmld"
+            }
+        },
+        {
+            "type": "Research, Internship and General Elective Suggestions",
+            "code": "INDD 5300-01",
+            "name": "Design Thinking",
+            "description": "Exploration of design thinking process, toolkits, and mindsets as creative problem solving approaches for systems, products, and processes, across diverse contexts. Strategies for problem-framing, creative solutions and co-evolution process, with a focus on collaborative and interdisciplinary design to investigate real-world problems and opportunities.",
+            "delivery_mode": "Asynchronous online course; there are no scheduled lectures or meeting times.",
+            "sections": {
+                "workday_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1337852.htmld"
+            }
+        },
+        {
+            "type": "Research, Internship and General Elective Suggestions",
+            "code": "CPRE 5340-01",
+            "name": "Legal and Ethical Issues in Cyber Security",
+            "description": "Legal and ethical issues in computer security. State and local codes and regulations. Privacy issues.",
+            "delivery_mode": "Asynchronous course; there are no scheduled lectures or meeting times.",
+            "sections": {
+                "workday_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1339731.htmld"
+            }
+        },
+        {
+            "type": "Research, Internship and General Elective Suggestions",
+            "code": "ENGL 5920C-01",
+            "name": "Core Studies: Professional Communication",
+            "description": "Covers various topics in AI. Contact the instructor, Abram Anders, if you have any questions.",
+            "sections": {
+                "workday_link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1354086.htmld"
+            }
+        }
+    ]
+}

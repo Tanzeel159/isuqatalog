@@ -1,0 +1,112 @@
+{
+    "degree_requirements_summary": {
+        "credits_required": 30,
+        "min_credits_at_isu": 22,
+        "degree_type": "Master of Science at Iowa State University"
+    },
+    "tracks": {
+        "ms_thesis": {
+            "name": "Human Computer Interaction, M.S. Thesis",
+            "supervision": "HCI faculty member must serve as major professor.",
+            "funding": "Major professor usually provides funding for a half-time graduate assistantship.",
+            "curriculum": {
+                "core_courses": {
+                    "credits": 12,
+                    "description": "Any four courses, one from each category: Design, Implementation, Phenomena, Evaluation."
+                },
+                "general_electives": {
+                    "credits": "Up to 15",
+                    "description": "Any courses from the ISU Course Catalog."
+                },
+                "research_credits": {
+                    "credits": "Minimum 3",
+                    "course": "HCI 699, Research"
+                },
+                "additional_requirements": {
+                    "course": "GR ST 565 Responsible Conduct of Research (1 credit)",
+                    "applicability": "Required for students entering Spring 2022 and after. Encouraged for current students."
+                }
+            }
+        },
+        "ms_creative_component": {
+            "name": "Human Computer Interaction, M.S. Creative Component (capstone project)",
+            "supervision": "Students do not need an HCI faculty member as major professor.",
+            "funding": "Assistantship funding is unavailable. Students responsible for tuition and fees.",
+            "availability": "Not available for online students.",
+            "curriculum": {
+                "core_courses": {
+                    "credits": 12,
+                    "description": "Any four courses, one from each category: Design, Implementation, Phenomena, Evaluation."
+                },
+                "general_electives": {
+                    "credits": 15,
+                    "description": "Any 5000 or 6000-level courses from ISU Course Catalog, including additional HCI courses."
+                },
+                "research_credits": {
+                    "credits": 3,
+                    "course": "HCI 5990, HCI Creative Component (capstone course)"
+                },
+                "additional_requirements": {
+                    "requirement": "Feedback data from at least 5 users (interview, survey, or observation).",
+                    "applicability": "Students completing creative component in Spring 2023 and after.",
+                    "appeal_process": "Appeal to DOGE if 5 users not achieved."
+                }
+            }
+        }
+    },
+    "research_differences": {
+        "title": "Differences between the research for HCI master's degrees",
+        "programs": {
+            "MS_HCI": {
+                "research_paths": [
+                    {
+                        "type": "Thesis",
+                        "output": {
+                            "artifact": "Publishable research document",
+                            "description": "Formal research suitable for publication"
+                        },
+                        "irb_requirement": {
+                            "required_if": "Human subjects are involved",
+                            "not_required_if": "Only code or system building is involved"
+                        }
+                    },
+                    {
+                        "type": "Creative Component",
+                        "output": {
+                            "artifact": "Research document",
+                            "description": "Document explains in detail what was done"
+                        },
+                        "irb_requirement": {
+                            "required_if": "Human subjects are involved",
+                            "not_required_if": "Only code or system building is involved"
+                        }
+                    },
+                    {
+                        "type": "Capstone Project",
+                        "output": {
+                            "artifact": "Website and documentation",
+                            "description": "Website and docs explain the project"
+                        },
+                        "irb_requirement": {
+                            "required_if": "You want to publish the work",
+                            "not_required_if": "Project is not intended for publication"
+                        }
+                    }
+                ]
+            },
+            "MHCI": {
+                "structure": {
+                    "type": "Coursework only",
+                    "requirements": {
+                        "total_courses": 10,
+                        "research_project": false,
+                        "thesis": false
+                    },
+                    "irb_requirement": {
+                        "required": false
+                    }
+                }
+            }
+        }
+    }
+}

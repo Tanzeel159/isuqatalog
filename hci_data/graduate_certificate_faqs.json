@@ -1,0 +1,43 @@
+{
+    "graduate_certificate_faqs": {
+        "admission_requirements": {
+            "who_can_apply": "Applicants from all undergraduate majors, backgrounds, and work experiences.",
+            "academic_background": "4-year Bachelor’s degree (or equivalent).",
+            "gpa_requirement": "Minimum 2.80 GPA (students with 2.8-3.0 are welcome to apply).",
+            "records": "Academic Records/Transcripts required.",
+            "english_proficiency": "Required for nonnative speakers.",
+            "programming_experience": "Not required to apply. Implementation course is a degree requirement (levels available from beginner to advanced)."
+        },
+        "program_details": {
+            "duration": "8-12 months.",
+            "online_availability": "Yes, can be completed entirely online (assignments, discussions, tests via Canvas).",
+            "transition_to_mhci": {
+                "eligibility": "Must apply and meet admission requirements for Master of HCI.",
+                "credit_transfer": "Credits earned towards certificate may be counted towards online MHCI degree requirements."
+            }
+        },
+        "course_details": {
+            "delivery_formats": {
+                "asynchronous": "Flexible, no set meetings, weekly coursework on Canvas.",
+                "synchronous": "Live virtual lectures at fixed times (usually evenings >5pm CT), mandatory attendance."
+            },
+            "workload": {
+                "full_time_workers": "Plan to take 1-2 courses (no more than 2).",
+                "time_commitment": "8-12 hours per week per class.",
+                "pacing": "Not self-paced; strict due dates for activities, assignments, and exams."
+            },
+            "semester_length": {
+                "spring_fall": "16 weeks.",
+                "summer": "8 weeks (Session I/II) or 12 weeks (Full Session); shorter and faster paced."
+            }
+        },
+        "application_process": {
+            "response_time": "1-2 weeks after application is considered complete.",
+            "fee_waivers": "Not available."
+        },
+        "career_info": {
+            "job_placement": "No direct assistance/placement offered by program. Students directed to Graduate College Career Services.",
+            "student_profile": "Mix of professionals already in the field and those looking to transition into UX/UI or HCI roles."
+        }
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "internship_cpt_policies": {
+        "last_updated": "10/7/2024",
+        "description": "Policies and procedures for expanding knowledge base by accepting an internship and receiving CPT approval.",
+        "eligibility_requirements": [
+            "Must be in valid F-1 status",
+            "Must be enrolled in a Master's or Doctoral program",
+            "Must have been enrolled full-time for the preceding academic year (fall and spring semester)",
+            "Must be making normal progress toward degree completion",
+            "Must be enrolled in the appropriate CPT course"
+        ],
+        "course_enrollment": {
+            "full_time": {
+                "hours": "21 hours or more per week",
+                "course_code": "HCI 6970",
+                "course_title": "HCI Internship"
+            },
+            "part_time": {
+                "hours": "20 hours or less per week",
+                "course_code": "GRST 6980",
+                "course_title": "Graduate Internship: Part-Time CPT"
+            },
+            "details": {
+                "tuition": "Not charged (R-credit course)",
+                "credits": "Zero credit",
+                "degree_requirements": "Does not count toward degree requirements",
+                "purpose": "Designates student as full-time at ISU while on internship"
+            }
+        },
+        "cpt_process": {
+            "resource_link": "https://isso.dso.iastate.edu/students/f-1-students/curricular-practical-training",
+            "steps": [
+                "Receive internship/job offer",
+                "Attend CPT workshop in Cystart",
+                "Register for CPT related course (requires permission)",
+                "Apply for CPT in Cystart (requires two e-forms)",
+                "Advisor processing (Wait up to 10 working days)",
+                "Receive email from ISSO to pick up CPT authorization I-20",
+                "Start employment ONLY after receiving CPT authorization I-20 and reaching start date",
+                "Submit final report by due date"
+            ],
+            "application_routing": {
+                "student_request_eform": "Route to HCI DOGE, Cody Fleming",
+                "verification_of_academic_purpose_eform": "Route to Tiffany Kayser",
+                "creative_component_ms_students_note": "Use Tiffany Kayser as advisor on CPT forms"
+            }
+        },
+        "permission_to_enroll_instructions": {
+            "step_1": {
+                "action": "Email HCI@iastate.edu with required information in Word or PDF",
+                "required_info": [
+                    "Student Name",
+                    "Major Professor/Advisor",
+                    "Is this part-time or full-time CPT",
+                    "Company Supporting the CPT",
+                    "Address of Company",
+                    "Contact Phone Number",
+                    "Beginning Date of CPT",
+                    "Ending Date of CPT",
+                    "Employment Hours per Week",
+                    "Brief Description of Expected Work Activities",
+                    "Learning Objectives (3-5 items)",
+                    "HCI Courses/Electives with Direct Relevance to Work Activities"
+                ]
+            },
+            "step_2": "HCI Director of Graduate Education (DOGE) reviews request.",
+            "step_3": "Notification of approval or denial (with reason).",
+            "step_4": "Registration instructions provided if approved."
+        },
+        "final_report": {
+            "due_date": "Approximately two weeks before the end of the semester",
+            "grading_consequence": "Grade of F may be assigned if report is not submitted",
+            "content_requirements": [
+                "1-page summary of internship experience",
+                "WHERE you did the internship (including supervisory personnel names)",
+                "WHAT DATES you were at the internship",
+                "DESCRIPTION of activities performed",
+                "Statement on how this experience benefited you"
+            ]
+        },
+        "special_notes": [
+            "Only HCI 6970 or GRST 6980 permitted for internship/CPT use.",
+            "Full-time CPT (HCI 6970) allowed for one Summer/Fall OR Spring/Summer combination per year. Fall/Spring combination NOT permitted.",
+            "Must complete request process for each semester registered if requesting for permitted combinations.",
+            "Concurrent requests not permitted.",
+            "Must submit Final Report for previous semester before additional internship course requests will be reviewed.",
+            "Grading is Satisfactory (S) / Fail (F) based on the one-page write-up."
+        ]
+    }
+}

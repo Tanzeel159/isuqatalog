@@ -1,0 +1,141 @@
+{
+    "program_info": {
+        "title": "Master of Science Thesis Degree Requirements and Program Timeline",
+        "track": "MS Thesis"
+    },
+    "degree_requirements": {
+        "credits": {
+            "total_minimum": 30,
+            "minimum_at_isu": 22
+        },
+        "coursework": [
+            {
+                "category": "Core Courses",
+                "credits": 12,
+                "description": "Four courses, one from each category: Design, Implementation, Phenomena, Evaluation."
+            },
+            {
+                "category": "General Electives",
+                "credits": "Up to 15",
+                "description": "Any courses from the ISU Course Catalog."
+            },
+            {
+                "category": "Research Credits",
+                "credits": "Minimum 3",
+                "course": "HCI 699/6990, Research"
+            },
+            {
+                "category": "Additional Requirement",
+                "course": "GRST 565/5650 Responsible Conduct of Research",
+                "credits": 1,
+                "requirement_details": "Required for students entering Spring 2022 and after. Encouraged but not required for current students before that."
+            }
+        ]
+    },
+    "program_timeline": [
+        {
+            "step": 1,
+            "title": "COMMITTEE MEMBERSHIP",
+            "description": "Establish Academic Plan Committee (APC) of graduate faculty.",
+            "timing": "As early as possible (recommended during second semester).",
+            "constraints": "Must be approved BEFORE academic plan review.",
+            "instructions_location": "Graduate Student Committee Hub",
+            "warning": "Do not submit Academic Plan until committee explains are approved."
+        },
+        {
+            "step": 2,
+            "title": "ACADEMIC PLAN",
+            "description": "List of courses taken and planned.",
+            "timing": "Recommended during second semester.",
+            "instructions_location": "Graduate College website > Academic Plan (POSC Replacement)",
+            "warning": "Do not apply for program completion until academic plan is approved."
+        },
+        {
+            "step": 3,
+            "title": "APPLY FOR PROGRAM COMPLETION",
+            "description": "Apply for the intended semester of graduation.",
+            "checks": "Check Workday for I, N, NP, or F grades. Cannot graduate with unresolved grades.",
+            "instructions_location": "Graduate College website > Program Completion"
+        },
+        {
+            "step": 4,
+            "title": "FORMAT CHECK",
+            "description": "Review Thesis/Dissertation Format Requirements or meet with Center for Communication Excellence (CCE).",
+            "timing": "Before requesting final oral exam."
+        },
+        {
+            "step": 5,
+            "title": "FINAL ORAL EXAM REQUEST",
+            "description": "Confirm date/time/location with committee.",
+            "timing": "Must be submitted three weeks prior to exam date.",
+            "instructions_location": "Graduate College website > Oral Examinations"
+        },
+        {
+            "step": 6,
+            "title": "OPEN THESIS ACCOUNT WITH ProQUEST",
+            "description": "Input thesis title for Commencement Program.",
+            "timing": "No later than the deadline date.",
+            "scholarly_document_fee": {
+                "name": "Scholarly Document Fee",
+                "amount": "$145",
+                "details": "One-time fee charged to U-bill for students submitting dissertation/thesis/creative component."
+            }
+        },
+        {
+            "step": 7,
+            "title": "GRADUATE APPROVAL FORM and RESULTS OF FINAL ORAL EXAM",
+            "description": "Major professor(s) and DOGE(s) review/approve final dissertation content and format.",
+            "instructions_location": "Graduate College website > Oral Examinations > Graduate Approval Form"
+        },
+        {
+            "step": 8,
+            "title": "UPLOAD AND SUBMIT FINAL THESIS to ProQUEST/UMI",
+            "description": "Upload final thesis.",
+            "constraints": "Must be approved by Graduate College before graduation."
+        }
+    ],
+    "program_of_study_committee": {
+        "timeline": "Appointed before the end of the first year.",
+        "responsibilities": "accordance with Graduate College guidelines",
+        "composition": {
+            "ms_thesis": {
+                "members": "At least 3 members of graduate faculty",
+                "requirements": [
+                    "Two HCI faculty members (including major professor)",
+                    "One member outside student's major (not HCI faculty)"
+                ],
+                "note": "Result of focused research effort prepared according to Graduate College requirements."
+            },
+            "ms_creative_component_capstone": {
+                "members": "At least 2 members",
+                "requirements": [
+                    "One HCI faculty member as major professor",
+                    "One additional HCI faculty member"
+                ]
+            }
+        },
+        "instructions_location": "Graduate College Website > Academic Plan Committee"
+    },
+    "academic_plan_details": {
+        "definition": "List of courses taken or planned to meet degree requirements.",
+        "timing": "Develop early, submit in Workday during second semester.",
+        "process": "Student and major professor develop AP with APC approval.",
+        "changes": "Approved in Workday by Graduate College, major professor, committee members, and DOGE.",
+        "instructions_location": "Workday Student > Completing your Academic Plan (POSC Replacement)"
+    },
+    "annual_reviews": {
+        "target_audience": "MS Thesis Students",
+        "process": [
+            "Email announcement sent",
+            "Student completes web form",
+            "Non-confidential answers sent to advisor/major professor for sign-off",
+            "Confidential answers stay with HCI DOGE"
+        ]
+    },
+    "expired_courses_policy": {
+        "definition": "Time between year credits were earned and year of graduation.",
+        "limit": "Graduate College limit is 7 years (Time-to-Degree Limit).",
+        "program_policy": "The HCI Graduate Program accepts expired courses on an HCI student's academic plan.",
+        "reference": "Graduate College Handbook, 6.3.4"
+    }
+}

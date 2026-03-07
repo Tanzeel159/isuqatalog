@@ -1,0 +1,28 @@
+{
+    "general_graduate_resources": [
+        {
+            "title": "University Resources for All ISU Students",
+            "url": "https://www.grad-college.iastate.edu/resources/"
+        },
+        {
+            "title": "Financing a Graduate Degree",
+            "url": "https://www.grad-college.iastate.edu/finance/"
+        },
+        {
+            "title": "You and Your Major Professor",
+            "url": "https://www.grad-college.iastate.edu/student/you-and-major-professor/"
+        },
+        {
+            "title": "Graduate College Handbook",
+            "url": "https://www.grad-college.iastate.edu/handbook/"
+        },
+        {
+            "title": "Graduate College Career Services",
+            "url": "https://www.grad-college.iastate.edu/career/"
+        },
+        {
+            "title": "Graduate College Events and Deadlines",
+            "url": "https://www.grad-college.iastate.edu/calendar/"
+        }
+    ]
+}

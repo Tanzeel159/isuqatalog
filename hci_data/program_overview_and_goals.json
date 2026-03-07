@@ -1,0 +1,23 @@
+{
+    "program_overview": {
+        "title": "Overview of the HCI Graduate Program",
+        "description": "The study of the relationship between humans and computers has quickly become one of the most dynamic and significant fields of technical investigation. Iowa State University’s graduate program in Human Computer Interaction (HCI) is an established leader in this rapidly evolving field, making strategic investments to accelerate research, attract talented students and faculty, and expand the program of study.",
+        "key_characteristics": [
+            "Interdisciplinary by definition",
+            "Impacts nearly every area of lives",
+            "Reflects broad recognition in academia and industry of the need to train researchers for technological progress",
+            "Benefits from interactions with ISU faculty from every college and researchers at the VRAC (research center)"
+        ]
+    },
+    "learning_goals": {
+        "title": "HCI Graduate Program Learning Goals",
+        "goals": [
+            "Design and evaluate systems with a user-centered design lens",
+            "Participate in a multidisciplinary product development team",
+            "Choose and apply an appropriate user-centered design approach",
+            "Identify key players and organizations in HCI",
+            "Use theories and models in the HCI field",
+            "Describe emerging technology trends"
+        ]
+    }
+}

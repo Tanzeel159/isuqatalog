@@ -1,0 +1,131 @@
+{
+    "semester_dates": {
+        "session_period": "January 20 - May 15, 2026",
+        "last_day_to_add_drop_without_approval": "Monday, January 26",
+        "late_schedule_change_period_start": "Tuesday, January 27",
+        "description_for_late_change": "students must submit a late schedule change to add a course to their schedule",
+        "last_day_to_withdraw_without_extenuating_circumstances": "Friday, April 3"
+    },
+    "courses": [
+        {
+            "type of course": "Design Core Courses",
+            "course name": "IE 5720-02 - Design and Evaluation of Human-Computer Interaction",
+            "description": "Human factors methods applied to interface requirements, design, prototyping, and evaluation. Concepts related to understanding user characteristics, design principles, usability analysis, methods and techniques for design and evaluation of the interface. The evaluation and design of the information presentation characteristics of a wide variety of interfaces: web sites (e-commerce), mobile applications, and information presentation systems (cockpits, instrumentation, etc.).",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1337804.htmld"
+        },
+        {
+            "type of course": "Implementation Core Courses",
+            "course name": "HCI 5800-02 - Virtual Environments, Virtual Worlds, and Application",
+            "description": "A systematic introduction to the underpinnings of Virtual Environments (VE), Virtual Worlds, advanced displays and immersive technologies; and an overview of some of the applications areas particularly virtual engineering.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1344653.htmld"
+        },
+        {
+            "type of course": "Implementation Core Courses",
+            "course name": "HCI 5750-02 - Computational Perception",
+            "description": "This class covers statistical and algorithmic methods for sensing, recognizing, and interpreting the activities of people by a computer. We will focus on machine perception techniques that facilitate and augment human-computer interaction. The main goal of the class is to introduce computational perception on both theoretical and practical levels. Participation in small groups to design, implement, and evaluate a prototype of a human-computer interaction system that uses one or more of the techniques covered in the lectures.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1342672.htmld"
+        },
+        {
+            "type of course": "Implementation Core Courses",
+            "course name": "HCI 5250-02 - Optimization Methods for Complex Designs",
+            "description": "Optimization involves finding the 'best' according to specified criteria. Review of a range of optimization methods from traditional nonlinear to modern evolutionary methods such as Genetic algorithms. Examination of how these methods can be used to solve a wide variety of design problems across disciplines, including mechanical systems design, biomedical device design, biomedical imaging, and interaction with digital medical data. Students will gain knowledge of numerical optimization algorithms and sufficient understanding of the strengths and weaknesses of these algorithms to apply them appropriately in engineering design. Experience includes code writing and off-the-shelf routines. Numerous case-studies of real-world situations in which problems were modeled and solved using advanced optimization techniques.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1337415.htmld"
+        },
+        {
+            "type of course": "Phenomena Core Courses",
+            "course name": "HCI 5300X-01 - Perspectives in HCI",
+            "description": "An exploration of different perspectives in HCI that covers: inclusive and humane design; the intersection of technology and race, gender, age, and class; technology around the world; the impact of technology on democracy; social engineering and cybersecurity; and other relevant topics students would like to explore.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1337419.htmld"
+        },
+        {
+            "type of course": "Phenomena Core Courses",
+            "course name": "HCI 6550-01 - Organizational and Social Implications of Human Computer Interaction",
+            "description": "Examine opportunities and implications of information technologies and human computer interaction on social and organizational systems. Explore ethical and social issues appurtenant to human computer interaction, both from a proscriptive and prescriptive perspective. Develop informed perspective on human computer interaction. Implications on research and development programs.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1355482.htmld"
+        },
+        {
+            "type of course": "Phenomena Core Courses",
+            "course name": "ARTGR/HCI 5890-01 - Design and Ethics",
+            "description": "Issues in ethics and decision-making as they relate to technology, design, design research, HCI, and the design industry.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1354149.htmld"
+        },
+        {
+            "type of course": "Evaluation Core Courses",
+            "course name": "HCI 5220-02 - Scientific Methods in Human Computer Interaction",
+            "description": "Basics of hypothesis testing, experimental design, analysis and interpretation of data, and the ethical principles of human research as they apply to research in human computer interaction.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1334213.htmld"
+        },
+        {
+            "type of course": "Evaluation Core Courses",
+            "course name": "HCI 5230X-02 - Qualitative Research Methods in HCI",
+            "description": "Introduction to qualitative research methods specific to human computer interaction and user experience research, both from an academic perspective and applied industry perspective. Conduct, write, and critique qualitative research. Examples and projects will be drawn from human computer interaction domains, e.g., mobile apps, web applications, automated vehicle, self-checkout stations, etc. Methods include focus groups, interviews, surveys, and many others.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1345201.htmld"
+        },
+        {
+            "type of course": "HCI Recommended Electives",
+            "course name": "HCI 5100-01 - Foundations of Game-based Learning",
+            "description": "Theories, principles, and best practices of utilizing games in educational environments.  Topics include the theoretical foundations of learning games and game play, identity development in online environments, and assessment of learning in and out of games.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1344913.htmld"
+        },
+        {
+            "type of course": "HCI Recommended Electives",
+            "course name": "HCI 6030-01 - Advanced Learning Environments Design",
+            "description": "Exploration of advanced aspects of the learning environments design process. Application of analysis, design, development and production, evaluation, implementation, and project management principles. Theory and research in educational technology provides the foundation for design decisions. Focus on current trends in learning environment design and the production and use of educational technology.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1339409.htmld"
+        },
+        {
+            "type of course": "HCI Recommended Electives",
+            "course name": "HCI 5740-02 - Computational Implementation and Prototyping in HCI",
+            "description": "Fundamental concepts of software programming and the practical use of the Python programming language. Assignments include user interaction and interface design, information visualization, as well as other computational HCI tools. Intended for graduate students without prior background in software development. Requires programming during class lectures.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1337408.htmld"
+        },
+        {
+            "type of course": "HCI Recommended Electives",
+            "course name": "ARTGR/HCI 5500X-01 - User Experience Methodologies",
+            "description": "Fundamentals of lean user experience design, discovery, and process.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/1$15194/15194$1354400.htmld"
+        },
+        {
+            "type of course": "General Electives Suggestions",
+            "course name": "INDD 5300-01 - Design Thinking",
+            "description": "Exploration of design thinking process, toolkits, and mindsets as creative problem solving approaches for systems, products, and processes, across diverse contexts. Strategies for problem-framing, creative solutions and co-evolution process, with a focus on collaborative and interdisciplinary design to investigate real-world problems and opportunities.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1337852.htmld"
+        },
+        {
+            "type of course": "General Electives Suggestions",
+            "course name": "ARTGR 5870-01 - Graphic Design History/Theory/ Criticism I",
+            "description": "Late nineteenth century to the 1990s. This course will explore the cultural, social, political, industrial, and technological forces that have influenced the practice of graphic design in Britain, Europe, and the United States. Students will study the historical issues and problems facing designers, their clients, and their publics.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1339380.htmld"
+        },
+        {
+            "type of course": "General Electives Suggestions",
+            "course name": "CPRE 5340-01 - Legal and Ethical Issues in Cyber Security",
+            "description": "Legal and ethical issues in computer security. State and local codes and regulations. Privacy issues.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1339731.htmld"
+        },
+        {
+            "type of course": "General Electives Suggestions",
+            "course name": "DH 5740-01 - Digital Disease Management and Public Health",
+            "description": "Digital technologies and disease management strategies for individuals and populations. Design of digital interventions with innovative tools such as wearables and implants to address public health challenges. Technology-driven disease management and public health initiatives.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1341810.htmld"
+        },
+        {
+            "type of course": "General Electives Suggestions",
+            "course name": "DH 5730-01 - Precision Medicine: Tailoring Digital Health Solutions",
+            "description": "Digital technology and personalized treatment plans for exercise and nutrition prescriptions, disease prevention, and wellness promotion. Digital tools for precision in prognosis and rehabilitation. Delivery of health and exercise guidelines with Motivational Interviewing (MI). Tailoring prescriptions and guidelines according to individual goals.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1336606.htmld"
+        },
+        {
+            "type of course": "General Electives Suggestions",
+            "course name": "DH 5720-01 - Prognostic Insights and Innovative Rehabilitation Techniques for Advancing Health",
+            "description": "Digital tools for rehabilitation to enhance accessibility, affordability, and scalability. Strategies, frameworks, and determinants for the successful implementation and evaluation of digital interventions, transforming the landscape of healthcare practices such as physical therapy.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1341820.htmld"
+        },
+        {
+            "type of course": "General Electives Suggestions",
+            "course name": "DH 5160-01 - Analytics and AI for Health Strategies",
+            "description": "Structured query language (SQL), power BI/Tableau BI, R/Python, machine learning, and artificial intelligence (AI) to analyze exercise and health data. Data analytics applications and health systems, data mining and visualization, predictive modeling for health outcomes.",
+            "workday course link": "https://www.myworkday.com/isu/d/inst/15$365714/15194$1341771.htmld"
+        }
+    ]
+}

@@ -1,0 +1,298 @@
+{
+    "program_info": {
+        "title": "PhD Degree Requirements and Course Offerings",
+        "degree": "Doctor of Philosophy (Ph.D.)"
+    },
+    "degree_requirements": {
+        "summary": {
+            "total_graduate_credits_min": 72,
+            "credits_at_isu_min": 36,
+            "note": "At least 36 graduate credits, including all research credits, must be earned at ISU."
+        },
+        "course_requirements": [
+            {
+                "category": "HCI Core Courses",
+                "credits": 12,
+                "description": "Any four courses, one from each category: Design, Implementation, Phenomena, Evaluation."
+            },
+            {
+                "category": "Additional HCI Courses",
+                "credits": 6,
+                "description": "Two additional HCI courses, from core list or recommended electives."
+            },
+            {
+                "category": "Research Credits",
+                "credits": "Minimum 9",
+                "course": "HCI 6990 - Research"
+            },
+            {
+                "category": "Responsible Conduct of Research",
+                "credits": 1,
+                "course": "GRST 5650"
+            }
+        ]
+    },
+    "co_major_info": {
+        "definition": "Program of study for a single degree where requirements for two separate majors are met.",
+        "committee_requirements": [
+            "Must include co-major professors representing each major.",
+            "Both co-chairs must be graduate faculty.",
+            "Same person can serve as major professor for both if faculty in both."
+        ],
+        "research_requirements": "Preliminary oral exam and research work must be related to both majors.",
+        "course_flexibility": "A course meeting requirements of each major can count for both (if approved).",
+        "constraints": "Cannot be added after preliminary oral examination."
+    },
+    "course_offerings_by_semester": {
+        "fall_semester": [
+            {
+                "type": "Design Core Course",
+                "course": "HCI 5210/ PSYCH 5210 - Cognitive Psychology of Human Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "Design Core Course",
+                "course": "ARTGR 5300 - User Engagement",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Course",
+                "course": "HCI 5840 - Python Application Development in HCI",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Course",
+                "course": "HCI 5400X - Internet-Based Methods, Extended Reality, and Machine Learning for Use in Engineering Design and Data Analysis",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Course",
+                "course": "HCI 5890/ ARTGR 5890 - Design and Ethics",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Course",
+                "course": "HCI 6550 / MIS 6550 - Organizational and Social Implications of Human Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Course",
+                "course": "HCI 5040/ EDUC 5040 - Evaluating Technology-based Learning Environments",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Course",
+                "course": "PSYCH 5010 - Foundations of Behavioral Research",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 5260 - Design Ethnography",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 5960 - Emerging Practices in Human Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "IE 5770 - Human Factors",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 6810/ IE 6810 - Cognitive Engineering",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "EDUC 5030 - Designing Effective Learning Environments",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "ARTIS 5700X - Data, Code And Form",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "STAT 5101 - Statistical Methods for Data Analysis (formerly STAT 5870)",
+                "credits": 4
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "IE 5760 - Human Factors in Product Design",
+                "credits": 3
+            }
+        ],
+        "spring_semester": [
+            {
+                "type": "Design Core Course",
+                "course": "IE 5720 - Design and Evaluation of Human-Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Course",
+                "course": "COMS 5750/ CPRE 5750/ HCI 5750 - Computational Perception",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Course",
+                "course": "HCI 5800 / ME 5800 - Virtual Environments, Virtual Worlds, and Application",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Course",
+                "course": "COMS 5570/ CPRE 5570/ ME 5570 - Computer Graphics and Geometric Modeling",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Course",
+                "course": "HCI 5890/ ARTGR 5890 - Design and Ethics",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Course",
+                "course": "HCI 5300X - Perspectives in HCI",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Course",
+                "course": "ARTGR 5400 - Design for Behavioral Change",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Course",
+                "course": "HCI 5220 / PSYCH 5220 - Scientific Methods in Human Computer Interaction",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Course",
+                "course": "HCI 5230X - Qualitative Research Methods in HCI",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Course",
+                "course": "STAT 5279 - Statistical Computing for Data Analysis (formerly STAT 5860)",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 5250 / ME 5250 - Optimization Methods for Complex Designs",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 6030 / EDUC 6030 - Advanced Learning Environments Design",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 5740 - Computational Implementation and Prototyping in HCI",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "ARTGR 5500X - User Experience Methodologies",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 5100 / EDUC 5100 - Foundations of Game-based Learning",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 6080 /EDUC 6080 - Social Media and Education",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "ARTIS 5080 - Computer Aided Animation and Visualization",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "EDUC 5110 - Technology Diffusion, Leadership, and Change",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "STAT 5101 - Statistical Methods for Data Analysis (formerly STAT 5870)",
+                "credits": 4
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "ENGL 5200/ HCI 5200/ LING 5200 - Computational Analysis of English",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "INDD 5500 - Human Factors: User Experience Design",
+                "credits": 3
+            }
+        ],
+        "summer_semester": [
+            {
+                "type": "Design Core Course",
+                "course": "HCI 5950 - Visual Design of HCI",
+                "credits": 3
+            },
+            {
+                "type": "Implementation Core Course",
+                "course": "HCI 5840 - Python Application Development in HCI",
+                "credits": 3
+            },
+            {
+                "type": "Phenomena Core Course",
+                "course": "HCI 5890/ ARTGR 5890 - Design and Ethics",
+                "credits": 3
+            },
+            {
+                "type": "Evaluation Core Course",
+                "course": "DSNS 5010 - Introduction to Research Design",
+                "credits": 3
+            },
+            {
+                "type": "HCI Recommended Elective",
+                "course": "HCI 5870 - Models and Theories in Human Computer Interaction",
+                "credits": 3
+            }
+        ]
+    },
+    "other_catalog_courses_not_listed_above": [
+        {
+            "course": "HCI 5150 - Statistical Natural Language Processing",
+            "status": "not currently offered"
+        },
+        {
+            "course": "HCI 5710 - Augmented Reality",
+            "status": "not currently offered"
+        },
+        {
+            "course": "HCI 5790X - Methods for Interdisciplinary Research",
+            "status": "not currently offered"
+        },
+        {
+            "course": "HCI 5850 - Developmental Robotics",
+            "status": "not currently offered"
+        },
+        {
+            "course": "HCI 5910 - Seminar in Human Computer Interaction",
+            "status": "not currently offered"
+        },
+        {
+            "course": "HCI 5990 - Creative Component",
+            "target_audience": "HCI Master of Science (MS) creative component students"
+        },
+        {
+            "course": "HCI 6970 - HCI Internship",
+            "target_audience": "on-campus international HCI students"
+        },
+        {
+            "course": "HCI 6990 - Research",
+            "target_audience": "HCI MS Thesis or PhD students"
+        }
+    ]
+}

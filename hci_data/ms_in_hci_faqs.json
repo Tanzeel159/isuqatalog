@@ -1,0 +1,55 @@
+{
+    "ms_in_hci_faqs": {
+        "program_overview": {
+            "definition": "Research-focused degree for on-campus residential students interested in research careers or PhD study.",
+            "stem_designation": "Yes (eligible for 24-month F1 OPT extension)",
+            "online_availability": "Not offered online."
+        },
+        "degree_paths": {
+            "ms_thesis_path_1": {
+                "description": "Research-focused, competitive.",
+                "requirements": "Must secure HCI faculty member as major professor before admission.",
+                "funding": "Typically funded through research assistantship (RA).",
+                "duration": "Typically 2 years.",
+                "gpa_requirement": "3.0 and above."
+            },
+            "ms_creative_component_path_2": {
+                "description": "Coursework + Capstone Project (27 credits course + 3 credit capstone).",
+                "requirements": "No major professor required for admission. Not competitive (admitted if min reqs met).",
+                "funding": "Self-funded (students responsible for tuition/fees). Assistantships not available.",
+                "duration": "18-24 months.",
+                "gpa_requirement": "2.8 or higher."
+            }
+        },
+        "comparisons": {
+            "mhci_distance": "Coursework-only (10 courses), professional degree for online students.",
+            "ms_thesis_vs_creative": "Thesis requires major professor/research interest; Creative Component is for those wanting MS without thesis/advisor focus."
+        },
+        "admissions": {
+            "application_fee": "No waivers offered.",
+            "review_timeline": "10 days after deadline.",
+            "prerequisites": {
+                "undergraduate_degree": "Must be equivalent to U.S. bachelor’s. 3-year degrees from India, Bangladesh, Canada (excluding Quebec), Nepal, Pakistan NOT accepted.",
+                "gre": "Optional.",
+                "portfolio": "Optional.",
+                "prior_ms_for_phd": "Not required but preferred."
+            },
+            "transcripts": {
+                "requirement": "Scanned copies of official transcripts/degree statements.",
+                "india_specifics": "College-issued mark sheets only from autonomous colleges; consolidated mark sheets must include all attempts; degree statements from university."
+            },
+            "finding_major_professor": {
+                "timing": "Can apply without one, but required for admission (Thesis/PhD).",
+                "process": "Contact faculty with research interests. Email should include background, interest in their work, start date, and funding request."
+            }
+        },
+        "financial_support": {
+            "ms_thesis_phd": "Typically RA/TA.",
+            "ms_creative_component": "Self-supported."
+        },
+        "international_students": {
+            "visa": "I-20 issued after financial documentation confirms ability to cover expenses.",
+            "cpt_internship": "Eligible after one academic year (Fall + Spring) enrollment. Student must secure own internship."
+        }
+    }
+}

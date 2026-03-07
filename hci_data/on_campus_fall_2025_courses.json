@@ -1,0 +1,190 @@
+{
+    "semester_info": {
+        "term": "Fall 2025",
+        "start_date": "Monday, August 25",
+        "notes": [
+            "Check Workday for additional details for each course and to confirm a course is being offered.",
+            "Course descriptions and syllabi can be found here."
+        ]
+    },
+    "courses": {
+        "design_core_courses": [
+            {
+                "code": "HCI 5210",
+                "name": "Cognitive Psychology of Human Computer Interaction",
+                "delivery_mode": "in-person and online/asynchronous",
+                "instructor": "Racheal Ruble"
+            },
+            {
+                "code": "ARTGR 5300",
+                "name": "User Engagement",
+                "delivery_mode": "in-person; Reserved seating",
+                "instructor": "Aaron Yang",
+                "notes": "The student must submit a prerequisite override request. This course has a limit of 5 seats for HCI students."
+            }
+        ],
+        "implementation_core_courses": [
+            {
+                "code": "HCI 5840",
+                "name": "Python Application Development in HCI",
+                "delivery_mode": "online/asynchronous",
+                "instructor": "Chris Harding",
+                "notes": "Contact Tiffany for permission to register. The student must submit a prerequisite override request."
+            },
+            {
+                "code": "HCI 5400X",
+                "name": "Internet-Based Methods, Extended Reality, and Machine Learning for Use in Engineering Design and Data Analysis",
+                "status": "NEW COURSE!!!",
+                "delivery_mode": "in-person and online/asynchronous",
+                "instructor": "Eliot Winer",
+                "description": "Extensive overview of developing and deploying internet-based computational resources for engineering applications. Relational databases, server and client-side web programming, and their use with traditional engineering software (i.e. computer-aided design and finite-element modeling). Extended reality (XR) technologies and machine learning / artificial intelligence for use in internet-based solutions.",
+                "faq": [
+                    {
+                        "question": "Do you have to have programming experience to enroll?",
+                        "answer": "No! But this is an Implementation course, so you will learn programming."
+                    },
+                    {
+                        "question": "Is there a prerequisite course I must take?",
+                        "answer": "No prerequisite course is required to enroll."
+                    }
+                ]
+            }
+        ],
+        "phenomena_core_courses": [
+            {
+                "code": "HCI 5890",
+                "name": "Design and Ethics",
+                "delivery_mode": "online/asynchronous",
+                "instructor": "Tina Rice"
+            },
+            {
+                "code": "HCI 6550",
+                "name": "Organizational and Social Implications of Human Computer Interaction",
+                "delivery_mode": "in-person and online/asynchronous",
+                "instructor": "Ronit Nayak (currently it says Cody Fleming in Workday until Ronit has been hired for this role)",
+                "links": "Course flyer available via Box"
+            }
+        ],
+        "evaluation_core_courses": [
+            {
+                "code": "HCI 5040",
+                "name": "Evaluating Technology-based Learning Environments",
+                "delivery_mode": "Online; Meet on Wednesdays | 5:40 PM - 7:30 PM",
+                "instructor": "Evrim Baran"
+            },
+            {
+                "code": "HCI 5790X",
+                "name": "Methods for Interdisciplinary Research",
+                "delivery_mode": "Meet on Tuesdays and Thursdays | 2:10 PM - 3:25 PM",
+                "instructor": "Kimberly Zarecor",
+                "links": "Course flyer available via Box"
+            },
+            {
+                "code": "PSYCH 5010",
+                "name": "Foundations of Behavioral Research",
+                "delivery_mode": "in-person; check seating rules in Workday",
+                "instructor": "Marcus Crede"
+            }
+        ],
+        "hci_recommended_electives": [
+            {
+                "code": "HCI 5900",
+                "name": "Special Topics - Managing UX Teams and Delivering Design Systems",
+                "delivery_mode": "online/asynchronous",
+                "instructor": "Mridu Kashyap",
+                "notes": "To register, please submit a prerequisite override request.",
+                "details": "Courses structure: The course structure focuses on problem solving in the digital transformation space and design systems. The last module and final project deliverable on “Design Automation” allow students to deep dive into those concepts. Project Deliverable Examples: While there will be plenty of creative flexibility in the deliverables to explore concepts that resonate with you, these examples provide guidance on basic requirements. Time management: The low number of group deliverables allows balanced time management throughout the course. Each student will take on the role of “head of product design” for the individual project submissions for the Managing UX section and then work in small groups on the more complex design systems and transformation deliverables. While students are not required to attend class live synchronously, live presentation slots will be available over weekend as well to accommodate schedules if live presentation is desired. Collaboration: To promote learning from peers, there will be an opportunity to reflect on project ideas through peer reviews. In addition, the instructor will share key observations and takeaways to learn from each project submission. Weekly informal conversations: every week there will be a session where the instructor will share real life experiences relevant to the concepts and discussions posts for the week. Students can join the synchronous session to pose their questions real-time or view the recording offline. Coffee with instructor sessions: there will be an opportunity to connect with the instructor to deep dive on industry trends, UX careers, organizational dynamics, change management or any of the course related concepts."
+            },
+            {
+                "code": "HCI 5260",
+                "name": "Design Ethnography",
+                "delivery_mode": "in-person and online/asynchronous",
+                "instructor": "Ritwik Banerji"
+            },
+            {
+                "code": "HCI 5960",
+                "name": "Emerging Practices in Human-Computer Interaction",
+                "delivery_mode": "online/asynchronous",
+                "instructor": "Ella Sympson",
+                "topic": "HCI and AI"
+            },
+            {
+                "code": "HCI 6810",
+                "name": "Cognitive Engineering",
+                "status": "Canceled for Fall 2025",
+                "delivery_mode": "in-person and online/asynchronous",
+                "instructor": "Stephen Gilbert"
+            },
+            {
+                "code": "IE 5770",
+                "name": "Human Factors",
+                "delivery_mode": "in-person and online/asynchronous",
+                "instructor": "Rick Stone"
+            },
+            {
+                "code": "IE 5760",
+                "name": "Human Factors in Product Design",
+                "delivery_mode": "in-person",
+                "instructor": "Michael Dorneich"
+            },
+            {
+                "code": "EDUC 5030",
+                "name": "Designing Effective Learning Environments",
+                "delivery_mode": "Online; Mondays | 5:30 PM - 7:30 PM",
+                "instructor": "coming soon"
+            },
+            {
+                "code": "STAT 5101",
+                "name": "Statistical Methods for Data Analysis",
+                "notes": "Usually listed as STAT 5870. Currently not listed in Workday as being offered in Fall 2025."
+            },
+            {
+                "code": "ARTIS 5700X",
+                "name": "Data, Code And Form",
+                "status": "Currently not listed in Workday as being offered in Fall 2025."
+            }
+        ],
+        "general_electives_suggestions": [
+            {
+                "code": "ENGL 5860",
+                "name": "Visual Rhetoric in Professional Communication",
+                "description": "Rhetorical theory and research in graphics, document design, and related principles of visual communication. Methods of designing texts, data displays, illustrations, and other visual elements in business and technical communication.",
+                "delivery_mode": "in-person; Tuesday and Thursday from 2:10 to 3:25"
+            },
+            {
+                "code": "INDD 5300-01",
+                "name": "Design Thinking",
+                "delivery_mode": "Online",
+                "instructor": "Seda McKilligan"
+            },
+            {
+                "code": "EDUC 5930B",
+                "name": "Workshops: Educational Technology",
+                "delivery_mode": "Online; Meet once a month on Tuesdays from 5:30 PM - 7:30 PM CST | Synchronous meetings, 9/2, 10/7, 11/11, 12/9 (The rest are asynchronous)",
+                "instructor": "Evrim Baran",
+                "description": "Practical experience in designing, developing, and evaluating online learning environments for diverse audiences. Explores recent trends, technologies, and pedagogies in online education."
+            },
+            {
+                "code": "RESEV 5500",
+                "name": "Introduction to Educational Research"
+            }
+        ],
+        "research_and_internship": [
+            {
+                "code": "HCI 6970",
+                "name": "HCI Internship",
+                "notes": "For on-campus international students only."
+            },
+            {
+                "code": "HCI 5990",
+                "name": "Creative Component",
+                "notes": "MS Creative Component students must complete their AP Committee and Academic Plan tasks in Workday to register. Deadline: Thursday, July 31. Contact Tiffany with questions."
+            },
+            {
+                "code": "HCI 6990",
+                "name": "Research",
+                "notes": "For Ph.D. and MS Thesis students only. Do not try to register without permission. Sections can be found in Workday."
+            }
+        ]
+    }
+}

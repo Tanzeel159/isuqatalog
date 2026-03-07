@@ -1,0 +1,74 @@
+{
+    "mhci_faqs": {
+        "program_overview": {
+            "definition": "Online/distance professional master's degree targeted at working adults looking to advance careers or become more marketable.",
+            "capstone_thesis_requirement": "None. Students complete research in classes but no thesis, independent study, or capstone project.",
+            "difference_from_ms": {
+                "ms_thesis": "Research-focused, on-campus, thesis required, funding available (RA). Not for online students.",
+                "ms_creative_component": "27 credits coursework + 3 credit capstone. No funding. Not for online students.",
+                "mhci_distance": "Coursework-only (10 courses/30 credits), professional degree for online students. No difference from employer perspective."
+            }
+        },
+        "application_process": {
+            "who_can_apply": "Applicants from all undergraduate majors, backgrounds, and work experiences.",
+            "response_time": "1-2 weeks after application is complete (all documents uploaded).",
+            "recommendation_letters": {
+                "source": "Professional connections (supervisors, colleagues).",
+                "avoid": "Family members, neighbors, friends."
+            },
+            "gpa_requirement": "Accepts students with 2.8 GPA or higher.",
+            "prerequisites": {
+                "programming": "No prior experience needed to apply. Implementation/programming course required during program (levels available from beginner to advanced)."
+            }
+        },
+        "course_details": {
+            "delivery_formats": {
+                "asynchronous": "flexible, no set meetings, weekly coursework on Canvas, group work coordinated by students.",
+                "synchronous": "live virtual lectures (schedule cannot be changed), typically evening (>5 PM CT), real-time discussions."
+            },
+            "workload": {
+                "recommendation": "Full-time workers should take no more than 1-2 courses per semester.",
+                "time_commitment": "6-12 hours per week per course (approx. 2 hours study per credit hour).",
+                "pacing": "Not self-paced. Deadlines must be met."
+            },
+            "curriculum_flexibility": "Courses can be taken in any order; core courses do not need to be first."
+        },
+        "financial_info": {
+            "assistantships": "Not available to online students. (On-campus PhD/MS Thesis students typically receive them).",
+            "scholarships": "HCI Graduate Program does not fund scholarships. Students directed to ISU Office of Student Financial Aid."
+        },
+        "program_duration": {
+            "one_course_per_term": "3 years + 1 semester.",
+            "two_courses_per_term": "2 to 3 years.",
+            "max_limit": "7 years (Graduate College policy)."
+        },
+        "career_info": {
+            "internships": "Not required but strongly encouraged. Graduate College Career Services can assist.",
+            "job_placement": "No direct assistance/placement offered by program.",
+            "common_job_titles": [
+                "UX Researcher",
+                "UX Designer",
+                "Technical Project Manager",
+                "UI/UX Design Consultant",
+                "Product Designer",
+                "Instructional Designer",
+                "Product Manager",
+                "Data Analyst / Data Scientist",
+                "Software Engineer",
+                "Human Factors Engineer",
+                "UI Developer"
+            ],
+            "industry_context": "Graduates work in interdisciplinary teams involving technology, design, engineering, and psychology."
+        },
+        "transfer_credits": {
+            "eligibility": "Up to 6 graduate-level credits.",
+            "conditions": [
+                "Taken as graduate student",
+                "Grade B or better",
+                "Acceptable toward advanced degree at source institution",
+                "Taught by graduate faculty"
+            ],
+            "process_timing": "May need to wait until first semester or later to officially declare."
+        }
+    }
+}

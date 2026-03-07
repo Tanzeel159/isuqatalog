@@ -1,0 +1,26 @@
+{
+    "hci_student_group": {
+        "description": "Student-led organization that fosters community within the extreme diversity of the HCI program.",
+        "mission": "Inspire intellectual exchange and research collaborations among Iowa State faculty, students, staff, and the external HCI community.",
+        "activities": [
+            "Distinguished lecturers",
+            "Workshops",
+            "Social events"
+        ],
+        "contact_info": "Contact executive officers for more information.",
+        "membership": "Encouraged for all HCI students to get to know others and their areas of research outside typical disciplines."
+    },
+    "networking_resources": [
+        {
+            "name": "Human Computer Interaction - Iowa State University LinkedIn Group",
+            "url": "https://www.linkedin.com/groups/4645032/",
+            "purpose": "Support professional networking among students, faculty, staff, affiliates, and alumni of the HCI program at ISU."
+        },
+        {
+            "name": "Experiencing UX - Central Iowa",
+            "description": "Community focused on the collaborative sharing of User Experience topics in the Des Moines and Central Iowa area.",
+            "membership": "Inclusive mix of UX professionals, hobbyists, and HCI/UX students.",
+            "focus": "Growth mindset."
+        }
+    ]
+}

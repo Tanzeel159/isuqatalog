@@ -1,0 +1,3631 @@
+{
+    "professors": [
+        {
+            "name": "EJ Bang",
+            "department": "Education",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1503656",
+            "metrics": {
+                "total_ratings": 3,
+                "overall_quality_average": 3.0,
+                "difficulty_average": 2.0,
+                "would_take_again_percentage": "33%",
+                "rating_distribution": {
+                    "awesome_5": 1,
+                    "great_4": 0,
+                    "good_3": 0,
+                    "ok_2": 2,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Nov 8th, 2024",
+                    "course": "EDUC439",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "Not sure yet",
+                    "tags": [
+                        "Group projects",
+                        "Hilarious",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "I love EJ. She is the sweetest person ever. I love how excited she gets about the topics that she teaches about. I love her."
+                },
+                {
+                    "date": "Mar 18th, 2024",
+                    "course": "EDUC439",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "Not sure yet",
+                    "tags": [
+                        "Participation matters",
+                        "Group projects",
+                        "Helpful"
+                    ],
+                    "comment": "E.J. has a very fast-paced class. She hops right into the content and is teaching the entirety of the 2+ hours of class. Her directions can be unclear, and you will need to ask a lot of questions for clarification. Assignments are not created on canvas, and you can only find them in the syllabus."
+                },
+                {
+                    "date": "Feb 5th, 2024",
+                    "course": "EDUC439",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "Not sure yet",
+                    "tags": [
+                        "Get ready to read",
+                        "Graded by few things",
+                        "Helpful"
+                    ],
+                    "comment": "EJ's classes are incredibly fast-paced, which can sometimes feel overstimulating. She wastes time during class and gives massive assignments during the last five minutes. Her rubrics are unclear, which adds to the difficulty of being told about an assignment five minutes before class ends."
+                }
+            ]
+        },
+        {
+            "name": "Alex Braidwood",
+            "department": "Design",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1772839",
+            "metrics": {
+                "total_ratings": 5,
+                "overall_quality_average": 3.5,
+                "difficulty_average": 3.8,
+                "would_take_again_percentage": "20%",
+                "rating_distribution": {
+                    "awesome_5": 2,
+                    "great_4": 1,
+                    "good_3": 0,
+                    "ok_2": 2,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Oct 22nd, 2022",
+                    "course": "ARTGR370",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "N/A",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Gives good feedback",
+                        "Caring",
+                        "Graded by few things",
+                        "Helpful"
+                    ],
+                    "comment": "Alex is an amazing instructor, he gives great feedback and genuinely cares about his students. He's great at helping you develop good habits around typography, file organization, and professional practices. The projects we did were interesting, and he's just a great and respectful person in general"
+                },
+                {
+                    "date": "Jan 21st, 2022",
+                    "course": "ARTGR272",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "No",
+                    "grade": "N/A",
+                    "tags": [
+                        "Lots of homework",
+                        "Participation matters",
+                        "Graded by few things",
+                        "Helpful"
+                    ],
+                    "comment": "It seemed like the only project we did in his class the whole semester was making black and white posters using only Illustrator. In class, he would give good feedback but then say something totally different for your grade. Kind of confusing and gets boring after a while. Also, get ready to sketch the same idea over and over again."
+                },
+                {
+                    "date": "May 10th, 2017",
+                    "course": "ARTGR522",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "No",
+                    "grade": "A-",
+                    "tags": [
+                        "Tough Grader",
+                        "Gives good feedback",
+                        "Participation matters",
+                        "Helpful"
+                    ],
+                    "comment": "The work you will do in his class is experimental which is cool to look at but nothing that you can actually add in your portfolio. He'll always try to sell you the idea of code and tell you how cool it is but eventually, it all comes down to the point that if code is what you want to learn in a design studio class? his class wont help u get a job"
+                },
+                {
+                    "date": "Jan 10th, 2013",
+                    "course": "ARTGR270",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "N/A",
+                    "attendance": "N/A",
+                    "would_take_again": "N/A",
+                    "grade": "N/A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Alex is an awesome guy! He is so nice and understanding. He is always there to help you when you need it. He answers emails late at night and if you ask for the critique he will give it to you! He expects a lot and is a tough grader. Sometimes I wasn't really clear on what exactly an \"A\" work was on a project. Other than that he was great!"
+                },
+                {
+                    "date": "Nov 29th, 2012",
+                    "course": "ARTGR270",
+                    "quality_rating": 4.5,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "N/A",
+                    "attendance": "N/A",
+                    "would_take_again": "N/A",
+                    "grade": "N/A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Alex is a tough grader but will help you when you need it. He responds to emails quickly and will go the extra mile to make sure you understand what's going on. He makes jokes during class, pretty funny guy. Also, huge beard."
+                }
+            ]
+        },
+        {
+            "name": "Paul Bruski",
+            "department": "Graphic Arts",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1191623",
+            "metrics": {
+                "total_ratings": 6,
+                "overall_quality_average": 2.9,
+                "difficulty_average": 3.8,
+                "would_take_again_percentage": "33%",
+                "rating_distribution": {
+                    "awesome_5": 1,
+                    "great_4": 2,
+                    "good_3": 0,
+                    "ok_2": 2,
+                    "awful_1": 1
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Oct 29th, 2024",
+                    "course": "470",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "N/A",
+                    "grade": "A-",
+                    "tags": [
+                        "Tough grader",
+                        "Participation matters",
+                        "Lots of homework"
+                    ],
+                    "comment": "He is so strict!"
+                },
+                {
+                    "date": "Feb 2nd, 2023",
+                    "course": "ARTGR270",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A+",
+                    "tags": [
+                        "Inspirational",
+                        "Hilarious",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "He is wonderful! A caring professor whose knowledge led me to the right track. You are the best Prof. Bruski."
+                },
+                {
+                    "date": "Sep 15th, 2015",
+                    "course": "470",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "N/A",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "I had the opportunity of taking Paul's advanced type class & the senior studio class while studying in Rome. He can be a tough grader, but he really pushes you to work out the best solution for your project. His feedback can be a little murky, but the class critiques he facilitated for each project were very helpful. Also: MAPS. Bruski LOVES MAPS!"
+                },
+                {
+                    "date": "Jan 15th, 2009",
+                    "course": "ARTGR370",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "N/A",
+                    "attendance": "N/A",
+                    "would_take_again": "N/A",
+                    "grade": "N/A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Other reviewers are clearly little crybabies. Paul is an excellent professor. He does a lot of things outside of the class, and isn't available all the time, but so are other profs. He is a stickler for process, but that's a good thing. Unless you're lazy. His critiques are always helpful, and he has a good eye for typographic details."
+                },
+                {
+                    "date": "Jan 8th, 2009",
+                    "course": "ABCGR27",
+                    "quality_rating": 1.5,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "N/A",
+                    "attendance": "N/A",
+                    "would_take_again": "N/A",
+                    "grade": "N/A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "He isn't a bad person,but he isn't the greatest teacher either. It is hard to learn something from him. And his time seems limited to students.However, if you often tardy, he is a good pick, because for this course-tardiness is not accepted. but if you have this professor, chances are he will show later than you :)"
+                }
+            ]
+        },
+        {
+            "name": "Bernard Canniffe",
+            "department": "Design",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2477257",
+            "metrics": {
+                "total_ratings": 12,
+                "overall_quality_average": 2.7,
+                "difficulty_average": 3.4,
+                "would_take_again_percentage": "N/A",
+                "rating_distribution": {
+                    "awesome_5": 4,
+                    "great_4": 1,
+                    "good_3": 0,
+                    "ok_2": 1,
+                    "awful_1": 6
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Oct 21st, 2023",
+                    "course": "ARTGR270",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "N/A",
+                    "tags": [],
+                    "comment": "When reviewing work, this professor didn't give any helpful feedback and gave no suggestions on how to make the work better. They aren't sympathetic towards students when situations arise, and they rarely reply to emails. When there is a reply, they don't give direct answers or really any at all."
+                },
+                {
+                    "date": "Aug 7th, 2023",
+                    "course": "ARTGR270",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Participation matters",
+                        "Gives good feedback",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "He really is such a fun and helpful guy. As long as you are trying your best in the class you will be alright. I would take his classes over and over again if I could."
+                },
+                {
+                    "date": "Dec 14th, 2022",
+                    "course": "ARTGR273",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "N/A",
+                    "tags": [
+                        "Tough grader",
+                        "Participation matters",
+                        "Graded by few things",
+                        "Helpful"
+                    ],
+                    "comment": "Final grades in this class are based entirely on four projects. There is no wiggle room. Assignments must be emailed to him, but he frequently loses emails and gives zeros without even checking his spam folder or asking students for clarification. He is extremely unaccommodating and ignores extenuating circumstances, and doesn't teach at all."
+                },
+                {
+                    "date": "Oct 19th, 2022",
+                    "course": "ARTGR270",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Participation matters",
+                        "Caring",
+                        "Accessible outside class",
+                        "Helpful"
+                    ],
+                    "comment": "Bern is a great professor. He cares about his students, and he is happy to answer all questions you have for him. His projects are not only interesting, but they make good practice for what the \"real design world\" is like. Overall, he is a professor that pushes you to think outside the box and that your creativity and ideas are endless."
+                },
+                {
+                    "date": "Jul 22nd, 2022",
+                    "course": "HCI595",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A+",
+                    "tags": [
+                        "Gives good feedback",
+                        "Helpful"
+                    ],
+                    "comment": "Online format was great, he provided lecture videos and referenced outside resources. Class was less teaching material heavy, and more experimentation heavy. Assignments are non-conventional and encouraged critical thinking. It is what you make it - if you are excited to learn and put the work for each assignment, you will see the pay off!"
+                }
+            ]
+        },
+        {
+            "name": "Yongyeon Cho",
+            "department": "Interior Design",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2534452",
+            "metrics": {
+                "total_ratings": 4,
+                "overall_quality_average": 5.0,
+                "difficulty_average": 2.3,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 4,
+                    "great_4": 0,
+                    "good_3": 0,
+                    "ok_2": 0,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Jul 30th, 2025",
+                    "course": "ARTID571",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Clear grading criteria",
+                        "Gives good feedback",
+                        "Online Savvy",
+                        "Helpful"
+                    ],
+                    "comment": "Probably one of the most useful classes I've taken for those who want to learn and expand their knowledge on revit, ps, illustrator, digital drawing, and creating renders and animations. Some of his videos are really long, but the five exercises and final project are pretty straightforward, due every Sunday midnight for the summer."
+                },
+                {
+                    "date": "May 6th, 2022",
+                    "course": "ARTID465",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A-",
+                    "tags": [
+                        "Gives good feedback",
+                        "Inspirational",
+                        "Online Savvy",
+                        "Helpful"
+                    ],
+                    "comment": "Cho is a really sweet professor who has a ton of experience in Revit and other computer programs. He is very helpful to his students and always cares about you and your project."
+                },
+                {
+                    "date": "May 2nd, 2021",
+                    "course": "ARTID367",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "N/A",
+                    "tags": [
+                        "Gives good feedback",
+                        "Clear grading criteria",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "Professor Cho is highly knowledgeable and is amazing at answering any questions you have, especially regarding Revit! I really enjoyed him as a studio instructor; he shows great examples and even some of his personal work! Very kind and super funny, definitely creates a positive studio culture!"
+                },
+                {
+                    "date": "Dec 18th, 2019",
+                    "course": "ARTID465",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Gives good feedback",
+                        "Accessible outside class",
+                        "Hilarious",
+                        "Helpful"
+                    ],
+                    "comment": "Amazing Instructor. He knows his stuff quite well, and he is extremely considerate about bringing the best to the student. Gives you tons of feedback, and is always there for you during your low times in design. He is extremely hilarious, positive, and very creative. His software skills are exceptional - he has all the answers!!"
+                }
+            ]
+        },
+        {
+            "name": "Evgeny Chukharev",
+            "department": "Linguistics",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1838461",
+            "metrics": {
+                "total_ratings": 19,
+                "overall_quality_average": 4.1,
+                "difficulty_average": 3.0,
+                "would_take_again_percentage": "87%",
+                "rating_distribution": {
+                    "awesome_5": 11,
+                    "great_4": 5,
+                    "good_3": 1,
+                    "ok_2": 1,
+                    "awful_1": 1
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Mar 28th, 2023",
+                    "course": "LING120",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "grade": "A",
+                    "tags": [
+                        "Group projects",
+                        "Amazing lectures",
+                        "Clear grading criteria",
+                        "Helpful"
+                    ],
+                    "comment": "He is an amazing professor with such an amazing knowledge of computational linguistics. I would absolutely take another class of his."
+                },
+                {
+                    "date": "Mar 3rd, 2021",
+                    "course": "ENG420",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "N/A",
+                    "grade": "B+",
+                    "tags": [
+                        "Gives good feedback",
+                        "Skip class? You won't pass.",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "Evgeny was inarguably one of the best professors I have ever had. He cares for his students, makes time to support them, and did nothing but his best.. History of EngLang is an intensive course, but if you go to the study sessions w/ him and TAs, you'll do a lot better. He also was very gracious and helpful after Rona hit, and things went online."
+                },
+                {
+                    "date": "Apr 13th, 2019",
+                    "course": "LING120",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "N/A",
+                    "attendance": "Not Mandatory",
+                    "grade": "N/A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Great professor and person. I audited his grad class, and I was fascinated by what he was explaining about computers, the more complex it was. I struggled sometimes to follow but I didn't complain. He did manage to spark an interest in me to go into his area from plain linguistics."
+                },
+                {
+                    "date": "May 3rd, 2018",
+                    "course": "LING219",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "He did coding research in Russia and changed to linguistics, yet still knowledgeable, passionate, and easy to understand. He straight up said that he hates teaching, but does more than any other professor to get input on class policies, takes the job very seriously, and is funny. Only complaint is that recitation (every 2/3 classes) was redundant."
+                },
+                {
+                    "date": "Mar 28th, 2018",
+                    "course": "LING219",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "grade": "A",
+                    "tags": [
+                        "Inspirational",
+                        "Hilarious",
+                        "Amazing lectures",
+                        "Helpful"
+                    ],
+                    "comment": "He is extremely enthusiastic. He is hyper-intelligent in that he is fast with his smarts. Lectures are fast and condensed, questions are opened up to more answers than what you asked for or they are given direct simple answers (depending on the question). As long as you keep in mind that he is very interactive, you'll do great."
+                }
+            ]
+        },
+        {
+            "name": "Jonathan Claussen",
+            "department": "Mechanical Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1938153",
+            "metrics": {
+                "total_ratings": 24,
+                "overall_quality_average": 4.7,
+                "difficulty_average": 2.5,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 17,
+                    "great_4": 3,
+                    "good_3": 2,
+                    "ok_2": 1,
+                    "awful_1": 1
+                }
+            },
+            "reviews": [
+                {
+                    "date": "May 7th, 2024",
+                    "course": "ME335",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Gives good feedback",
+                        "Hilarious",
+                        "Accessible outside class",
+                        "Helpful"
+                    ],
+                    "comment": "One of the best profs I've had. Great in not only because he teaches the material well and wants his students to succeed, but also because he has a great personality and will make it entertaining. He cares about his students as people and not just students. Yeah Dog"
+                },
+                {
+                    "date": "Apr 26th, 2024",
+                    "course": "ME335",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Amazing lectures",
+                        "Inspirational",
+                        "Hilarious",
+                        "Helpful"
+                    ],
+                    "comment": "Absolutely the best professor I have had during my time at Iowa State. Really good at teaching and legitimately cares about the students knowing the content. Super easy to ask questions about literally anything as well."
+                },
+                {
+                    "date": "Feb 10th, 2024",
+                    "course": "ME160",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Amazing lectures",
+                        "Gives good feedback",
+                        "Hilarious",
+                        "Helpful"
+                    ],
+                    "comment": "Dr. Claussen, fueled by his passion for McDonald's, ensured that everyone in the Claussroom was able to compute the McMoment about a combo meal during our statics unit."
+                },
+                {
+                    "date": "Apr 24th, 2023",
+                    "course": "ME335",
+                    "quality_rating": 3.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "He is nice but lacks organization. Could take up to a week to respond to emails. The class has a good amount of work load to it between weekly quizzes, homework, and labs however they are all very easy."
+                },
+                {
+                    "date": "Oct 17th, 2022",
+                    "course": "ME160",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Amazing lectures",
+                        "Hilarious",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "By far my favorite professor at Iowa State so far his lectures are hilarious and he'll definitely make sure you know he loves McDonald's. Class was quite difficult but he was a super fair grader and wanted the best for everyone in the class."
+                }
+            ]
+        },
+        {
+            "name": "Elena Cotos",
+            "department": "English",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/551575",
+            "metrics": {
+                "total_ratings": 10,
+                "overall_quality_average": 3.3,
+                "difficulty_average": 3.4,
+                "would_take_again_percentage": "40%",
+                "rating_distribution": {
+                    "awesome_5": 3,
+                    "great_4": 0,
+                    "good_3": 2,
+                    "ok_2": 3,
+                    "awful_1": 2
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Aug 21st, 2022",
+                    "course": "ENG219",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A-",
+                    "tags": [
+                        "Get ready to read",
+                        "Lots of homework",
+                        "So many papers",
+                        "Helpful"
+                    ],
+                    "comment": "This is for E527 course taught in person. Too much information on a weekly basis. Lectures are presentations and discussions. Non-related numerous article readings are a theme and for high-level courses, it is not practical at times."
+                },
+                {
+                    "date": "Jul 20th, 2022",
+                    "course": "ENGL250",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "Rather not say",
+                    "tags": [
+                        "Get ready to read",
+                        "So many papers",
+                        "Lecture heavy",
+                        "Helpful"
+                    ],
+                    "comment": "(Discourse Analysis) knows info. but as a teacher analyzing students & study backgrounds is important. Esp. Grads should be able to focus on their study topics through her offered classes & not have massive amounts of unrelated articles to read/write weekly. There are no clear answers in class by the Prof., always asking students to just discuss."
+                },
+                {
+                    "date": "May 27th, 2016",
+                    "course": "ENG219",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "B",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Elena was an awesome professor. There were a few days I had to miss class so I emailed her in advance and she was so nice about it. Always felt welcomed at office hours. She hated the text book as much as we did so stopped using in. Gave out little homework but when she did you had 8 worksheets due within a day and a half. Overall great teacher!"
+                },
+                {
+                    "date": "Aug 27th, 2007",
+                    "course": "ENGL250",
+                    "quality_rating": 4.5,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "N/A",
+                    "attendance": "N/A",
+                    "would_take_again": "N/A",
+                    "grade": "N/A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Elena honestly did the best she could with the lame curriculum the English department demands in these intro classes. I'm disappointed to see so many negative reviews here. Despite the accent, Elena is possibly the most conscientious, concerned, and caring TA I've come across in 5 semesters at ISU"
+                },
+                {
+                    "date": "May 15th, 2006",
+                    "course": "ENG105",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "N/A",
+                    "attendance": "N/A",
+                    "would_take_again": "N/A",
+                    "grade": "N/A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Hard to understand at times... Makes up english words occasionally. I had no clue what specifically she wanted when. I had much better high school english teachers."
+                }
+            ]
+        },
+        {
+            "name": "Thomas Daniels",
+            "department": "Electrical Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/323196",
+            "metrics": {
+                "total_ratings": 56,
+                "overall_quality_average": 3.2,
+                "difficulty_average": 3.0,
+                "would_take_again_percentage": "N/A",
+                "rating_distribution": {
+                    "awesome_5": 13,
+                    "great_4": 11,
+                    "good_3": 13,
+                    "ok_2": 10,
+                    "awful_1": 9
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 18th, 2025",
+                    "course": "CPRE185",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "Rather not say",
+                    "tags": [
+                        "Tough grader",
+                        "Participation matters",
+                        "Graded by few things",
+                        "Helpful"
+                    ],
+                    "comment": "Bad lectures and barely teaches anything. All he does is blab about his achievements, and if you dont attend then thats 1/5th of your grade gone. The exams are also way harder than the practice exams that he gives. Hes also barely reachable outside of class hours and he doesnt respond to emails. He is a chill guy besides his classes, though."
+                },
+                {
+                    "date": "Dec 5th, 2025",
+                    "course": "CPRE185",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A+",
+                    "tags": [
+                        "Lots of homework"
+                    ],
+                    "comment": "Lectures are pointless. Rabbles on about mandatory attendance but i highly recommend doing Top Hat questions from your bed. All he does is about his personal life for 20 minutes, doing some random code that has almost nothing to do with labs. The only necessities of this class are zybooks, labs, and the practice exams."
+                },
+                {
+                    "date": "Nov 29th, 2025",
+                    "course": "CPRE185",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A",
+                    "tags": [
+                        "Participation matters",
+                        "Graded by few things"
+                    ],
+                    "comment": "His lectures are incredibly off topic and disorganized. He will teach things in the lectures that the homework and labs went over weeks ago. His communication with the TA's is abysmal."
+                }
+            ]
+        },
+        {
+            "name": "Daniela Dimitrova",
+            "department": "Journalism",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/567416",
+            "metrics": {
+                "total_ratings": 10,
+                "overall_quality_average": 2.5,
+                "difficulty_average": 3.4,
+                "would_take_again_percentage": "N/A",
+                "rating_distribution": {
+                    "awesome_5": 2,
+                    "great_4": 1,
+                    "good_3": 0,
+                    "ok_2": 4,
+                    "awful_1": 3
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Feb 7th, 2025",
+                    "course": "JLMC315",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Caring",
+                        "Respected",
+                        "Helpful"
+                    ],
+                    "comment": "Very good professor."
+                },
+                {
+                    "date": "Dec 18th, 2011",
+                    "course": "JLMC474",
+                    "quality_rating": 3.5,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "N/A",
+                    "attendance": "N/A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "I actually liked Dr. Dimitrova a lot. Although she told us that attendance was not required, we received a participation grade. Other than that, though, she was great."
+                },
+                {
+                    "date": "Apr 14th, 2010",
+                    "course": "JLMC476",
+                    "quality_rating": 1.5,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "N/A",
+                    "attendance": "N/A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Absolutely terrible teacher and class. They aren't kidding when they say she favors grad students, and if you offer suggestions she never considers them."
+                }
+            ]
+        },
+        {
+            "name": "Alyssa Emery",
+            "department": "Education",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2653184",
+            "metrics": {
+                "total_ratings": 14,
+                "overall_quality_average": 1.6,
+                "difficulty_average": 3.9,
+                "would_take_again_percentage": "N/A",
+                "rating_distribution": {
+                    "awesome_5": 0,
+                    "great_4": 1,
+                    "good_3": 1,
+                    "ok_2": 3,
+                    "awful_1": 9
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 8th, 2025",
+                    "course": "EDUC332",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Participation matters",
+                        "Group projects",
+                        "Lots of homework",
+                        "Helpful"
+                    ],
+                    "comment": "Dr. Emery is not joking about her content, but I don't think that's a bad thing. You have to do homework and participate in class; while it's not graded on participation, it helps."
+                },
+                {
+                    "date": "Dec 2nd, 2025",
+                    "course": "EDUC332",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A",
+                    "tags": [
+                        "Group projects",
+                        "Lots of homework",
+                        "Lecture heavy",
+                        "Helpful"
+                    ],
+                    "comment": "Often the lectures are her talking and talking and talking. She doesn't take criticism well and tries to convince you that she is a good professor- the students are the problem."
+                },
+                {
+                    "date": "Dec 20th, 2024",
+                    "course": "EDUC332",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A",
+                    "tags": [
+                        "Tough grader",
+                        "Get ready to read",
+                        "Group projects",
+                        "Helpful"
+                    ],
+                    "comment": "She and the TAs did not agree on grading so there was lots of variance. She expects us to complete the work before coming to class and then spends most of the week going over the exact same information."
+                }
+            ]
+        },
+        {
+            "name": "Patrick Finley",
+            "department": "Graphic Arts",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2996345",
+            "metrics": {
+                "total_ratings": 2,
+                "overall_quality_average": 5.0,
+                "difficulty_average": 2.5,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 2,
+                    "great_4": 0,
+                    "good_3": 0,
+                    "ok_2": 0,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 18th, 2024",
+                    "course": "ARTGR477",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Gives good feedback",
+                        "Hilarious",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "Patrick is wonderful. I learned so much in this class. He doesn't like to use Canvas so you have to make sure you keep up with deadlines. He is very personable and cares about his students."
+                },
+                {
+                    "date": "Mar 28th, 2024",
+                    "course": "ARTGR477",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A-",
+                    "tags": [
+                        "Participation matters",
+                        "Gives good feedback",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "Patrick is awesome. He gives feedback that is accurate and he will help you move forward very well. In the middle of a project you will hate him but he is right and will make your work better."
+                }
+            ]
+        },
+        {
+            "name": "Cody Fleming",
+            "department": "Mechanical Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2621818",
+            "metrics": {
+                "total_ratings": 2,
+                "overall_quality_average": 5.0,
+                "difficulty_average": 2.5,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 2,
+                    "great_4": 0,
+                    "good_3": 0,
+                    "ok_2": 0,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Oct 17th, 2023",
+                    "course": "ME280",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Really enjoyed professor Fleming for ME280X. Lectures were given at a high level, and lots of interesting concepts were discussed. Make sure you attend all classes. He is a laid back and funny professor, and there weren't any exams."
+                },
+                {
+                    "date": "Dec 1st, 2021",
+                    "course": "ME425",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "B+",
+                    "tags": [
+                        "Gives good feedback",
+                        "Accessible outside class",
+                        "Hilarious",
+                        "Helpful"
+                    ],
+                    "comment": "Dr. Fleming made me want to do coding and calculus. That is saying a whole mouthful for a stupid mechanical engineering student such as myself. He is a great explainer and was always willing to help and work through a prob no matter how dumb my MATLAB questions were."
+                }
+            ]
+        },
+        {
+            "name": "Jonathan Fox",
+            "department": "Family Consumer Science",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2171603",
+            "metrics": {
+                "total_ratings": 10,
+                "overall_quality_average": 3.4,
+                "difficulty_average": 2.0,
+                "would_take_again_percentage": "N/A",
+                "rating_distribution": {
+                    "awesome_5": 5,
+                    "great_4": 1,
+                    "good_3": 0,
+                    "ok_2": 1,
+                    "awful_1": 3
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Oct 21st, 2025",
+                    "course": "HDFS4840",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Participation matters",
+                        "Clear grading criteria",
+                        "Gives good feedback",
+                        "Helpful"
+                    ],
+                    "comment": "Helpful and learned a lot in the class, cares for the students."
+                },
+                {
+                    "date": "May 14th, 2025",
+                    "course": "HDFS4840",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Not worth the time honestly. Didn't get much out of it."
+                },
+                {
+                    "date": "May 14th, 2025",
+                    "course": "HDFS4850",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "tags": [
+                        "Lots of homework",
+                        "Helpful"
+                    ],
+                    "comment": "The class was not helpful for FCP students. Instead of gaining client experience, software knowledge, or even personalized feedback in the capstone course, as students we were fending for ourselves to create the final plan."
+                }
+            ]
+        },
+        {
+            "name": "Douglas Gentile",
+            "department": "Psychology",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/424596",
+            "metrics": {
+                "total_ratings": 71,
+                "overall_quality_average": 4.4,
+                "difficulty_average": 2.5,
+                "would_take_again_percentage": "87%",
+                "rating_distribution": {
+                    "awesome_5": 47,
+                    "great_4": 14,
+                    "good_3": 6,
+                    "ok_2": 2,
+                    "awful_1": 2
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 16th, 2025",
+                    "course": "101PSYC",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A+",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "This professor is great, and the online course is very easy. All you have to do is the homework, definitely watch the lecture videos, as the exam is taken only from lectures."
+                },
+                {
+                    "date": "Nov 4th, 2025",
+                    "course": "101PSYC",
+                    "quality_rating": 3.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "grade": "A",
+                    "tags": [
+                        "EXTRA CREDIT",
+                        "Lots of homework",
+                        "Lecture heavy",
+                        "Helpful"
+                    ],
+                    "comment": "I took PSYCH 1010 online with Dr. Gentile and really like him as a professor, but not how the class is structured. In order to do all the work, including extra credit, I probably spent around 6-9 hours a week on this class."
+                },
+                {
+                    "date": "Dec 6th, 2024",
+                    "course": "PSY101",
+                    "quality_rating": 3.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A-",
+                    "tags": [
+                        "Get ready to read",
+                        "Lots of homework",
+                        "Lecture heavy",
+                        "Helpful"
+                    ],
+                    "comment": "This class was interesting. However, there is a lot of assignments throughout the week that can get overwhelming if you are not on top of it. The tests are open-note which is nice but you still need to study."
+                }
+            ]
+        },
+        {
+            "name": "Stephen Gilbert",
+            "department": "Industrial Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1703421",
+            "metrics": {
+                "total_ratings": 10,
+                "overall_quality_average": 3.4,
+                "difficulty_average": 3.5,
+                "would_take_again_percentage": "N/A",
+                "rating_distribution": {
+                    "awesome_5": 1,
+                    "great_4": 5,
+                    "good_3": 1,
+                    "ok_2": 3,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Apr 7th, 2025",
+                    "course": "IE148",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "B",
+                    "tags": [
+                        "Group projects",
+                        "Lots of homework",
+                        "Respected",
+                        "Helpful"
+                    ],
+                    "comment": "Stephen Gilbert is genuinely one of the most brilliant professors I've ever had. This class is challenging and requires a lot of time spent out of class to do the Excel VBA hw."
+                },
+                {
+                    "date": "Jun 12th, 2019",
+                    "course": "IE148",
+                    "quality_rating": 3.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A-",
+                    "tags": [
+                        "Lots of homework",
+                        "Get ready to read",
+                        "Helpful"
+                    ],
+                    "comment": "Going to the TA office hours is the main reason I passed this class. The professor doesn't teach much during the lecture so you have to learn on your own most of the material."
+                },
+                {
+                    "date": "Apr 12th, 2019",
+                    "course": "IE148",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Gives good feedback",
+                        "Lots of homework",
+                        "Get ready to read",
+                        "Helpful"
+                    ],
+                    "comment": "I liked this class. There was a lot of outside work, but I thought it was pretty manageable. I recommend taking this class with this professor."
+                }
+            ]
+        },
+        {
+            "name": "Carmen Gomes",
+            "department": "Mechanical Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2363236",
+            "metrics": {
+                "total_ratings": 4,
+                "overall_quality_average": 5.0,
+                "difficulty_average": 3.0,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 4,
+                    "great_4": 0,
+                    "good_3": 0,
+                    "ok_2": 0,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Oct 17th, 2023",
+                    "course": "ME270",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Participation matters",
+                        "Group projects",
+                        "Helpful"
+                    ],
+                    "comment": "Good professor for ME270. This class is a lot of paperwork, and she is reasonable with it. Generally an easy grader, and she is willing to discuss grading for an individual assignment."
+                },
+                {
+                    "date": "Oct 3rd, 2019",
+                    "course": "ME231",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "tags": [
+                        "Test heavy",
+                        "Caring",
+                        "EXTRA CREDIT",
+                        "Helpful"
+                    ],
+                    "comment": "Dr. Gomes makes 8 am thermo genuinely enjoyable. She works hard to keep us engaged and prepares us well for the exams. She gives extra credit for attendance."
+                },
+                {
+                    "date": "Mar 10th, 2019",
+                    "course": "ME332",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Accessible outside class",
+                        "Amazing lectures",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "Carmen is so nice, she is easily the best ME instructor at Iowa State. Whenever I have questions during off hours she is still very quick to answer, and she is very accommodating."
+                }
+            ]
+        },
+        {
+            "name": "Chris Harding",
+            "department": "Geology",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2843071",
+            "metrics": {
+                "total_ratings": 4,
+                "overall_quality_average": 4.8,
+                "difficulty_average": 1.5,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 3,
+                    "great_4": 1,
+                    "good_3": 0,
+                    "ok_2": 0,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 22nd, 2025",
+                    "course": "GEOL1110",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "This is a great 1-credit class to take online. If you wanted to, you could easily complete the entire class in a weekend. The assignments are straightforward and don't take a ton of time to complete."
+                },
+                {
+                    "date": "Dec 21st, 2022",
+                    "course": "GEOL",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Online Savvy",
+                        "Helpful"
+                    ],
+                    "comment": "Great 1 credit course if you wanna raise your GPA. All course material is available to you at the beginning of the course and there are no late penalties so you can complete the whole course whenever you want."
+                },
+                {
+                    "date": "Dec 2nd, 2022",
+                    "course": "GEOL",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "tags": [
+                        "Clear grading criteria",
+                        "Lecture heavy",
+                        "Helpful"
+                    ],
+                    "comment": "Took 1 credit course GEOL 111. Half semester, online, 7 weeks of content. All tests/quizzes, including final & midterm, are open note. No group or written assignments."
+                }
+            ]
+        },
+        {
+            "name": "Heike Hofmann",
+            "department": "Statistics",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/902068",
+            "metrics": {
+                "total_ratings": 9,
+                "overall_quality_average": 3.7,
+                "difficulty_average": 3.0,
+                "would_take_again_percentage": "67%",
+                "rating_distribution": {
+                    "awesome_5": 3,
+                    "great_4": 3,
+                    "good_3": 0,
+                    "ok_2": 3,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "May 10th, 2023",
+                    "course": "STAT511",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "tags": [
+                        "Participation matters",
+                        "Group projects",
+                        "Gives good feedback",
+                        "Helpful"
+                    ],
+                    "comment": "I took the STAT 585 with Dr. Heike Hofmann and she is a fantastic professor in her field. She constantly updates lectures and material so that student's don't miss out on the newest information and if you take the time to talk to her, you will find that she genuinely cares about you and your work."
+                },
+                {
+                    "date": "Jan 3rd, 2017",
+                    "course": "STAT332",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "would_take_again": "No",
+                    "grade": "A",
+                    "tags": [
+                        "GROUP PROJECTS"
+                    ],
+                    "comment": "Pretty easy class overall. Didn't seem to take a lot to impress her when designing graphics as long as you follow a lot of the basics she lays out. Grading was all over the place in terms of when it was graded."
+                },
+                {
+                    "date": "Dec 23rd, 2011",
+                    "course": "STAT480",
+                    "quality_rating": 4.5,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "N/A",
+                    "attendance": "N/A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Very helpful and explained material clearly. She made the course very interesting!"
+                }
+            ]
+        },
+        {
+            "name": "Ming-Chen Hsu",
+            "department": "Mechanical Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1861306",
+            "metrics": {
+                "total_ratings": 10,
+                "overall_quality_average": 4.2,
+                "difficulty_average": 3.0,
+                "would_take_again_percentage": "80%",
+                "rating_distribution": {
+                    "awesome_5": 5,
+                    "great_4": 3,
+                    "good_3": 0,
+                    "ok_2": 1,
+                    "awful_1": 1
+                }
+            },
+            "reviews": [
+                {
+                    "date": "May 16th, 2025",
+                    "course": "ME335",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Amazing lectures",
+                        "Lots of homework",
+                        "Test heavy",
+                        "Helpful"
+                    ],
+                    "comment": "A very good lecturer who teaches in an effective and intuitive way, with a good mix of examples and theoretical discussion. After-class help hours are amazing since he takes the time to make sure you know the concept and is good at understanding where the textbook homework may have left out details."
+                },
+                {
+                    "date": "Feb 11th, 2022",
+                    "course": "ME335",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Dr Hsu was a great professor in my opinion. Always willing to help students when they need it and pretty reasonable with exam questions. His lectures are clear and he provides great examples for the content being learned. 10/10 would recommend him as the top prof for fluids"
+                },
+                {
+                    "date": "May 1st, 2020",
+                    "course": "ME335",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A-",
+                    "tags": [
+                        "Gives good feedback",
+                        "Skip class? You won't pass.",
+                        "Helpful"
+                    ],
+                    "comment": "Very good at teaching Fluids, knows a lot, teaches it well. He also knows when to be serious and when to have a laugh or 2. Very strict about deadlines and cheating. He writes on the lecture slides via his iPad and sometimes it can be sloppy so just go to lecture and follow along and you'll be fine."
+                }
+            ]
+        },
+        {
+            "name": "Julie Irish",
+            "department": "Design",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2830188",
+            "metrics": {
+                "total_ratings": 1,
+                "overall_quality_average": 2.0,
+                "difficulty_average": 5.0,
+                "would_take_again_percentage": "N/A",
+                "rating_distribution": {
+                    "awesome_5": 0,
+                    "great_4": 0,
+                    "good_3": 0,
+                    "ok_2": 1,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Mar 27th, 2024",
+                    "course": "ARTID356",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "tags": [
+                        "Lecture heavy",
+                        "Test heavy",
+                        "Helpful"
+                    ],
+                    "comment": "90+ slides every class period. The slides are not organized, No notes on the test. The test is fill-in-the-blank and the questions show you a picture of a furniture piece and you have to know who made it. No word bank. The highest score on this test was 80% out of 80ish students."
+                }
+            ]
+        },
+        {
+            "name": "Vijay Kalivarapo",
+            "department": "Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1117005",
+            "metrics": {
+                "total_ratings": 8,
+                "overall_quality_average": 2.3,
+                "difficulty_average": 3.8,
+                "would_take_again_percentage": "60%",
+                "rating_distribution": {
+                    "awesome_5": 0,
+                    "great_4": 3,
+                    "good_3": 0,
+                    "ok_2": 1,
+                    "awful_1": 4
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Mar 29th, 2023",
+                    "course": "ME525",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "Not sure yet",
+                    "tags": [
+                        "Tough grader",
+                        "Helpful"
+                    ],
+                    "comment": "There is no wiggle room in grading. Even if answers are right, if you didn't do it his way, then it is wrong. Which is not how the real world works, even though he preaches about students getting careers in the real world. He is clearly a very talented ME, but has no talent for teaching."
+                },
+                {
+                    "date": "Mar 5th, 2023",
+                    "course": "ME525",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "C-",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "This professor is awful. He does not take accountability for his own bad teaching methods and makes fun of students for not being able to recall poorly taught methods. I am good at math and thought this would be a fun elective to take, but I was wrong."
+                },
+                {
+                    "date": "Feb 4th, 2023",
+                    "course": "ME525",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "Not sure yet",
+                    "tags": [
+                        "Participation matters",
+                        "Hilarious",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "He's not very computer savvy, but he tries his best and keeps himself accountable for it. Very funny guy and tries his best to relate to how students are feeling about the subject. He cancelled class for career fair day because he understands that students are here to get jobs in the end."
+                }
+            ]
+        },
+        {
+            "name": "Jonathan Kelly",
+            "department": "Psychology",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1902658",
+            "metrics": {
+                "total_ratings": 10,
+                "overall_quality_average": 4.3,
+                "difficulty_average": 2.4,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 9,
+                    "great_4": 0,
+                    "good_3": 1,
+                    "ok_2": 0,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Oct 25th, 2022",
+                    "course": "HCI521",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Awesome class, and I would highly recommend it to any student entering the HCI program at ISU. It lays important groundwork for understanding HCI and gives a great appreciation for the major. Dr. Kelly is a really insightful lecturer; his topics are super interesting. A must for anyone in HCI."
+                },
+                {
+                    "date": "Dec 2nd, 2021",
+                    "course": "HCI521",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Respected",
+                        "Accessible outside class",
+                        "Inspirational",
+                        "Helpful"
+                    ],
+                    "comment": "HCI521 is one of the best classes I've taken here. Dr. Kelly is a great lecturer, picked good readings, and created useful assignments. He made the course extremely accessible for students with disabilities and for during the pandemic. I really learned during this class rather than just aiming for a grade."
+                },
+                {
+                    "date": "May 16th, 2017",
+                    "course": "PSYCH312",
+                    "quality_rating": 3.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "TEST HEAVY",
+                        "GRADED BY FEW THINGS",
+                        "LECTURE HEAVY",
+                        "Helpful"
+                    ],
+                    "comment": "This class has no textbook and it based on all lecture material. The slides are available on BB, though they are not the complete notes. There are 4 exams, that is it. . The lectures could get extremely dry at times, as he has a fairly monotone voice. He makes the material practical so its easier to understand for you."
+                }
+            ]
+        },
+        {
+            "name": "Nir Keren",
+            "department": "Industrial Technology",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/741759",
+            "metrics": {
+                "total_ratings": 11,
+                "overall_quality_average": 4.0,
+                "difficulty_average": 2.8,
+                "would_take_again_percentage": "83%",
+                "rating_distribution": {
+                    "awesome_5": 7,
+                    "great_4": 2,
+                    "good_3": 0,
+                    "ok_2": 2,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "May 6th, 2020",
+                    "course": "TSM470",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Gives good feedback",
+                        "Group projects",
+                        "Clear grading criteria",
+                        "Helpful"
+                    ],
+                    "comment": "Dr. Keren is a solid professor. He structured this class well and had clear expectations of students. He also graded assignments quickly and gave good feedback. His main issue is lack of attention to detail when writing quiz and exam questions."
+                },
+                {
+                    "date": "Jan 20th, 2017",
+                    "course": "TSM477X",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A-",
+                    "tags": [
+                        "Respected",
+                        "Inspirational",
+                        "GROUP PROJECTS",
+                        "Helpful"
+                    ],
+                    "comment": "Great teacher, has lots of regards for students who work hard. He will ensure that all students get value out of his classes."
+                },
+                {
+                    "date": "Dec 9th, 2014",
+                    "course": "TSM376",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A+",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Easy easy class and teacher. Only flaw is that expects group meeting from online class which doesn't make much sense. Don't bother buying book for this class either, never once used."
+                }
+            ]
+        },
+        {
+            "name": "Regis Kopper",
+            "department": "Computer Science",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/3067023",
+            "metrics": {
+                "total_ratings": 4,
+                "overall_quality_average": 1.3,
+                "difficulty_average": 4.0,
+                "would_take_again_percentage": "0%",
+                "rating_distribution": {
+                    "awesome_5": 0,
+                    "great_4": 0,
+                    "good_3": 0,
+                    "ok_2": 1,
+                    "awful_1": 3
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 21st, 2025",
+                    "course": "COMS363",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "grade": "Rather not say",
+                    "tags": [
+                        "Tough grader",
+                        "So many papers",
+                        "Helpful"
+                    ],
+                    "comment": "This was one of the most disorganized and poorly run class I have taken full stop! I won't take a class with him again!"
+                },
+                {
+                    "date": "Dec 10th, 2025",
+                    "course": "COMS363",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "grade": "A+",
+                    "tags": [
+                        "Lots of homework",
+                        "So many papers",
+                        "Test heavy",
+                        "Helpful"
+                    ],
+                    "comment": "Awful Professor. Assigns thousands of homework and tasks without considering the students' needs. Will be unavailable most of the time and will pop back 4 hours or a day before the class, and will assign a 1-week task whose deadline will be in 4 hours."
+                },
+                {
+                    "date": "Apr 10th, 2025",
+                    "course": "COMS363",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Prof is usually under prepared for class. Many times he prepares an example to demonstrate in class, only to encounter errors. Later, he has to send out an announcement correcting the example and explaining the right approach."
+                }
+            ]
+        },
+        {
+            "name": "Charles Kostelnick",
+            "department": "English",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/998487",
+            "metrics": {
+                "total_ratings": 7,
+                "overall_quality_average": 4.6,
+                "difficulty_average": 2.4,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 5,
+                    "great_4": 2,
+                    "good_3": 0,
+                    "ok_2": 0,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 11th, 2025",
+                    "course": "ENG353",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "B+",
+                    "tags": [
+                        "Participation matters",
+                        "Lecture heavy",
+                        "Helpful"
+                    ],
+                    "comment": "Charlie is a sweetie! You must read and must go to class in order to understand anything, but he also grades your participation - which is a hefty amount. His papers are a little rough and demanding, but if you just ask for help, he is so willing to help you be successful."
+                },
+                {
+                    "date": "Dec 9th, 2019",
+                    "course": "ENGL586",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Gives good feedback",
+                        "Respected",
+                        "Accessible outside class",
+                        "Helpful"
+                    ],
+                    "comment": "Charlie is a fantastic professor, easily one of ISU's best. His homework is fun and actually helpful for applying skills from the class, lectures are great, and he responds to emails and grades at a superhuman speed."
+                },
+                {
+                    "date": "Dec 5th, 2019",
+                    "course": "ENGL416",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "tags": [
+                        "Respected",
+                        "Inspirational",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "Charlie is great. He is the best professor I've had in the English department, probably even the best professor I've had. He explains visual concepts really well. He is the fastest grader I've ever seen and grades fairly."
+                }
+            ]
+        },
+        {
+            "name": "Adarsh Krishnamurthy",
+            "department": "Mechanical Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2092690",
+            "metrics": {
+                "total_ratings": 2,
+                "overall_quality_average": 2.0,
+                "difficulty_average": 3.0,
+                "would_take_again_percentage": "N/A",
+                "rating_distribution": {
+                    "awesome_5": 0,
+                    "great_4": 0,
+                    "good_3": 1,
+                    "ok_2": 0,
+                    "awful_1": 1
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Apr 25th, 2016",
+                    "course": "ME170",
+                    "quality_rating": 3.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Doesn't always explain content the best, but a good teacher nonetheless"
+                },
+                {
+                    "date": "Dec 21st, 2015",
+                    "course": "ME419",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "I had this professor for what I assume, to be his first teaching job. This was supposed to be a CAD class, but we did 90% programming. He was extremely unhelpful and expected us to be on his level immediately. His homework and lectures held no useful information to the scope of the class."
+                }
+            ]
+        },
+        {
+            "name": "Margaret Laware",
+            "department": "English",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/190838",
+            "metrics": {
+                "total_ratings": 25,
+                "overall_quality_average": 4.1,
+                "difficulty_average": 2.6,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 13,
+                    "great_4": 6,
+                    "good_3": 2,
+                    "ok_2": 4,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Jan 10th, 2022",
+                    "course": "SPCM216",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Gives good feedback",
+                        "Clear grading criteria",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "She is such an amazing Professor! She is so empathetic towards students and often pushes deadlines to meet the needs of students. Although attendance is not mandatory, I highly recommend going. She presented the class material in an interesting way and often gives out extra credit. Show up and participate and you will pass. By far my favorite prof!"
+                },
+                {
+                    "date": "Dec 10th, 2021",
+                    "course": "SPCM216",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Accessible outside class",
+                        "Caring",
+                        "EXTRA CREDIT",
+                        "Helpful"
+                    ],
+                    "comment": "If you need to fulfill the US diversity requirement, take this class!! The prof is so nice and you can tell she genuinely cares about her students. She gives lots of extra credit opportunities as well!"
+                },
+                {
+                    "date": "Jul 10th, 2019",
+                    "course": "SPCM323",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A+",
+                    "tags": [
+                        "Respected",
+                        "Caring",
+                        "EXTRA CREDIT",
+                        "Helpful"
+                    ],
+                    "comment": "Maggie is an AMAZING prof. This class is 90% class discussion, really interesting and engaging. TONS of extra credit ops. She gave study guides and allowed notes on exams. Also, she brings us snacks :) Final exam was optional. Attendance was pretty relaxed, but class was actually fun to be in. Took this for a com elective and it was a super easy A."
+                }
+            ]
+        },
+        {
+            "name": "James Lathrop",
+            "department": "Computer Science",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2514882",
+            "metrics": {
+                "total_ratings": 105,
+                "overall_quality_average": 4.1,
+                "difficulty_average": 3.0,
+                "would_take_again_percentage": "82%",
+                "rating_distribution": {
+                    "awesome_5": 53,
+                    "great_4": 19,
+                    "good_3": 19,
+                    "ok_2": 17,
+                    "awful_1": 20
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 19th, 2025",
+                    "course": "COMS327",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A+",
+                    "tags": [
+                        "Lecture heavy",
+                        "Test heavy",
+                        "Helpful"
+                    ],
+                    "comment": "Not a difficult class if you go to lecture and do the homework. His exams are curved and fair. Only issue I had was the second project was horribly worded and hard to complete."
+                },
+                {
+                    "date": "Dec 9th, 2025",
+                    "course": "COMS327",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "Not sure yet",
+                    "tags": [
+                        "Amazing lectures",
+                        "Test heavy",
+                        "Graded by few things",
+                        "Helpful"
+                    ],
+                    "comment": "Lathrop is a good teacher and understands what he is talking about, and when he doesn't (niche cases), he takes the time to clarify himself before the next class. He relies on in-class participation and questions to make sure you understand part-by-part what he is writing. It will be up to you to keep up on soft assignment deadlines."
+                },
+                {
+                    "date": "Oct 6th, 2025",
+                    "course": "COMS437",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Participation matters",
+                        "Group projects",
+                        "Clear grading criteria",
+                        "Helpful"
+                    ],
+                    "comment": "The courses were very straight forward. at the start of the semester you receive rough deadlines of the few projects. Then all you do in class is work on the projects and learn how to use game engines. Very fun class"
+                }
+            ]
+        },
+        {
+            "name": "Jeongeun Lee",
+            "department": "Human Development",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2312004",
+            "metrics": {
+                "total_ratings": 7,
+                "overall_quality_average": 4.1,
+                "difficulty_average": 2.1,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 1,
+                    "great_4": 5,
+                    "good_3": 1,
+                    "ok_2": 0,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "May 8th, 2023",
+                    "course": "HDFS373",
+                    "quality_rating": 3.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A+",
+                    "tags": [
+                        "Get ready to read",
+                        "EXTRA CREDIT",
+                        "Online Savvy",
+                        "Helpful"
+                    ],
+                    "comment": "This class was super interesting and so much fun. Homework was mostly concept checks and exams with some discussion boards about our guest lectures (which were awesome!) The hardest part is the two papers due, one of which is a book report on a book you have to read throughout the whole semester. Time your reading well, and you should be good."
+                },
+                {
+                    "date": "Jan 12th, 2023",
+                    "course": "HDFS373",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A+",
+                    "tags": [
+                        "Get ready to read",
+                        "EXTRA CREDIT",
+                        "So many papers",
+                        "Helpful"
+                    ],
+                    "comment": "She was very nice. I will have to say that there is a book that you have to read at the end of the semester for your final paper that is never discussed in class. I found that to be very frustrating."
+                },
+                {
+                    "date": "Apr 14th, 2022",
+                    "course": "HDFS373",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "it's an easy class online. only thing that was bothersome is that they doc points on your discussions for spelling, grammar, etc. which i didn't know this was an english class and i didn't think it really mattered. so make sure your \"I\"'s are capitalized because you'll get a lower grade if you don't"
+                }
+            ]
+        },
+        {
+            "name": "Cameron Mackenzie",
+            "department": "Industrial Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2037443",
+            "metrics": {
+                "total_ratings": 17,
+                "overall_quality_average": 4.4,
+                "difficulty_average": 3.5,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 11,
+                    "great_4": 2,
+                    "good_3": 3,
+                    "ok_2": 0,
+                    "awful_1": 1
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Mar 11th, 2025",
+                    "course": "IE560",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "grade": "B-",
+                    "tags": [
+                        "Tough grader",
+                        "Get ready to read",
+                        "Lots of homework",
+                        "Helpful"
+                    ],
+                    "comment": "The course started off well, but as the semester progressed, the workload increased significantly. There are frequent case studies, quizzes, and homework assignments that require a lot of time and effort. This course is a good fit if you find Calculus III manageable. Also, be prepared to use Excel regularly for complex calculations."
+                },
+                {
+                    "date": "Mar 19th, 2024",
+                    "course": "IE413",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Group projects",
+                        "Gives good feedback",
+                        "Accessible outside class",
+                        "Helpful"
+                    ],
+                    "comment": "MacKenzie was a great professor. He is willing to help anyone and is in his office frequently. The material was easy for me, but the project he put on was challenging. The format of the class is great and co-taught with Siggi. They break down the class into manageable chunks. Content differs between the two, but do the labs before going to lab."
+                },
+                {
+                    "date": "Jan 16th, 2024",
+                    "course": "IE305",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "C+",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Very responsive to questions and fast responses to emails. He feels as though he actually wants you to do well in the class."
+                }
+            ]
+        },
+        {
+            "name": "Subinay Malhorta",
+            "department": "Design",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/3096770",
+            "metrics": {
+                "total_ratings": 2,
+                "overall_quality_average": 5.0,
+                "difficulty_average": 2.5,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 2,
+                    "great_4": 0,
+                    "good_3": 0,
+                    "ok_2": 0,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 2nd, 2025",
+                    "course": "2500",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Group projects",
+                        "Amazing lectures",
+                        "Gives good feedback",
+                        "Helpful"
+                    ],
+                    "comment": "Subinay worked diligently to develop UI/UX skills in his students; actually seemed to care about the subject he was instructing. I felt like I was receiving knowledge from a professional of their field rather than a textbook. Lessons were incredibly collaborative and required thinking outside the box. Would take again!"
+                },
+                {
+                    "date": "May 1st, 2025",
+                    "course": "2500",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A+",
+                    "tags": [
+                        "Participation matters",
+                        "Group projects",
+                        "Inspirational",
+                        "Helpful"
+                    ],
+                    "comment": "Subinay is a great UI/UX teacher, he allows his students to create things they are passionate about while instilling a strong sense of UI/UX design. Highly recommend taking him for the beginning stages of your UI/UX career."
+                }
+            ]
+        },
+        {
+            "name": "Peter Martin",
+            "department": "Humanities",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/416711",
+            "metrics": {
+                "total_ratings": 12,
+                "overall_quality_average": 4.1,
+                "difficulty_average": 2.4,
+                "would_take_again_percentage": "78%",
+                "rating_distribution": {
+                    "awesome_5": 9,
+                    "great_4": 0,
+                    "good_3": 2,
+                    "ok_2": 0,
+                    "awful_1": 1
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Jan 9th, 2016",
+                    "course": "HDFS377",
+                    "quality_rating": 3.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Can't skip class and expect to pass it! Two tests, one online and one take home. Not too bad! In class points. Lectures are long and boring (to me). I always found myself on my laptop or falling asleep. It may have just not caught my interest, though. He seemed pretty helpful and passionate."
+                },
+                {
+                    "date": "Nov 18th, 2015",
+                    "course": "HDFS377",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A+",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "This class is super easy if you show up and do the assignments. You have a weekly summary to write (easy), occasional quizzes (which you have unlimited times to get 100%), and no final. You have to go to lectures though to get attendance points. Super easy. I recommend this class."
+                },
+                {
+                    "date": "May 13th, 2015",
+                    "course": "HDFS510",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Loved Dr. Martin.  He makes you enjoy the subject because it's his passion."
+                }
+            ]
+        },
+        {
+            "name": "Mark Wright",
+            "department": "Mechanical Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2395385",
+            "metrics": {
+                "total_ratings": 8,
+                "overall_quality_average": 1.6,
+                "difficulty_average": 4.1,
+                "would_take_again_percentage": "13%",
+                "rating_distribution": {
+                    "awesome_5": 1,
+                    "great_4": 0,
+                    "good_3": 1,
+                    "ok_2": 0,
+                    "awful_1": 6
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 10th, 2024",
+                    "course": "ME510",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "grade": "B-",
+                    "tags": [
+                        "Tough grader",
+                        "Get ready to read",
+                        "Participation matters",
+                        "Helpful"
+                    ],
+                    "comment": "bad bad bad"
+                },
+                {
+                    "date": "Dec 22nd, 2023",
+                    "course": "ME332",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "His only redeeming factor is that he sometimes tries to be a nice guy. However, he is a horrendous teacher and does not put time into his class. HW & Exams questions were unclear, and he doesn't bothering finishing his examples. He also made the class more confused when he tried to answer questions. Probably better off learning from the textbook."
+                },
+                {
+                    "date": "May 4th, 2021",
+                    "course": "ME332",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "No",
+                    "grade": "Not sure yet",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Actually terrible. Run. Quizzes/Homeworks are full of errors. Expect to be driven insane not knowing who's at fault for errors. He devoted 30 minutes to this class a week, tops. Doesn't put in the effort to make good assignments, lectures, example problems, or in answering questions. It's Finals week and I still don't know how this class is graded."
+                }
+            ]
+        },
+        {
+            "name": "Seda McKilligan",
+            "department": "Design",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2477259",
+            "metrics": {
+                "total_ratings": 2,
+                "overall_quality_average": 5.0,
+                "difficulty_average": 2.5,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 2,
+                    "great_4": 0,
+                    "good_3": 0,
+                    "ok_2": 0,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Jul 8th, 2025",
+                    "course": "INDD532",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Participation matters",
+                        "Inspirational",
+                        "Respected",
+                        "Helpful"
+                    ],
+                    "comment": "Very very good"
+                },
+                {
+                    "date": "Apr 9th, 2019",
+                    "course": "INDD532",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Gives good feedback",
+                        "Lots of homework",
+                        "Inspirational",
+                        "Helpful"
+                    ],
+                    "comment": "One the best teachers online, even if lecture wasn't live."
+                }
+            ]
+        },
+        {
+            "name": "Maurice Meilleur",
+            "department": "Graphic Arts",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2558314",
+            "metrics": {
+                "total_ratings": 19,
+                "overall_quality_average": 1.8,
+                "difficulty_average": 4.1,
+                "would_take_again_percentage": "18%",
+                "rating_distribution": {
+                    "awesome_5": 0,
+                    "great_4": 2,
+                    "good_3": 0,
+                    "ok_2": 6,
+                    "awful_1": 11
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 2nd, 2025",
+                    "course": "ARTGR475",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "B",
+                    "tags": [
+                        "Tough grader",
+                        "Participation matters",
+                        "Helpful"
+                    ],
+                    "comment": "Absolutely do NOT take his classes. He routinely belittles students and tells you outright that you should leave feeling worse about yourself. His harsh tone makes you question your design abilities and even your mental well-being. You grade your own projects; he only grades weekly deliverables."
+                },
+                {
+                    "date": "Jun 12th, 2025",
+                    "course": "ARTGR2740",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "B+",
+                    "tags": [
+                        "Tough grader",
+                        "Lots of homework",
+                        "So many papers",
+                        "Helpful"
+                    ],
+                    "comment": "Not the best guy... literally .02% away from an A and having all A's and I emailed to see what I could do and he ghosted me /: In my opinion, self centered."
+                },
+                {
+                    "date": "Apr 22nd, 2025",
+                    "course": "ARTGR2740",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "B-",
+                    "tags": [
+                        "Tough grader",
+                        "Get ready to read",
+                        "Participation matters",
+                        "Helpful"
+                    ],
+                    "comment": "I wish you the best of luck if you have the misfortune of landing in one of his classes. Not only was he unable to provide meaningful feedback most of the time, but he is also allergic to giving clear instructions for any of the type 2 projects. It was so bad that I saw one of my classmates cry in class because of his \"critiques.\""
+                }
+            ]
+        },
+        {
+            "name": "Mani Mina",
+            "department": "Electrical Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/109803",
+            "metrics": {
+                "total_ratings": 107,
+                "overall_quality_average": 4.2,
+                "difficulty_average": 2.6,
+                "would_take_again_percentage": "87%",
+                "rating_distribution": {
+                    "awesome_5": 74,
+                    "great_4": 19,
+                    "good_3": 5,
+                    "ok_2": 1,
+                    "awful_1": 8
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 11th, 2025",
+                    "course": "EE201",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "That class itself was not too difficult. He really did not teach much and often just said to read the textbook and then got mad at us when we did not but he graded fairly and definitely wants us to do well in the class. The TAs in the class were very good, and I felt like they did more teaching than the professor."
+                },
+                {
+                    "date": "Dec 7th, 2025",
+                    "course": "EE201",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "grade": "Incomplete",
+                    "tags": [
+                        "Hilarious",
+                        "Beware of pop quizzes",
+                        "So many papers",
+                        "Helpful"
+                    ],
+                    "comment": "In my experience, this is not a professor I would recommend if you genuinely want to learn the circuits. He rarely lectures in class. Another major issue was that he rarely explained why answers were correct or how to approach problems. Most of the actual learning came from the TAs, who were the ones willing to help students understand it."
+                },
+                {
+                    "date": "Dec 2nd, 2025",
+                    "course": "EE201",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "B+",
+                    "tags": [
+                        "Get ready to read",
+                        "Lots of homework",
+                        "Test heavy",
+                        "Helpful"
+                    ],
+                    "comment": "Mani is an amazing professor as long as you can adapt to his teaching style. He doesn't “teach” in the traditional sense; most of the learning comes from doing the textbook work on your own time. In class, you'll play a lot of games, which make up a big part of your grade. The games are how he gives feedback and teaches."
+                }
+            ]
+        },
+        {
+            "name": "Sara Nelson",
+            "department": "Education",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2855241",
+            "metrics": {
+                "total_ratings": 2,
+                "overall_quality_average": 5.0,
+                "difficulty_average": 3.5,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 2,
+                    "great_4": 0,
+                    "good_3": 0,
+                    "ok_2": 0,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Sep 30th, 2024",
+                    "course": "3770",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "Not sure yet",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Dr. Nelson is incredibly kind. She is a fun person and brings that fun to our classes. She cares about her students and wants the best for them."
+                },
+                {
+                    "date": "Sep 28th, 2024",
+                    "course": "3770",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Participation matters",
+                        "Caring",
+                        "Accessible outside class",
+                        "Helpful"
+                    ],
+                    "comment": "Dr. Nelson is AWESOME! She is so kind and keeps class interesting by having a good balance of lecturing and activities. She is willing to listen to student feedback to adjust course policies and assignments so they better fit student needs. She is really good about responding to emails. Unlike other school of Ed prof she makes sure content fits ECE"
+                }
+            ]
+        },
+        {
+            "name": "James Oliver",
+            "department": "Mechanical Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1169729",
+            "metrics": {
+                "total_ratings": 5,
+                "overall_quality_average": 3.9,
+                "difficulty_average": 2.6,
+                "would_take_again_percentage": "50%",
+                "rating_distribution": {
+                    "awesome_5": 3,
+                    "great_4": 1,
+                    "good_3": 0,
+                    "ok_2": 0,
+                    "awful_1": 1
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Apr 2nd, 2023",
+                    "course": "ME270",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A+",
+                    "tags": [
+                        "Inspirational",
+                        "Hilarious",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "I loved him. he really took time to respond to all my emails in a timely manner, and would always give me extensions when needed."
+                },
+                {
+                    "date": "Nov 1st, 2018",
+                    "course": "ME584",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "No",
+                    "grade": "Not sure yet",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Worst Professor when it comes to replying for e-mail. His TA Colin was the worst grader I've encountered in my life. It's a mechanical engineering class for namesake it's probably more of an English class"
+                },
+                {
+                    "date": "Jan 8th, 2018",
+                    "course": "ME584",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "No",
+                    "grade": "A+",
+                    "tags": [
+                        "Get ready to read",
+                        "Participation matters",
+                        "Skip class? You won't pass.",
+                        "Helpful"
+                    ],
+                    "comment": "Makes you read about 3 to 4 books for this course and a final project. Book critiques are very crucial; the way to a do a book critique is not properly provided; its ambiguous at the very best. The entire course seems easy but is very tough in terms of tedious work. Not an easy class. Very hard to get a hold of Prof if you are an online student."
+                }
+            ]
+        },
+        {
+            "name": "Joshua Peschel",
+            "department": "Agricultural Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2442796",
+            "metrics": {
+                "total_ratings": 15,
+                "overall_quality_average": 3.6,
+                "difficulty_average": 2.9,
+                "would_take_again_percentage": "62%",
+                "rating_distribution": {
+                    "awesome_5": 5,
+                    "great_4": 3,
+                    "good_3": 1,
+                    "ok_2": 2,
+                    "awful_1": 4
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Apr 29th, 2023",
+                    "course": "TSM363",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A-",
+                    "tags": [
+                        "Test heavy",
+                        "Helpful"
+                    ],
+                    "comment": "This class has 5 tests in total, you get a cheat sheet for each of them, yet they still get progressively harder. This is okay because the final is just going back and doing corrections, where you can get full credit even if you failed it. Peschel is pretty good overall, he does review right before each test which is very helpful. Labs are long."
+                },
+                {
+                    "date": "Dec 5th, 2022",
+                    "course": "ABE216",
+                    "quality_rating": 3.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "grade": "A-",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Class was not run well."
+                },
+                {
+                    "date": "Dec 23rd, 2021",
+                    "course": "TSM363",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "tags": [
+                        "Gives good feedback",
+                        "Accessible outside class",
+                        "Helpful"
+                    ],
+                    "comment": "Attending lectures helps as he explains things very in-depth, but in a way that is easy to follow and understand. The Canvas course is very clear. The assignments aren't super easy, but he is more than willing to help when you have questions."
+                }
+            ]
+        },
+        {
+            "name": "Andrea Quam",
+            "department": "Design",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1470003",
+            "metrics": {
+                "total_ratings": 8,
+                "overall_quality_average": 4.0,
+                "difficulty_average": 3.8,
+                "would_take_again_percentage": "75%",
+                "rating_distribution": {
+                    "awesome_5": 5,
+                    "great_4": 1,
+                    "good_3": 0,
+                    "ok_2": 2,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 15th, 2025",
+                    "course": "DSNS1020",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "would_take_again": "Yes",
+                    "grade": "A-",
+                    "tags": [
+                        "Tough grader",
+                        "Group projects",
+                        "Graded by few things",
+                        "Helpful"
+                    ],
+                    "comment": "Not the greatest at providing instruction and directions. They're also kit the most difficult grader out there but they can be tough."
+                },
+                {
+                    "date": "Aug 20th, 2022",
+                    "course": "ARTGR370",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A-",
+                    "tags": [
+                        "Gives good feedback",
+                        "Caring",
+                        "Respected",
+                        "Helpful"
+                    ],
+                    "comment": "Andrea was one of the best professors I took in the Fall of 2021! She is super helpful, provides clear feedback, encourages you to try new things, and had us work in groups for one project!!!\n\nShe honestly provided me with a foundation of learning that I have gotten from few professors. Yes, the work is difficult but sooo worth it! Take her!"
+                },
+                {
+                    "date": "May 15th, 2018",
+                    "course": "ARTGR471",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Gives good feedback",
+                        "Respected",
+                        "Caring",
+                        "Helpful"
+                    ],
+                    "comment": "Andrea is one of the best graphic design professors I had while at Iowa State! She is open to all ideas and is excited to help out with both academic and personal projects. It is clear that she wants her students to succeed in the classroom and in their future careers."
+                }
+            ]
+        },
+        {
+            "name": "Kristin Rozier",
+            "department": "Aerospace Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/2365318",
+            "metrics": {
+                "total_ratings": 6,
+                "overall_quality_average": 1.7,
+                "difficulty_average": 4.4,
+                "would_take_again_percentage": "10%",
+                "rating_distribution": {
+                    "awesome_5": 0,
+                    "great_4": 1,
+                    "good_3": 0,
+                    "ok_2": 1,
+                    "awful_1": 4
+                }
+            },
+            "reviews": [
+                {
+                    "date": "May 9th, 2024",
+                    "course": "AERE361",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Tough grader",
+                        "Accessible outside class",
+                        "Helpful"
+                    ],
+                    "comment": "If you have strong problem-solving skills, and some previous knowledge of Linux, this probably won't be too bad. You do get to re-attempt past HWs, so even if I got a zero the first time, with the feedback I could get a 100. If you're struggling in this course, just go to office hours. Some TAs were better than others so just try each one out."
+                },
+                {
+                    "date": "Apr 16th, 2024",
+                    "course": "AERE361",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "C",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Unreasonable expectations and workload. Routinely disrespectful to students and attributes nearly every complaint to student incompetence. Grading is convoluted and inconsistent. The only useful part of this class is the C syntax and the use of Git. Says that googling how to fix code is a bad practice."
+                },
+                {
+                    "date": "Feb 27th, 2022",
+                    "course": "AERE407",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "No",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Professor Rozier is clearly very intelligent and has done high quality work in the field of formal methods. However, she is unable to effectively convey this material to students who are taking this class with an average undergraduate's understanding of comp sci. She'd probably be ok PhD advisor, but is a subpar teacher of undergraduate classes."
+                }
+            ]
+        },
+        {
+            "name": "Racheal Ruble",
+            "department": "Communication",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1699470",
+            "metrics": {
+                "total_ratings": 10,
+                "overall_quality_average": 4.5,
+                "difficulty_average": 1.8,
+                "would_take_again_percentage": "100%",
+                "rating_distribution": {
+                    "awesome_5": 6,
+                    "great_4": 3,
+                    "good_3": 0,
+                    "ok_2": 1,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 11th, 2024",
+                    "course": "2100",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A+",
+                    "tags": [
+                        "Clear grading criteria",
+                        "Gives good feedback",
+                        "Online Savvy",
+                        "Helpful"
+                    ],
+                    "comment": "Love Love Love her! She is so sweet, she reached out several times one-on-one to check in, but not in an overbearing way! Always gave clear, great feedback and grades were always fair and reasonable. I loved taking this course with her. She didn't add more to my workload than necessary and always had a great attitude about what was being taught."
+                },
+                {
+                    "date": "Dec 17th, 2022",
+                    "course": "COMST214",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A+",
+                    "tags": [
+                        "Group projects",
+                        "Clear grading criteria",
+                        "Gives good feedback",
+                        "Helpful"
+                    ],
+                    "comment": "Easy class. Every week there is a quiz and activity due on Fridays. There are some group projects throughout the semester and the final is a group project. Overall, super easy if you put in the work. All you really have to do is get the assignments done on time. She is willing to help if you ask for it. Also, responds to emails very quickly."
+                },
+                {
+                    "date": "Dec 16th, 2022",
+                    "course": "COMST330",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Group projects",
+                        "Clear grading criteria",
+                        "Respected",
+                        "Helpful"
+                    ],
+                    "comment": "Average class. Made up of 2 exams (midterm/final, not cumulative), an essay, a group podcast project, and every week we had a reading reflection due Tuesday, and a packback (1 question, 3 answers) due Thursdays. Thursdays were usually online which was nice. Ruble was an average professor."
+                }
+            ]
+        },
+        {
+            "name": "Kevin Scheibe",
+            "department": "Information Systems",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/265602",
+            "metrics": {
+                "total_ratings": 49,
+                "overall_quality_average": 3.7,
+                "difficulty_average": 3.2,
+                "would_take_again_percentage": "62%",
+                "rating_distribution": {
+                    "awesome_5": 33,
+                    "great_4": 10,
+                    "good_3": 3,
+                    "ok_2": 2,
+                    "awful_1": 1
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Jun 4th, 2021",
+                    "course": "MIS548",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "No",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "This class is hilarious. Using EXCEL to do MACHINE LEARNING. Who on earth uses machine learning with EXCEL?Avoid this class! Seriously"
+                },
+                {
+                    "date": "Jan 9th, 2017",
+                    "course": "MIS301",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "No",
+                    "grade": "B",
+                    "tags": [
+                        "Gives good feedback",
+                        "Respected",
+                        "Skip class? You won't pass.",
+                        "Helpful"
+                    ],
+                    "comment": "His teaching way is awesome and quite special because he never use slides and he just standing in front of us and keeping taking and writing notes on blackboard. But the key point is you HAVE to write down ALLLLLLL the notes AND the things he mentioned. All of those content will be tested. And even some details about maybe a company or a voc."
+                },
+                {
+                    "date": "Dec 5th, 2016",
+                    "course": "MIS301",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "No",
+                    "grade": "A-",
+                    "tags": [
+                        "Tough Grader",
+                        "Participation matters",
+                        "LOTS OF HOMEWORK",
+                        "Helpful"
+                    ],
+                    "comment": "If you skip Kevin's class you will most likely not pass. His lectures are essentially him standing up in the front of the room talking the whole time and expecting students to give input. Be prepared for students who exclusively talk purely for the participation credit every single day. The homework will take multiple hours to complete. Be prepared"
+                }
+            ]
+        },
+        {
+            "name": "Mack Shelley",
+            "department": "Education",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/497434",
+            "metrics": {
+                "total_ratings": 11,
+                "overall_quality_average": 4.3,
+                "difficulty_average": 2.7,
+                "would_take_again_percentage": "88%",
+                "rating_distribution": {
+                    "awesome_5": 4,
+                    "great_4": 5,
+                    "good_3": 1,
+                    "ok_2": 1,
+                    "awful_1": 0
+                }
+            },
+            "reviews": [
+                {
+                    "date": "May 10th, 2024",
+                    "course": "STAT401",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "would_take_again": "Yes",
+                    "grade": "B",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "pretty great professor honestly"
+                },
+                {
+                    "date": "Mar 20th, 2024",
+                    "course": "401",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "would_take_again": "Yes",
+                    "grade": "A+",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "A wonderful, wonderful professor! He genuinely cares about his students success, is very easy going, and makes the material easy to understand. If the class does poorly on homework, he will go over it in class to make sure everyone is up to speed. I highly recommend him as a professor"
+                },
+                {
+                    "date": "Dec 5th, 2022",
+                    "course": "POLS360",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "B+",
+                    "tags": [
+                        "Gives good feedback",
+                        "Caring",
+                        "Graded by few things",
+                        "Helpful"
+                    ],
+                    "comment": "An incredibly nice guy, very friendly, personable, and easy to talk to. Will go above and beyond to answer questions and help in any way he can. The only downside is his lectures are pretty boring, but all of the information is helpful and relevant, and he will switch it up a little if you ask him to."
+                }
+            ]
+        },
+        {
+            "name": "Elizabeth Stegemoller",
+            "department": "Kinesiology",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1912229",
+            "metrics": {
+                "total_ratings": 14,
+                "overall_quality_average": 2.9,
+                "difficulty_average": 3.4,
+                "would_take_again_percentage": "55%",
+                "rating_distribution": {
+                    "awesome_5": 2,
+                    "great_4": 3,
+                    "good_3": 3,
+                    "ok_2": 3,
+                    "awful_1": 3
+                }
+            },
+            "reviews": [
+                {
+                    "date": "May 7th, 2025",
+                    "course": "KIN372",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A-",
+                    "tags": [
+                        "Tough grader",
+                        "Lecture heavy",
+                        "Test heavy",
+                        "Helpful"
+                    ],
+                    "comment": "If you have an option, take your class with anyone else. Quiz questions aren't clear and will tank your grade. Lectures are confusing and constantly changing the meaning of things. Takes more time out of your week than organic chemistry or anatomy and physiology combined."
+                },
+                {
+                    "date": "May 16th, 2024",
+                    "course": "KIN473",
+                    "quality_rating": 2.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A-",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Truly thinks her class is the most important thing in your life and is not understanding of external events. Have had her for two courses and both were awful. I'm a good student and do well in school; I didn't think KIN 372 or KIN 473 were hard (unpopular opinion though). Attendance policy is terrible and strict. Don't recommend her."
+                },
+                {
+                    "date": "Apr 18th, 2023",
+                    "course": "KIN473",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "B",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Professor is uninterested in actually teaching the material in class. Instead she just reads questions off a powerpoint. None of the material is taught in class as it is 'reverse format.' There are unclear expectations for assignments and projects. Content on exams is written unprofessionally with typos."
+                }
+            ]
+        },
+        {
+            "name": "Richard Stone",
+            "department": "Industrial Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/1666219",
+            "metrics": {
+                "total_ratings": 30,
+                "overall_quality_average": 3.7,
+                "difficulty_average": 3.1,
+                "would_take_again_percentage": "87%",
+                "rating_distribution": {
+                    "awesome_5": 11,
+                    "great_4": 10,
+                    "good_3": 4,
+                    "ok_2": 2,
+                    "awful_1": 3
+                }
+            },
+            "reviews": [
+                {
+                    "date": "May 7th, 2025",
+                    "course": "IE271",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "EXTRA CREDIT",
+                        "Group projects",
+                        "Helpful"
+                    ],
+                    "comment": "My favorite class and probably the best IE teacher I have had! his lectures are interesting and he offers quite a bit of extra credit, but to obtain it you must go to lecture. His office hours were late but if you went he always asked how you were doing. A very personable and likeable person."
+                },
+                {
+                    "date": "Apr 16th, 2025",
+                    "course": "IE437",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "grade": "Incomplete",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Half of his assignments you have to have an outside job site that will allow you to interrupt their work to preform studies on and the other half of his assignments he doesn't actually teach how to do the content he asks for."
+                },
+                {
+                    "date": "May 10th, 2024",
+                    "course": "IE437",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Respected",
+                        "Helpful"
+                    ],
+                    "comment": "Dr. Stone was extremely knowledgeable about the topic of safety.  His lectures were excellent, though not necessary to attend to pass the class.  There are a lot of labs and work involved, but if you do them well, you will easily get an A."
+                }
+            ]
+        },
+        {
+            "name": "Alexander Stoytchev",
+            "department": "Computer Science",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/787989",
+            "metrics": {
+                "total_ratings": 85,
+                "overall_quality_average": 4.5,
+                "difficulty_average": 3.1,
+                "would_take_again_percentage": "95%",
+                "rating_distribution": {
+                    "awesome_5": 56,
+                    "great_4": 14,
+                    "good_3": 3,
+                    "ok_2": 2,
+                    "awful_1": 1
+                }
+            },
+            "reviews": [
+                {
+                    "date": "May 3rd, 2025",
+                    "course": "575",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Helpful"
+                    ],
+                    "comment": "Great course focussed on video/image processing."
+                },
+                {
+                    "date": "Apr 3rd, 2025",
+                    "course": "CPRE281",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Amazing lectures",
+                        "Gives good feedback",
+                        "Hilarious",
+                        "Helpful"
+                    ],
+                    "comment": "Exams were a bit of a time crunch but I thought he did a good job preparing us for them. Great lecturer."
+                },
+                {
+                    "date": "Mar 5th, 2025",
+                    "course": "CPRE281",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A-",
+                    "tags": [
+                        "Amazing lectures",
+                        "Lots of homework",
+                        "Hilarious",
+                        "Helpful"
+                    ],
+                    "comment": "Participation in the lectures isn't mandatory, but I recommend it. The class pace is fast and Stoytchevs' lectures were the easiest way for me to learn; way better than anything I found online. He is very approachable, loves Star Wars, makes & puts jokes in his lecture slides, really great guy and teacher. One of the best professors I've had."
+                }
+            ]
+        },
+        {
+            "name": "Eliot Winer",
+            "department": "Mechanical Engineering",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/795313",
+            "metrics": {
+                "total_ratings": 16,
+                "overall_quality_average": 3.9,
+                "difficulty_average": 2.5,
+                "would_take_again_percentage": "88%",
+                "rating_distribution": {
+                    "awesome_5": 10,
+                    "great_4": 1,
+                    "good_3": 2,
+                    "ok_2": 0,
+                    "awful_1": 3
+                }
+            },
+            "reviews": [
+                {
+                    "date": "May 4th, 2025",
+                    "course": "ME170",
+                    "quality_rating": 3.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Tough grader",
+                        "Group projects",
+                        "Online Savvy",
+                        "Helpful"
+                    ],
+                    "comment": "Eliot is a good teacher, don't get me wrong, he's very knowledgeable on all engineering topics, and I learned a lot from his ME1700 class. I'd have to think about taking him again, though, because there were multiple times in the semester when he would yell at the class and humiliate the class."
+                },
+                {
+                    "date": "Dec 5th, 2024",
+                    "course": "ME170",
+                    "quality_rating": 3.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "grade": "B+",
+                    "tags": [
+                        "Tough grader",
+                        "Group projects",
+                        "Beware of pop quizzes",
+                        "Helpful"
+                    ],
+                    "comment": "very smart and knows what he is talking about. sometimes can be a bit rude about things but doesn't sugarcoat anything. maybe a bit too heavy on how the graphics work instead of introducing strategies on how to model things."
+                },
+                {
+                    "date": "Dec 22nd, 2021",
+                    "course": "ME412",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 2.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Respected",
+                        "Group projects",
+                        "Clear grading criteria",
+                        "Helpful"
+                    ],
+                    "comment": "He might be one of the smartest people I have ever met. He can come across as arrogant, but does care about the students. The class was very useful and I felt like I will actually use the lessons in real life. Only around 5 group essays (2 pages) and one interactive (i.e. participate in a debate or similar). Take it if you want something useful."
+                }
+            ]
+        },
+        {
+            "name": "Kimberly Zarecor",
+            "department": "Design",
+            "university": "Iowa State University",
+            "profile_url": "https://www.ratemyprofessors.com/professor/720581",
+            "metrics": {
+                "total_ratings": 23,
+                "overall_quality_average": 3.0,
+                "difficulty_average": 3.3,
+                "would_take_again_percentage": "67%",
+                "rating_distribution": {
+                    "awesome_5": 4,
+                    "great_4": 7,
+                    "good_3": 5,
+                    "ok_2": 4,
+                    "awful_1": 3
+                }
+            },
+            "reviews": [
+                {
+                    "date": "Dec 14th, 2025",
+                    "course": "ARCH201",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "tags": [
+                        "Tough grader"
+                    ],
+                    "comment": "There's no reason someone with this little understanding of arch should feel as stubborn as she does about her opinions (which are always right and never wrong according to her). Even if you were to present her own ideas to her in final crit you will still get torn apart as she simply gets off to feeling superior despite her lack of experience."
+                },
+                {
+                    "date": "Nov 9th, 2023",
+                    "course": "ARCH222",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A",
+                    "tags": [],
+                    "comment": "She taught ARCH221 jointly with another professor. She regularly mispronounced the names of international sites and buildings. She lectured on Muslim architecture one day and completely misconstrued Muslim history and teachings as well as the purpose of many important buildings. It was insulting. She did not care to prepare for her lectures."
+                },
+                {
+                    "date": "Jan 30th, 2023",
+                    "course": "222",
+                    "quality_rating": 1.0,
+                    "difficulty_rating": 5.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "B",
+                    "tags": [],
+                    "comment": "This person has never been an architect, there is no reason on God's green earth should she be teaching a graduate studio. Entire semester was unplanned, and she was very unprepared and unprofessional at times. Studio work did not have substance in regards to architecture. Horrible experience ever."
+                },
+                {
+                    "date": "Dec 12th, 2021",
+                    "course": "DSNS102",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Gives good feedback",
+                        "Skip class? You won't pass.",
+                        "Caring"
+                    ],
+                    "comment": "I personally really enjoyed this class. I felt like Kimberly pushed me to produce work outside of my comfort zone but by the end of the semester, I can tell it helped me. Sometimes it was confusing to know what she was looking for. Overall, she really cares for her students and is kind and I enjoyed being in her studio."
+                },
+                {
+                    "date": "Apr 29th, 2021",
+                    "course": "ARCH322",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Participation matters",
+                        "Lecture heavy"
+                    ],
+                    "comment": "Online Arch 322 ended up being a breeze. The class format was 5 1-hour recorded lectures to take notes on every other week followed by a group webex discussion to \"prove\" you learned something. The lectures sometimes skipped around quickly from topic to topic but only to cover the relevant material in a timely manner."
+                },
+                {
+                    "date": "Jan 26th, 2021",
+                    "course": "ARCH201",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A-",
+                    "tags": [
+                        "Gives good feedback",
+                        "Participation matters",
+                        "Inspirational"
+                    ],
+                    "comment": "I loved having Kimberly as a professor. She was understanding and gave me great feedback. I've reached out to Kimberly with things unrelated to ARCH 201 and she was so helpful and supportive. I looked forward going to class and talking with her. Just work hard, be involved, and don't be afraid to ask her questions."
+                },
+                {
+                    "date": "Jan 21st, 2021",
+                    "course": "ARCH201",
+                    "quality_rating": 5.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A-",
+                    "tags": [
+                        "Gives good feedback",
+                        "Participation matters",
+                        "Caring"
+                    ],
+                    "comment": "I was hesitant at first, but once you warm up to her, you'll see how deeply she cares about her students. We would all talk at the beginning of each class to warm up. She gives great examples and helps you move forward in your work; don't be afraid to ask for help! As long as you show an improvement and participate, you'll get a good grade!"
+                },
+                {
+                    "date": "Dec 20th, 2018",
+                    "course": "ARCH321",
+                    "quality_rating": 3.0,
+                    "difficulty_rating": 1.0,
+                    "for_credit": "Yes",
+                    "attendance": "Not Mandatory",
+                    "would_take_again": "Yes",
+                    "grade": "A",
+                    "tags": [
+                        "Graded by few things",
+                        "Extra credit",
+                        "Lecture heavy"
+                    ],
+                    "comment": "Was a pretty good lecturer which made the class very interesting and fun, but she took a long time to grade papers and tests. Also would try to bring politics into architecture class a little too much which was annoying but not the worst."
+                },
+                {
+                    "date": "Oct 4th, 2018",
+                    "course": "ARCH321",
+                    "quality_rating": 3.0,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "would_take_again": "Yes",
+                    "grade": "Not sure yet",
+                    "tags": [
+                        "Get ready to read",
+                        "Graded by few things",
+                        "Lecture heavy"
+                    ],
+                    "comment": "Knowledgeable professor who's fascinated with the topic. That being said, lectures contain a lot of \"interesting\" information rather than \"useful\" information. The only chances you get to learn which is which: exams. I completed very few of the readings and found that the useful information is likely in the powerpoints. Somewhat interesting class."
+                },
+                {
+                    "date": "May 5th, 2015",
+                    "course": "222",
+                    "quality_rating": 4.5,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "tags": [],
+                    "comment": "The tests are hard. Get ready to write. If you study and know your stuff, you'll do fine. The readings were more supplemental than required, and if you just went to lecture and took notes, you would do well. Pay attention."
+                },
+                {
+                    "date": "Jan 6th, 2015",
+                    "course": "ARCH321",
+                    "quality_rating": 2.5,
+                    "difficulty_rating": 3.0,
+                    "for_credit": "Yes",
+                    "tags": [],
+                    "comment": "The grading scale was not concrete because she got too personal and opinionated with her grading. The same went with her comments on essays. Her lectures were clear but also rather monotonous. Attendance wasn't a huge percentage of the grade, but you should still show up. I did really well in the class but only ever did a couple of the readings."
+                },
+                {
+                    "date": "Nov 17th, 2014",
+                    "course": "ARCH222",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 4.0,
+                    "for_credit": "Yes",
+                    "attendance": "Mandatory",
+                    "grade": "A",
+                    "tags": [],
+                    "comment": "Kimberly is a good lecturer and clearly knows her stuff. While she isn't punctual, she is good at conveying important information and doesn't kill you on tests or papers. Show up, pay attention, read (mostly) and give it medium effort and you should do fine."
+                },
+                {
+                    "date": "May 7th, 2012",
+                    "course": "ARCH222",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 4.0,
+                    "tags": [],
+                    "comment": "A lot of reading but it is manageable and helpful as long as you keep up with it. The essays were easy, as long as you cover the topics you should get a B on them. Most of the content on the exams is what is covered in class. If you go to class and pay attention then the class will be rather easy but you will need to study"
+                },
+                {
+                    "date": "Mar 10th, 2011",
+                    "course": "ARCH202",
+                    "quality_rating": 1.5,
+                    "difficulty_rating": 1.0,
+                    "tags": [],
+                    "comment": "Her grading scale is a bit askew, everyone appears to get the same grade on projects as long as they try. Injects herself too personally into students' lives (i.e. she makes many assumptions). Seems to care more about attendance than quality of work in several classes she teaches, yet decides to show up late and unprepared most of the time."
+                },
+                {
+                    "date": "Mar 7th, 2011",
+                    "course": "ARCH222",
+                    "quality_rating": 1.5,
+                    "difficulty_rating": 5.0,
+                    "tags": [],
+                    "comment": "I was torn between feeling bad for her because all of her students were so mean to her because of her unpreparedness for class, and shaking her as hard as I could because she is so frustrating to have as a teacher. She wastes at least the first 10 min of every lecture trying to figure out the overhead projector set up and ruined this class."
+                },
+                {
+                    "date": "May 19th, 2009",
+                    "course": "ARCH420",
+                    "quality_rating": 2.5,
+                    "difficulty_rating": 5.0,
+                    "tags": [],
+                    "comment": "Extremely difficult to work with. She's always nice to your face, but she has written some of the most demeaning, vicious emails I have ever gotten. She has trouble with face to face confrontation. She is not clear about expectations, but then complains that you have not done it right. She is very knowledgeable about the subject."
+                },
+                {
+                    "date": "May 17th, 2009",
+                    "course": "ARCH420",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 3.0,
+                    "tags": [],
+                    "comment": "This was the most interesting class I have taken. The subject is fascinating. Kimberly expects students to read between 30-50 pages between each class which is a bit ridiculous. If I had time, the reading would have helped, but they can be scanned and you will do just fine on quizzes. The papers are hard, but manageable, and the final is great"
+                },
+                {
+                    "date": "Mar 19th, 2009",
+                    "course": "ARCH202",
+                    "quality_rating": 1.5,
+                    "difficulty_rating": 5.0,
+                    "tags": [],
+                    "comment": "Terrible professor. Lets her personal bias get in the way of anything students try to design, extremely difficult to work with. Definitely try to avoid her if you can."
+                },
+                {
+                    "date": "Jan 8th, 2009",
+                    "course": "ARCH201",
+                    "quality_rating": 3.5,
+                    "difficulty_rating": 4.0,
+                    "tags": [],
+                    "comment": "She has a blunt, matter of fact teaching style and is a very effective studio instructor. She is kind of stubborn on what she will allow her students to design, but is willing to let you take risks, but she is usually right in being hesitant. She is chronically late, but it allows for the class to have some leverage to get more time to work."
+                },
+                {
+                    "date": "Sep 9th, 2008",
+                    "course": "ARCH420",
+                    "quality_rating": 2.5,
+                    "difficulty_rating": 4.0,
+                    "tags": [],
+                    "comment": "Kimberly has a time management problem; she is never on time to class and is often 15 or more minutes late. She is extremely knowledgeable about the subject but is not all that clear on her expectations of her students. I don't think teaching is her first priority. She's there to research and teaching is just the**** she's stuck with as a result."
+                },
+                {
+                    "date": "Apr 3rd, 2007",
+                    "course": "ARCH420",
+                    "quality_rating": 4.5,
+                    "difficulty_rating": 1.0,
+                    "tags": [],
+                    "comment": "History of the American City ... Kimberly's lectures are one run-on sentence, but are clear. If you show up for this class, do the 4 quick quizzes and two papers, you'll do well. She's much easier in a lecture setting than a studio setting."
+                },
+                {
+                    "date": "Jun 11th, 2006",
+                    "course": "ARCH302",
+                    "quality_rating": 1.5,
+                    "difficulty_rating": 2.0,
+                    "tags": [],
+                    "comment": "The worst professor I've ever had. Inability to communicate, constant tardiness to class (1/2-2hr ave) lack of real world/practice knowledge etc creates an atmosphere that is nearly impossible to benefit from her as a teacher. I don't have anything positive to say about her as an educator"
+                },
+                {
+                    "date": "Apr 19th, 2006",
+                    "course": "DSN102",
+                    "quality_rating": 4.0,
+                    "difficulty_rating": 4.0,
+                    "tags": [],
+                    "comment": "No Comments"
+                }
+            ]
+        }
+    ]
+}

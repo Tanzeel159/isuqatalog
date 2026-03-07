@@ -1,0 +1,47 @@
+{
+    "phd_in_hci_faqs": {
+        "program_overview": {
+            "definition": "Interdisciplinary degree preparing students for careers in business, industry, and academia.",
+            "curriculum": "Required HCI courses, electives from variety of disciplines, and dissertation research.",
+            "credit_requirements": {
+                "total_minimum": 72,
+                "isu_residency_credits": "At least 36 graduate credits (including all research credits) must be earned at ISU."
+            },
+            "online_availability": "No."
+        },
+        "residency_requirement": {
+            "expectation": "Expected to reside at Iowa State University in Ames, Iowa, for duration of program.",
+            "enrollment_rule": "Must be enrolled as full-time, on-campus students for at least 36 credits.",
+            "dissertation_research": "All credits must be earned at ISU under supervision of Academic Plan Committee.",
+            "exceptions": "Must be discussed with HCI Supervisory Committee."
+        },
+        "admissions": {
+            "major_professor_requirement": {
+                "to_apply": "Not required to have major professor or advisor to apply.",
+                "recommendation": "Submit application BEFORE contacting faculty.",
+                "process": "Application shared with all HCI faculty. Students then encouraged to contact faculty with aligned interests."
+            },
+            "decision_process": "Made by individual HCI faculty members, not an admissions committee.",
+            "gpa_requirement": "Students with undergraduate GPA below 3.0 are NOT accepted.",
+            "english_proficiency": {
+                "requirement": "Required for nonnative speakers.",
+                "options": [
+                    "Submit official scores from approved English language exams.",
+                    "Earn a degree (bachelor's, master's, doctoral) from a country where English is the only official language (degree must be conferred at time of application)."
+                ]
+            }
+        },
+        "financial_support": {
+            "assistantship_eligibility": "All admitted HCI PhD students receive a half-time graduate research assistantship.",
+            "application": "Separate application not required; based on admission application.",
+            "source": "Provided by faculty member (major professor) from research grant/contract.",
+            "package_details": {
+                "stipend": "Minimum of $20,872 for each academic year",
+                "tuition": "100% tuition scholarship",
+                "fees": "Fee award scholarship: $189 applied toward student fees",
+                "health_insurance": "Paid single-student health insurance, including prescription drug plan"
+            },
+            "conditions": "Contingent on satisfactory performance, degree progression, and fund availability."
+        }
+    }
+}

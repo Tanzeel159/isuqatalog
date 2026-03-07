@@ -1,0 +1,55 @@
+{
+    "mhci_degree_requirements": {
+        "program_info": {
+            "degree_title": "Human Computer Interaction, M.H.C.I. (Distance)",
+            "type": "Professional terminal degree program",
+            "graduate_college_classification": "Master’s Coursework Only",
+            "delivery_mode": "Online master's degree",
+            "capstone_thesis_requirement": "None (MHCI students DO NOT complete a capstone project or thesis)"
+        },
+        "credit_requirements": {
+            "total_credits_minimum": 30,
+            "total_courses_minimum": 10,
+            "breakdown": [
+                {
+                    "category": "Core Courses",
+                    "credits": 12,
+                    "courses_count": 4,
+                    "details": "One course from each core course category"
+                },
+                {
+                    "category": "Two Additional HCI Courses",
+                    "credits": 6,
+                    "courses_count": 2,
+                    "details": "Can be any type of HCI course"
+                },
+                {
+                    "category": "General Electives",
+                    "credits": 12,
+                    "courses_count": 4,
+                    "details": "Can be HCI courses or other 5000 or 6000 3-credit courses"
+                }
+            ]
+        },
+        "academic_policies": {
+            "gpa_requirement": "Grade of ‘B’ (3.0 GPA) or better required for each core HCI course",
+            "course_sequencing": "Courses can be taken in any order. Core courses do not need to be taken first.",
+            "undergraduate_courses_limit": {
+                "max_allowed": 3,
+                "combinations": "Up to three courses at the 4000 level OR One 3000 level and two 4000-level courses",
+                "pre_approval": "Must contact academic advisor (Tiffany) before enrolling to ensure applicability"
+            }
+        },
+        "time_to_complete": {
+            "typical_enrollment": "One or two courses per semester/term while working full-time",
+            "estimated_duration": {
+                "one_course_per_term": "3 years plus 1 semester",
+                "two_courses_per_term": "2 to 3 years"
+            },
+            "graduate_college_maximum_limit": "7 years"
+        },
+        "resources": {
+            "planning_worksheet": "Human Computer Interaction, M.H.C.I. (Distance) Student Planning Worksheet"
+        }
+    }
+}
