@@ -10,8 +10,12 @@ coverage/
 # Runtime data (SQLite DB is auto-created)
 data/
 
-# Editor agent skills
+# Editor config and agent skills
 .agents/
+.cursor/
+
+# Private dev log (contains IPs, server paths, credentials context)
+docs/DEVLOG.md
 
 # Stale scaffold (not part of the app)
 Update/

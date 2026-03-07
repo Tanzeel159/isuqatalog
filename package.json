@@ -9,6 +9,7 @@
     "build": "vite build",
     "start": "NODE_ENV=production tsx server/index.ts",
     "preview": "vite preview",
+    "deploy": "ssh root@64.23.226.28 \"cd /opt/isuqatalog && git pull && npm install --omit=dev && npm run build && pm2 restart isuqatalog\"",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit"
   },

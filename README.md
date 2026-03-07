@@ -25,42 +25,12 @@
 | AI | OpenAI API, Pinecone (vector search) |
 | Build | Vite |
 
-## Getting Started
+## Documentation
 
-**Prerequisites:** Node.js (v18+)
-
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/<your-username>/isuqatalog.git
-   cd isuqatalog
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Configure environment variables**
-
-   Copy the example file and fill in your keys:
-   ```bash
-   cp .env.example .env
-   ```
-
-   | Variable | Required | Description |
-   |----------|----------|-------------|
-   | `OPENAI_API_KEY` | Yes | OpenAI API key for AI features |
-   | `PINECONE_API_KEY` | No | Pinecone API key for vector search (falls back to local TF-IDF) |
-   | `PINECONE_INDEX` | No | Pinecone index name (default: `hci-index`) |
-   | `OPENAI_EMBEDDING_MODEL` | No | Embedding model (default: `text-embedding-3-small`) |
-   | `APP_URL` | No | Frontend URL (default: `http://localhost:3000`) |
-   | `API_PORT` | No | API server port (default: `3001`) |
-
-4. **Run the app**
-   ```bash
-   npm run dev
-   ```
-   The frontend runs on `http://localhost:3000` and the API on port `3001`.
+| Document | Description |
+|----------|-------------|
+| [Design System](docs/DESIGN_SYSTEM.md) | Brand tokens, color system, typography, components |
+| [Journal](docs/JOURNAL.md) | Narrative of the build process |
 
 ## Project Structure
 
