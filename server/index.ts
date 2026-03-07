@@ -3,6 +3,8 @@ import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import rateLimit from 'express-rate-limit';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { openDb } from './db';
 import { authenticateUser, createUser, getUserById } from './auth';
 import { getCookie } from './cookies';
@@ -10,9 +12,11 @@ import { jsonError } from './http';
 import { createSession, deleteSession, deleteUserSessions, getUserIdFromSession, sessionCookieName, purgeExpiredSessions } from './sessions';
 import { initAI, isReady, chat, getRecommendations, aiSearch, getAcademicInsights } from './ai';
 
-const PORT = Number(process.env.API_PORT) || 3001;
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+const PORT = Number(process.env.PORT) || Number(process.env.API_PORT) || 3001;
 if (Number.isNaN(PORT)) {
-  console.error('Invalid API_PORT');
+  console.error('Invalid PORT');
   process.exit(1);
 }
 
@@ -249,6 +253,16 @@ app.post('/api/ai/insights', chatLimiter, async (req, res) => {
     return aiErrorResponse(res, err, 'Insights');
   }
 });
+
+// ── Static frontend (production) ─────────────────────────────────────
+
+if (isProd) {
+  const distPath = path.resolve(__dirname, '..', 'dist');
+  app.use(express.static(distPath));
+  app.get('*', (_req, res) => {
+    res.sendFile(path.join(distPath, 'index.html'));
+  });
+}
 
 app.listen(PORT, () => {
   console.log(`API listening on http://localhost:${PORT}`);
