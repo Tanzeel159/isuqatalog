@@ -1,6 +1,6 @@
-import { useState, type FormEvent } from 'react';
+import { useState, useMemo } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { motion } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 import {
   Search,
   ArrowRight,
@@ -10,11 +10,13 @@ import {
   Map,
   Star,
   TrendingUp,
+  X,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Logo } from '@/components/shared/Logo';
 import { AnimatedBackground } from '@/components/ui/AnimatedBackground';
 import { staggerContainer, fadeUp } from '@/lib/motion';
+import { HCI_COURSES, CATEGORY_CONFIG } from './data';
 
 const DEPARTMENTS = [
   { id: 'hci', code: 'HCI', name: 'Human-Computer Interaction', description: 'Master User Experience and Interaction Design', courses: 28, topCourse: 'UX Strategy', accent: '#C8102E' },
@@ -38,28 +40,54 @@ const TRENDING_COURSES = [
   { id: '4', dept: 'ART', number: '2500', title: 'Patterns in AI Functional Design', professor: 'Dr. Lisa Park', rating: 8.2, credits: 3, semester: 'Spring 2027', accent: '#BE531C' },
 ];
 
+const MAX_PUBLIC_RESULTS = 6;
+
 export default function DepartmentSelect() {
   const navigate = useNavigate();
   const [search, setSearch] = useState('');
+  const [searchFocused, setSearchFocused] = useState(false);
 
-  const handleSearch = (e: FormEvent) => {
-    e.preventDefault();
-    if (search.trim()) {
-      navigate(`/catalog?q=${encodeURIComponent(search.trim())}`);
-    }
-  };
+  const searchResults = useMemo(() => {
+    const q = search.trim().toLowerCase();
+    if (!q || q.length < 2) return [];
+    return HCI_COURSES.filter(
+      (c) =>
+        c.code.toLowerCase().includes(q) ||
+        c.name.toLowerCase().includes(q) ||
+        c.description.toLowerCase().includes(q) ||
+        c.offerings.some((o) => o.instructor?.toLowerCase().includes(q)),
+    );
+  }, [search]);
+
+  const visibleResults = searchResults.slice(0, MAX_PUBLIC_RESULTS);
+  const hasMore = searchResults.length > MAX_PUBLIC_RESULTS;
+  const showResults = search.trim().length >= 2 && searchFocused;
 
   return (
     <div className="relative min-h-svh bg-[var(--color-surface-page)]">
       <AnimatedBackground variant="catalog" />
 
+      {/* Search backdrop overlay */}
+      <AnimatePresence>
+        {searchFocused && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.15 }}
+            className="fixed inset-0 z-30 bg-black/15 backdrop-blur-[3px]"
+            aria-hidden="true"
+          />
+        )}
+      </AnimatePresence>
+
       {/* Navbar */}
-      <header className="relative z-10 flex items-center justify-between px-6 py-5">
-        <Logo to="/catalog" size="lg" />
+      <header className="relative z-20 flex items-center justify-between px-6 py-5">
+        <Logo to="/explore" size="lg" />
         <div className="flex items-center gap-3">
           <Link
             to="/"
-            className="hidden text-[var(--text-sm)] font-semibold text-[var(--color-neutral-500)] transition-colors hover:text-[var(--color-brand-dark)] sm:inline-flex"
+            className="hidden text-[var(--text-sm)] font-medium text-[var(--color-neutral-500)] transition-colors hover:text-[var(--color-brand-dark)] sm:inline-flex"
           >
             Log in
           </Link>
@@ -77,58 +105,133 @@ export default function DepartmentSelect() {
       </header>
 
       {/* Hero */}
-      <section className="relative z-10 flex flex-col items-center px-4 pb-8 sm:pb-12">
+      <section className={cn("relative flex flex-col items-center px-4 pb-6 sm:pb-10", searchFocused ? "z-40" : "z-20")}>
         <motion.div
           initial={{ opacity: 0, y: 20, filter: 'blur(6px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="flex w-full max-w-lg flex-col items-center text-center"
+          className="flex w-full max-w-2xl flex-col items-center text-center"
         >
-          <h1 className="text-[var(--text-xl)] font-bold tracking-tight text-[var(--color-neutral-900)] sm:text-[var(--text-2xl)]">
+          <h1 className="text-[var(--text-2xl)] font-bold tracking-[var(--tracking-tight)] text-[var(--color-neutral-900)] sm:text-[var(--text-3xl)]">
             Find the courses that <span className="text-gradient">matter to you</span>
           </h1>
-          <p className="mt-2 text-[var(--text-sm)] leading-relaxed text-[var(--color-neutral-500)]">
-            Browse departments, explore syllabi, and plan your path.
+          <p className="mt-2 text-[var(--text-sm)] leading-relaxed text-[var(--color-neutral-400)]">
+            Browse departments, explore syllabi, and plan your academic path at Iowa State.
           </p>
 
-          <motion.form
-            onSubmit={handleSearch}
+          <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="mt-6 flex w-full items-center gap-2"
+            className="mt-8 w-full max-w-lg mx-auto relative"
           >
-            <div className="relative flex-1">
-              <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-[var(--color-neutral-400)]" />
+            <div
+              className={cn(
+                'relative flex items-center rounded-xl border bg-white transition-all duration-200',
+                showResults && searchResults.length > 0
+                  ? 'border-[var(--color-neutral-300)] shadow-lg rounded-b-none border-b-[var(--color-border-default)]'
+                  : searchFocused
+                    ? 'border-[var(--color-neutral-800)] shadow-md'
+                    : 'border-[var(--color-border-default)] hover:border-[var(--color-neutral-400)]',
+              )}
+            >
+              <Search className="ml-4 h-[18px] w-[18px] shrink-0 text-[var(--color-neutral-400)]" />
               <input
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder='Try "HCI 5500" or "user research"'
-                className={cn(
-                  'flex h-[var(--input-h-md)] w-full rounded-2xl border bg-white/90 pl-11 pr-4 text-[var(--text-sm)]',
-                  'transition-all duration-200 shadow-sm',
-                  'placeholder:text-[var(--color-neutral-400)]',
-                  'focus:outline-none focus:border-[var(--color-border-focus)] focus:ring-4 focus:ring-[var(--color-brand-cardinal)]/5 focus:shadow-md',
-                  'hover:border-[var(--color-border-hover)]',
-                  'border-[var(--color-border-default)]',
-                )}
+                onFocus={() => setSearchFocused(true)}
+                onBlur={() => setTimeout(() => setSearchFocused(false), 150)}
+                placeholder='Search courses...'
+                className="h-12 w-full bg-transparent px-3 text-[var(--text-base)] text-[var(--color-neutral-900)] placeholder:text-[var(--color-neutral-400)] focus:outline-none"
               />
-            </div>
-            <motion.button
-              type="submit"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.97 }}
-              className={cn(
-                'flex h-[var(--input-h-md)] shrink-0 items-center gap-2 rounded-2xl bg-[var(--color-brand-cardinal)] px-6',
-                'text-[var(--text-sm)] font-bold text-white',
-                'shadow-md transition-all hover:bg-[var(--color-brand-cardinal-hover)] hover:shadow-lg',
+              {search && (
+                <button
+                  onClick={() => setSearch('')}
+                  className="mr-3 p-1 rounded-md hover:bg-[var(--color-neutral-100)] text-[var(--color-neutral-400)] transition-colors"
+                >
+                  <X className="w-4 h-4" />
+                </button>
               )}
-            >
-              Search
-              <ArrowRight className="h-4 w-4" />
-            </motion.button>
-          </motion.form>
+            </div>
+
+            {/* Search results — clean list */}
+            <AnimatePresence>
+              {showResults && searchResults.length > 0 && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.1 }}
+                  className="absolute left-0 right-0 top-full z-50 overflow-hidden rounded-b-xl border border-t-0 border-[var(--color-neutral-300)] bg-white shadow-lg"
+                >
+                  <p className="px-4 py-2 text-[var(--text-2xs)] font-medium text-[var(--color-neutral-400)] bg-[var(--color-neutral-50)] border-b border-[var(--color-border-default)]">
+                    {searchResults.length} course {searchResults.length === 1 ? 'result' : 'results'}
+                  </p>
+
+                  <div className="max-h-[280px] overflow-y-auto">
+                    {visibleResults.map((course) => {
+                      const config = CATEGORY_CONFIG[course.category];
+                      return (
+                        <button
+                          key={course.id}
+                          onMouseDown={() => navigate(`/department/hci`)}
+                          className="flex w-full items-center gap-3 px-4 py-2.5 text-left hover:bg-[var(--color-neutral-50)] transition-colors cursor-pointer"
+                        >
+                          <span
+                            className="h-2 w-2 rounded-full shrink-0"
+                            style={{ backgroundColor: config.color }}
+                          />
+                          <span className="text-[var(--text-xs)] font-bold text-[var(--color-neutral-500)] w-[72px] shrink-0 tabular-nums">
+                            {course.code}
+                          </span>
+                          <span className="text-[var(--text-sm)] text-[var(--color-neutral-800)] truncate">
+                            {course.name}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {hasMore ? (
+                    <Link
+                      to="/signup"
+                      onMouseDown={(e) => e.preventDefault()}
+                      className="flex items-center justify-center gap-1.5 py-2.5 border-t border-[var(--color-border-default)] text-[var(--text-xs)] font-medium text-[var(--color-neutral-400)] hover:text-[var(--color-brand-cardinal)] hover:bg-[var(--color-neutral-50)] transition-colors"
+                    >
+                      Sign in to see all {searchResults.length} results
+                      <ArrowRight className="w-3 h-3" />
+                    </Link>
+                  ) : (
+                    <Link
+                      to="/signup"
+                      onMouseDown={(e) => e.preventDefault()}
+                      className="flex items-center justify-center gap-1.5 py-2.5 border-t border-[var(--color-border-default)] text-[var(--text-xs)] font-medium text-[var(--color-neutral-400)] hover:text-[var(--color-brand-cardinal)] hover:bg-[var(--color-neutral-50)] transition-colors"
+                    >
+                      Sign in for AI search & planning
+                      <ArrowRight className="w-3 h-3" />
+                    </Link>
+                  )}
+                </motion.div>
+              )}
+
+              {showResults && search.trim().length >= 2 && searchResults.length === 0 && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="absolute left-0 right-0 top-full z-50 rounded-b-xl border border-t-0 border-[var(--color-neutral-300)] bg-white shadow-lg px-4 py-4 text-center"
+                >
+                  <p className="text-[var(--text-sm)] text-[var(--color-neutral-500)]">
+                    No results for &ldquo;{search}&rdquo;
+                  </p>
+                  <p className="mt-0.5 text-[var(--text-xs)] text-[var(--color-neutral-400)]">
+                    <Link to="/signup" className="font-medium text-[var(--color-brand-cardinal)] hover:underline">Sign up</Link> for AI-powered search
+                  </p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
         </motion.div>
       </section>
 
@@ -138,9 +241,9 @@ export default function DepartmentSelect() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: '-40px' }}
         transition={{ duration: 0.5 }}
-        className="relative z-10 py-12 sm:py-14"
+        className="relative z-10 py-10 sm:py-14"
       >
-        <div className="mx-auto grid max-w-3xl gap-8 px-4 sm:grid-cols-3 sm:gap-6 sm:px-6">
+        <div className="mx-auto grid max-w-4xl gap-6 px-4 sm:grid-cols-3 sm:px-6">
           {FEATURES.map((feature, i) => (
             <motion.div
               key={feature.title}
@@ -148,18 +251,18 @@ export default function DepartmentSelect() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.4 }}
-              className="text-center"
+              className="glass-panel rounded-2xl p-5 text-center"
             >
               <motion.div
                 whileHover={{ scale: 1.1, rotate: -5 }}
-                className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--color-brand-cardinal-light)]"
+                className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--color-brand-cardinal)]/8"
               >
                 <feature.icon className="h-5 w-5 text-[var(--color-brand-cardinal)]" />
               </motion.div>
               <h3 className="text-[var(--text-sm)] font-semibold text-[var(--color-brand-dark)]">
                 {feature.title}
               </h3>
-              <p className="mt-1 text-[var(--text-xs)] leading-relaxed text-[var(--color-neutral-500)]">
+              <p className="mt-1.5 text-[var(--text-xs)] leading-relaxed text-[var(--color-neutral-400)]">
                 {feature.description}
               </p>
             </motion.div>
@@ -329,81 +432,51 @@ export default function DepartmentSelect() {
         </div>
       </section>
 
-      {/* CTA Banner */}
-      <section className="relative z-10 overflow-hidden bg-[var(--color-brand-cardinal)] py-16 sm:py-20">
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute -left-[10%] top-[10%] h-[60%] w-[40%] rounded-full bg-white/5 blur-[80px]" />
-          <div className="absolute -right-[10%] bottom-[10%] h-[50%] w-[35%] rounded-full bg-[var(--color-brand-gold)]/10 blur-[80px]" />
-        </div>
-
-        <div className="relative mx-auto max-w-2xl px-4 text-center">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-[var(--text-2xs)] font-bold uppercase tracking-widest text-white/50"
-          >
+      {/* Footer with integrated CTA */}
+      <footer className="relative z-10 border-t border-[var(--color-border-default)] bg-[var(--color-neutral-50)]/60">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 text-center">
+          <p className="text-[var(--text-2xs)] font-semibold uppercase tracking-[var(--tracking-widest)] text-[var(--color-neutral-400)]">
             Start your journey
-          </motion.p>
-          <motion.h2
-            initial={{ opacity: 0, y: 14 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.05 }}
-            className="mt-3 text-[var(--text-xl)] font-bold text-white sm:text-[var(--text-2xl)]"
-          >
+          </p>
+          <h2 className="mt-2.5 text-[var(--text-xl)] font-bold tracking-[var(--tracking-tight)] text-[var(--color-neutral-900)]">
             Join 10,000+ learners at Iowa State.
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="mx-auto mt-3 max-w-md text-[var(--text-sm)] leading-relaxed text-white/70"
-          >
-            Personalized paths, expert instructors, and data-driven insights to help you reach your study goals faster than ever.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.15 }}
-            className="mt-8"
-          >
+          </h2>
+          <p className="mx-auto mt-2 max-w-md text-[var(--text-sm)] leading-relaxed text-[var(--color-neutral-400)]">
+            Personalized paths, expert instructors, and data-driven insights to help you reach your goals faster.
+          </p>
+          <div className="mt-6">
             <Link
               to="/signup"
               className={cn(
-                'h-[var(--input-h-lg)] rounded-full bg-white px-10',
-                'inline-flex items-center gap-2 text-[var(--text-sm)] font-bold text-[var(--color-brand-cardinal)]',
-                'shadow-lg transition-all duration-200',
-                'hover:shadow-xl hover:scale-[1.03]',
+                'h-[var(--input-h-md)] rounded-full bg-[var(--color-brand-cardinal)] px-8',
+                'inline-flex items-center gap-2 text-[var(--text-sm)] font-bold text-white',
+                'shadow-sm transition-all duration-200',
+                'hover:bg-[var(--color-brand-cardinal-hover)] hover:shadow-md',
               )}
             >
               Sign Up for Free
               <ArrowRight className="h-4 w-4" />
             </Link>
-          </motion.div>
+          </div>
         </div>
-      </section>
 
-      {/* Footer */}
-      <footer className="relative z-10 border-t border-[var(--color-neutral-100)] py-10">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center gap-8 sm:flex-row sm:justify-between">
-            <div className="flex flex-col items-center gap-3 sm:items-start">
+        <div className="border-t border-[var(--color-border-default)] py-6">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+            <div className="flex items-center gap-3">
               <div className="flex items-baseline gap-1">
-                <span className="text-[var(--text-base)] font-extrabold tracking-tight text-[var(--color-brand-cardinal)]">ISU</span>
-                <span className="text-[var(--text-base)] font-semibold tracking-tight text-[var(--color-brand-dark)]">Qatalog</span>
+                <span className="text-[var(--text-sm)] font-extrabold tracking-tight text-[var(--color-brand-cardinal)]">ISU</span>
+                <span className="text-[var(--text-sm)] font-semibold tracking-tight text-[var(--color-brand-dark)]">Qatalog</span>
               </div>
+              <span className="text-[var(--color-neutral-200)]">&middot;</span>
               <p className="text-[var(--text-2xs)] text-[var(--color-neutral-400)]">
-                &copy; {new Date().getFullYear()} Iowa State University of Science and Technology.
+                &copy; {new Date().getFullYear()} Iowa State University
               </p>
             </div>
 
-            <nav className="flex items-center gap-8 text-[var(--text-xs)] font-medium text-[var(--color-neutral-500)]">
-              <Link to="/catalog" className="transition-colors hover:text-[var(--color-brand-cardinal)]">Departments</Link>
-              <Link to="/catalog" className="transition-colors hover:text-[var(--color-brand-cardinal)]">Course Catalog</Link>
-              <a href="mailto:support@isuqatalog.com" className="transition-colors hover:text-[var(--color-brand-cardinal)]">Contact</a>
+            <nav className="flex items-center gap-6 text-[var(--text-xs)] font-medium text-[var(--color-neutral-400)]">
+              <Link to="/explore" className="transition-colors hover:text-[var(--color-neutral-700)]">Departments</Link>
+              <Link to="/explore" className="transition-colors hover:text-[var(--color-neutral-700)]">Courses</Link>
+              <a href="mailto:support@isuqatalog.com" className="transition-colors hover:text-[var(--color-neutral-700)]">Contact</a>
             </nav>
           </div>
         </div>

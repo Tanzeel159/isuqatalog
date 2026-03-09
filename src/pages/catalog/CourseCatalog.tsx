@@ -1,7 +1,16 @@
-import { useState, useMemo, useRef, useEffect, useCallback, type FC } from 'react';
+import { useState, useMemo, useRef, useEffect, type FC } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
+import type { PageSearchEntry } from '@/lib/searchTypes';
+
+export const SEARCH_ENTRIES: PageSearchEntry[] = [
+  { section: 'Header', text: 'Course Catalog. Browse courses across all departments.' },
+  { section: 'Filters', text: 'Filter courses. Best Match. Highest Rated. Lowest Workload. Most Popular. Max Workload. Min Rating.' },
+  { section: 'Categories', text: 'Design Core. Implementation Core. Phenomena Core. Evaluation Core. Elective.' },
+  { section: 'My Courses', text: 'My Courses. View your enrolled and registered courses.', route: '/catalog?view=my' },
+  { section: 'Saved Courses', text: 'Saved Courses. Courses you bookmarked for later.', route: '/catalog?view=saved' },
+];
 import {
-  Sparkles,
   SlidersHorizontal,
   X,
   Star,
@@ -13,12 +22,9 @@ import {
   Monitor,
   ArrowRight,
   Search as SearchIcon,
-  Loader2,
-  Bot,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { DashboardLayout } from '@/components/layouts/DashboardLayout';
-import { apiFetch } from '@/lib/api';
 import { staggerContainer, fadeUp } from '@/lib/motion';
 import {
   HCI_COURSES,
@@ -45,65 +51,11 @@ const SORT_OPTIONS = [
   { value: 'most-popular', label: 'Most Popular' },
 ] as const;
 
+const LEVEL_OPTIONS = ['Graduate', 'Undergraduate'] as const;
+
 /* ────────────────────────────────────────────────────────────
    Inline sub-components
    ──────────────────────────────────────────────────────────── */
-
-const Checkbox: FC<{
-  checked: boolean;
-  onChange: () => void;
-  label: string;
-  color?: string;
-}> = ({ checked, onChange, label, color }) => {
-  return (
-    <button
-      type="button"
-      role="checkbox"
-      aria-checked={checked}
-      onClick={onChange}
-      className="flex items-center gap-2.5 cursor-pointer group w-full text-left py-1"
-    >
-      <div
-        className={cn(
-          'w-[18px] h-[18px] rounded-[5px] border-2 flex items-center justify-center transition-all duration-200 shrink-0',
-          checked
-            ? 'bg-[var(--color-brand-cardinal)] border-[var(--color-brand-cardinal)]'
-            : 'border-[var(--color-neutral-300)] group-hover:border-[var(--color-neutral-400)]',
-        )}
-      >
-        {checked && (
-          <motion.svg
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-            className="w-2.5 h-2.5 text-white"
-            viewBox="0 0 12 12"
-            fill="none"
-          >
-            <path
-              d="M2.5 6l2.5 2.5 4.5-5"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </motion.svg>
-        )}
-      </div>
-      <div className="flex items-center gap-1.5">
-        {color && (
-          <span
-            className="w-2 h-2 rounded-full shrink-0"
-            style={{ backgroundColor: color }}
-          />
-        )}
-        <span className="text-[var(--text-sm)] font-medium text-[var(--color-neutral-600)]">
-          {label}
-        </span>
-      </div>
-    </button>
-  );
-}
 
 function WorkloadDots({ value, max = 5 }: { value: number; max?: number }) {
   return (
@@ -129,6 +81,7 @@ const CatalogCard: FC<{
   onToggleSave: () => void;
   semester: string;
 }> = ({ course, isSaved, onToggleSave, semester }) => {
+  const navigate = useNavigate();
   const config = CATEGORY_CONFIG[course.category];
   const workload = getWorkload(course);
   const avgRating = getAvgRating(course);
@@ -150,7 +103,6 @@ const CatalogCard: FC<{
       className="glass-panel rounded-2xl overflow-hidden cursor-pointer group hover:shadow-lg transition-shadow duration-300"
     >
       <div className="p-5">
-        {/* Top: code + category + rating + workload */}
         <div className="flex items-start justify-between gap-3">
           <div className="flex items-center gap-2.5 flex-wrap">
             <span className="text-[var(--text-xs)] font-bold text-[var(--color-brand-cardinal)] bg-[var(--color-brand-cardinal)]/8 px-2.5 py-1 rounded-lg">
@@ -184,12 +136,10 @@ const CatalogCard: FC<{
           </div>
         </div>
 
-        {/* Course name */}
         <h3 className="mt-3 text-[var(--text-md)] font-bold text-[var(--color-brand-dark)] leading-snug">
           {course.name}
         </h3>
 
-        {/* Meta line */}
         <p className="mt-1 text-[var(--text-xs)] text-[var(--color-neutral-400)]">
           {course.credits} Credits &middot; {level}
           {activeOffering?.instructor && (
@@ -197,12 +147,10 @@ const CatalogCard: FC<{
           )}
         </p>
 
-        {/* Description */}
         <p className="mt-2.5 text-[var(--text-sm)] text-[var(--color-neutral-500)] leading-relaxed line-clamp-2">
           {course.description}
         </p>
 
-        {/* Tags */}
         <div className="mt-3 flex flex-wrap items-center gap-1.5">
           {course.offerings.map((o) => (
             <span
@@ -239,7 +187,6 @@ const CatalogCard: FC<{
           )}
         </div>
 
-        {/* Actions */}
         <div className="mt-4 flex items-center justify-end gap-2 border-t border-[var(--color-border-default)]/30 pt-3">
           <motion.button
             whileTap={{ scale: 0.9 }}
@@ -263,7 +210,11 @@ const CatalogCard: FC<{
           </motion.button>
           <motion.button
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-[var(--color-brand-cardinal)] text-white text-[var(--text-xs)] font-bold shadow-sm hover:bg-[var(--color-brand-cardinal-hover)] transition-colors"
+            onClick={(e) => {
+              e.stopPropagation();
+              navigate(`/course/${course.id}`);
+            }}
+            className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-[var(--color-brand-cardinal)]/8 text-[var(--color-brand-cardinal)] text-[var(--text-xs)] font-bold hover:bg-[var(--color-brand-cardinal)]/15 transition-colors"
           >
             View Details
             <ArrowRight className="w-3 h-3" />
@@ -272,111 +223,60 @@ const CatalogCard: FC<{
       </div>
     </motion.div>
   );
-}
+};
 
 /* ────────────────────────────────────────────────────────────
    Main page
    ──────────────────────────────────────────────────────────── */
 
 export default function CourseCatalog() {
-  const [searchQuery, setSearchQuery] = useState('');
   const [department, setDepartment] = useState('hci');
-  const [levels, setLevels] = useState({
-    Undergraduate: false,
-    Graduate: true,
-    Certificate: false,
-  });
+  const [level, setLevel] = useState<string>('Graduate');
   const [semester, setSemester] = useState<string>('All Terms');
-  const [maxWorkload, setMaxWorkload] = useState(5);
-  const [minRating, setMinRating] = useState(0);
-  const [selectedCategories, setSelectedCategories] = useState<
-    Set<CourseCategory>
-  >(new Set());
+  const [selectedCategories, setSelectedCategories] = useState<Set<CourseCategory>>(new Set());
   const [sortBy, setSortBy] = useState('best-match');
   const [savedCourses, setSavedCourses] = useState<Set<string>>(new Set());
-  const [showMobileFilters, setShowMobileFilters] = useState(false);
   const [showSortDropdown, setShowSortDropdown] = useState(false);
-
-  const [aiSearchLoading, setAiSearchLoading] = useState(false);
-  const [aiMatchedCodes, setAiMatchedCodes] = useState<Set<string> | null>(null);
-  const [aiSummary, setAiSummary] = useState('');
+  const [showAdvanced, setShowAdvanced] = useState(false);
+  const [maxWorkload, setMaxWorkload] = useState(5);
+  const [minRating, setMinRating] = useState(0);
+  const [textFilter, setTextFilter] = useState('');
 
   const sortRef = useRef<HTMLDivElement>(null);
+  const deptRef = useRef<HTMLDivElement>(null);
+  const [showDeptDropdown, setShowDeptDropdown] = useState(false);
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (sortRef.current && !sortRef.current.contains(e.target as Node))
         setShowSortDropdown(false);
+      if (deptRef.current && !deptRef.current.contains(e.target as Node))
+        setShowDeptDropdown(false);
     };
     document.addEventListener('mousedown', handler);
     return () => document.removeEventListener('mousedown', handler);
-  }, []);
-
-  const triggerAISearch = useCallback(async () => {
-    const q = searchQuery.trim();
-    if (!q || aiSearchLoading) return;
-    setAiSearchLoading(true);
-    setAiSummary('');
-    try {
-      const data = await apiFetch<{ ok: true; courses: string[]; summary: string }>(
-        '/api/ai/search',
-        { method: 'POST', json: { query: q } },
-      );
-      if (data.courses.length > 0) {
-        const codeSet = new Set(data.courses.map((c) => c.toLowerCase().replace(/\s+/g, '')));
-        setAiMatchedCodes(codeSet);
-        setAiSummary(data.summary);
-      } else {
-        setAiMatchedCodes(new Set());
-        setAiSummary(data.summary || 'No courses matched your search.');
-      }
-    } catch {
-      setAiMatchedCodes(null);
-      setAiSummary('');
-    } finally {
-      setAiSearchLoading(false);
-    }
-  }, [searchQuery, aiSearchLoading]);
-
-  const clearAISearch = useCallback(() => {
-    setAiMatchedCodes(null);
-    setAiSummary('');
-    setSearchQuery('');
   }, []);
 
   const courses = department === 'hci' ? HCI_COURSES : [];
 
   const filteredCourses = useMemo(() => {
     const result = courses.filter((c) => {
-      // If AI search is active, use AI results as primary filter
-      if (aiMatchedCodes !== null) {
-        const normalizedCode = c.code.toLowerCase().replace(/\s+/g, '');
-        return aiMatchedCodes.has(normalizedCode);
-      }
-
-      const lvl = courseLevel(c.code);
-      const anyLevel = !levels.Undergraduate && !levels.Graduate;
-      if (!anyLevel) {
-        if (lvl === 'Undergraduate' && !levels.Undergraduate) return false;
-        if (lvl === 'Graduate' && !levels.Graduate) return false;
-      }
+      if (level !== 'All' && courseLevel(c.code) !== level) return false;
 
       if (semester !== 'All Terms') {
         const mapped = TERM_MAP[semester];
         if (mapped && !c.offerings.some((o) => o.term === mapped)) return false;
       }
 
-      if (getWorkload(c) > maxWorkload) return false;
+      if (maxWorkload < 5 && getWorkload(c) > maxWorkload) return false;
 
       const rating = getAvgRating(c);
-      if (minRating > 0 && (rating === null || rating < minRating))
-        return false;
+      if (minRating > 0 && (rating === null || rating < minRating)) return false;
 
-      if (selectedCategories.size > 0 && !selectedCategories.has(c.category))
-        return false;
+      if (selectedCategories.size > 0 && !selectedCategories.has(c.category)) return false;
 
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase();
+      if (textFilter.trim()) {
+        const q = textFilter.toLowerCase();
         return (
           c.code.toLowerCase().includes(q) ||
           c.name.toLowerCase().includes(q) ||
@@ -395,35 +295,15 @@ export default function CourseCatalog() {
         case 'lowest-workload':
           return getWorkload(a) - getWorkload(b);
         case 'most-popular': {
-          const rA = parseInt(
-            a.offerings.find((o) => o.wouldTakeAgain)?.wouldTakeAgain ?? '0',
-          );
-          const rB = parseInt(
-            b.offerings.find((o) => o.wouldTakeAgain)?.wouldTakeAgain ?? '0',
-          );
+          const rA = parseInt(a.offerings.find((o) => o.wouldTakeAgain)?.wouldTakeAgain ?? '0');
+          const rB = parseInt(b.offerings.find((o) => o.wouldTakeAgain)?.wouldTakeAgain ?? '0');
           return rB - rA;
         }
         default:
           return 0;
       }
     });
-  }, [
-    courses,
-    levels,
-    semester,
-    maxWorkload,
-    minRating,
-    selectedCategories,
-    searchQuery,
-    sortBy,
-    aiMatchedCodes,
-  ]);
-
-  const toggleLevel = (level: string) =>
-    setLevels((p) => ({
-      ...p,
-      [level]: !p[level as keyof typeof p],
-    }));
+  }, [courses, level, semester, maxWorkload, minRating, selectedCategories, textFilter, sortBy]);
 
   const toggleCategory = (cat: CourseCategory) =>
     setSelectedCategories((prev) => {
@@ -442,211 +322,41 @@ export default function CourseCatalog() {
     });
 
   const resetFilters = () => {
-    setLevels({ Undergraduate: false, Graduate: true, Certificate: false });
+    setLevel('Graduate');
     setSemester('All Terms');
     setMaxWorkload(5);
     setMinRating(0);
     setSelectedCategories(new Set());
-    setSearchQuery('');
+    setTextFilter('');
   };
 
   const hasActiveFilters =
-    levels.Undergraduate ||
-    levels.Certificate ||
+    level !== 'Graduate' ||
     semester !== 'All Terms' ||
     maxWorkload < 5 ||
     minRating > 0 ||
     selectedCategories.size > 0 ||
-    searchQuery.trim() !== '';
+    textFilter.trim() !== '';
 
-  const sliderProgress = ((maxWorkload - 1) / 4) * 100;
+  const hasAdvancedFilters = maxWorkload < 5 || minRating > 0;
 
-  /* ── Filter panel (shared between desktop sidebar + mobile drawer) ── */
-  const filterPanel = (
-    <div className="space-y-6">
-      {/* Department */}
-      <div>
-        <h3 className="text-[var(--text-xs)] font-bold uppercase tracking-widest text-[var(--color-neutral-400)] mb-2.5">
-          Department
-        </h3>
-        <div className="relative">
-          <select
-            value={department}
-            onChange={(e) => setDepartment(e.target.value)}
-            aria-label="Department"
-            className={cn(
-              'w-full h-[var(--input-h-md)] rounded-xl border border-[var(--color-border-default)] bg-white px-3 pr-9',
-              'text-[var(--text-sm)] font-medium text-[var(--color-neutral-800)]',
-              'focus:outline-none focus:border-[var(--color-brand-cardinal)] focus:ring-2 focus:ring-[var(--color-brand-cardinal)]/10',
-              'appearance-none cursor-pointer transition-all duration-200',
-            )}
-          >
-            {DEPARTMENT_LIST.map((d) => (
-              <option key={d.id} value={d.id}>
-                {d.name}
-              </option>
-            ))}
-          </select>
-          <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-neutral-400)] pointer-events-none" />
-        </div>
-      </div>
+  const activeDept = DEPARTMENT_LIST.find((d) => d.id === department);
 
-      {/* Level */}
-      <div>
-        <h3 className="text-[var(--text-xs)] font-bold uppercase tracking-widest text-[var(--color-neutral-400)] mb-2.5">
-          Level
-        </h3>
-        <div className="space-y-1">
-          {(['Undergraduate', 'Graduate', 'Certificate'] as const).map((l) => (
-            <Checkbox
-              key={l}
-              checked={levels[l]}
-              onChange={() => toggleLevel(l)}
-              label={l}
-            />
-          ))}
-        </div>
-      </div>
-
-      {/* Term */}
-      <div>
-        <h3 className="text-[var(--text-xs)] font-bold uppercase tracking-widest text-[var(--color-neutral-400)] mb-2.5">
-          Term
-        </h3>
-        <div className="relative">
-          <select
-            value={semester}
-            onChange={(e) => setSemester(e.target.value)}
-            aria-label="Term"
-            className={cn(
-              'w-full h-[var(--input-h-md)] rounded-xl border border-[var(--color-border-default)] bg-white px-3 pr-9',
-              'text-[var(--text-sm)] font-medium text-[var(--color-neutral-800)]',
-              'focus:outline-none focus:border-[var(--color-brand-cardinal)] focus:ring-2 focus:ring-[var(--color-brand-cardinal)]/10',
-              'appearance-none cursor-pointer transition-all duration-200',
-            )}
-          >
-            {SEMESTER_OPTIONS.map((s) => (
-              <option key={s} value={s}>
-                {s}
-              </option>
-            ))}
-          </select>
-          <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-neutral-400)] pointer-events-none" />
-        </div>
-      </div>
-
-      {/* Workload score */}
-      <div>
-        <div className="flex items-center justify-between mb-2.5">
-          <h3 className="text-[var(--text-xs)] font-bold uppercase tracking-widest text-[var(--color-neutral-400)]">
-            Workload Score
-          </h3>
-          <span className="text-[var(--text-xs)] font-bold text-[var(--color-brand-cardinal)] tabular-nums">
-            1&ndash;{maxWorkload}
-          </span>
-        </div>
-        <input
-          type="range"
-          min={1}
-          max={5}
-          step={1}
-          value={maxWorkload}
-          onChange={(e) => setMaxWorkload(Number(e.target.value))}
-          aria-label="Maximum workload score (1 = easy, 5 = hard)"
-          className="range-slider w-full"
-          style={{
-            background: `linear-gradient(to right, var(--color-brand-cardinal) 0%, var(--color-brand-cardinal) ${sliderProgress}%, var(--color-neutral-200) ${sliderProgress}%, var(--color-neutral-200) 100%)`,
-          }}
-        />
-        <div className="flex justify-between mt-1.5">
-          {[1, 2, 3, 4, 5].map((n) => (
-            <span
-              key={n}
-              className={cn(
-                'text-[var(--text-2xs)] font-medium cursor-pointer transition-colors',
-                n <= maxWorkload
-                  ? 'text-[var(--color-brand-cardinal)]'
-                  : 'text-[var(--color-neutral-300)]',
-              )}
-              onClick={() => setMaxWorkload(n)}
-            >
-              {n}
-            </span>
-          ))}
-        </div>
-        <p className="text-[var(--text-2xs)] text-[var(--color-neutral-400)] mt-1">
-          1 = easy &middot; 5 = hard
-        </p>
-      </div>
-
-      {/* Rating */}
-      <div>
-        <h3 className="text-[var(--text-xs)] font-bold uppercase tracking-widest text-[var(--color-neutral-400)] mb-2.5">
-          Minimum Rating
-        </h3>
-        <div className="flex gap-2">
-          {[
-            { value: 0, label: 'Any' },
-            { value: 3, label: '\u2265 3.0' },
-            { value: 4, label: '\u2265 4.0' },
-          ].map((opt) => (
-            <button
-              key={opt.value}
-              onClick={() => setMinRating(opt.value)}
-              aria-pressed={minRating === opt.value}
-              aria-label={`Minimum rating: ${opt.label}`}
-              className={cn(
-                'flex-1 py-2 rounded-xl text-[var(--text-xs)] font-semibold transition-all duration-200',
-                minRating === opt.value
-                  ? 'bg-[var(--color-brand-cardinal)] text-white shadow-sm'
-                  : 'bg-[var(--color-neutral-50)] text-[var(--color-neutral-500)] hover:bg-[var(--color-neutral-100)]',
-              )}
-            >
-              {opt.label}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Category */}
-      <div>
-        <h3 className="text-[var(--text-xs)] font-bold uppercase tracking-widest text-[var(--color-neutral-400)] mb-2.5">
-          Category
-        </h3>
-        <div className="space-y-1">
-          {ALL_CATEGORIES.map((cat) => {
-            const config = CATEGORY_CONFIG[cat];
-            return (
-              <Checkbox
-                key={cat}
-                checked={selectedCategories.has(cat)}
-                onChange={() => toggleCategory(cat)}
-                label={config.label}
-                color={config.color}
-              />
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Reset */}
-      <motion.button
-        whileTap={{ scale: 0.97 }}
-        onClick={resetFilters}
-        disabled={!hasActiveFilters}
-        className={cn(
-          'w-full py-2.5 rounded-xl text-[var(--text-sm)] font-semibold transition-all duration-200',
-          hasActiveFilters
-            ? 'bg-[var(--color-neutral-100)] text-[var(--color-neutral-700)] hover:bg-[var(--color-neutral-200)]'
-            : 'bg-[var(--color-neutral-50)] text-[var(--color-neutral-300)] cursor-not-allowed',
-        )}
-      >
-        Reset Filters
-      </motion.button>
-    </div>
-  );
-
-  /* ── Render ──────────────────────────────────────────────── */
+  const categoryCounts = useMemo(() => {
+    const base = courses.filter((c) => {
+      if (level !== 'All' && courseLevel(c.code) !== level) return false;
+      if (semester !== 'All Terms') {
+        const mapped = TERM_MAP[semester];
+        if (mapped && !c.offerings.some((o) => o.term === mapped)) return false;
+      }
+      return true;
+    });
+    const counts: Record<string, number> = {};
+    ALL_CATEGORIES.forEach((cat) => {
+      counts[cat] = base.filter((c) => c.category === cat).length;
+    });
+    return counts;
+  }, [courses, level, semester]);
 
   return (
     <DashboardLayout>
@@ -654,312 +364,371 @@ export default function CourseCatalog() {
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className="max-w-7xl mx-auto"
+        className="max-w-6xl mx-auto"
       >
         {/* Page header */}
-        <div className="mb-6">
+        <div className="mb-5">
           <h1 className="text-[var(--text-2xl)] font-bold tracking-tight text-[var(--color-brand-dark)]">
             Course Catalog
           </h1>
-          <p className="mt-1 text-[var(--text-base)] text-[var(--color-neutral-400)]">
+          <p className="mt-1 text-[var(--text-sm)] text-[var(--color-neutral-400)]">
             Browse courses across all departments
           </p>
         </div>
 
-        {/* AI Search */}
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1, duration: 0.4 }}
-          className="mb-6"
-        >
-          <div
-            className={cn(
-              'flex items-center gap-3 rounded-2xl border bg-white/90 backdrop-blur-sm px-4',
-              'border-[var(--color-border-default)]',
-              'transition-all duration-200',
-              'focus-within:border-[var(--color-brand-cardinal)] focus-within:ring-4 focus-within:ring-[var(--color-brand-cardinal)]/5 focus-within:shadow-[var(--shadow-card)]',
-              'hover:border-[var(--color-border-hover)]',
-            )}
-          >
-            <Sparkles className="w-5 h-5 text-[var(--color-brand-cardinal)] shrink-0" />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => {
-                setSearchQuery(e.target.value);
-                if (aiMatchedCodes !== null) {
-                  setAiMatchedCodes(null);
-                  setAiSummary('');
-                }
-              }}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter') {
-                  e.preventDefault();
-                  triggerAISearch();
-                }
-              }}
-              placeholder='AI Search — try "user research methods" or "python programming"'
-              aria-label="AI Search — try user research methods or python programming"
-              className="flex-1 h-[var(--input-h-lg)] bg-transparent text-[var(--text-sm)] placeholder:text-[var(--color-neutral-400)] focus:outline-none"
-            />
-            {(searchQuery || aiMatchedCodes !== null) && (
+        {/* ── Filter bar ─────────────────────────────────────── */}
+        <div className="glass-panel rounded-2xl mb-5 relative z-40">
+          {/* Row 1: Department, text filter, level, semester, advanced toggle, sort */}
+          <div className="flex flex-wrap items-center gap-2.5 px-4 py-3">
+            {/* Department selector */}
+            <div className="relative" ref={deptRef}>
               <button
-                onClick={clearAISearch}
-                aria-label="Clear search"
-                className="p-1 rounded-full hover:bg-[var(--color-neutral-100)] text-[var(--color-neutral-400)] transition-colors"
+                onClick={() => setShowDeptDropdown((v) => !v)}
+                className={cn(
+                  'inline-flex items-center gap-2 rounded-lg border px-3 py-1.5',
+                  'text-[var(--text-xs)] font-bold transition-all duration-200',
+                  'border-[var(--color-border-default)] bg-white text-[var(--color-brand-dark)]',
+                  'hover:border-[var(--color-border-hover)]',
+                )}
               >
-                <X className="w-4 h-4" />
+                <span
+                  className="h-2 w-2 rounded-full shrink-0"
+                  style={{ backgroundColor: activeDept?.accent }}
+                />
+                {activeDept?.code ?? 'Dept'}
+                <ChevronDown className="h-3 w-3 text-[var(--color-neutral-400)]" />
               </button>
-            )}
-            <motion.button
-              whileTap={{ scale: 0.95 }}
-              onClick={triggerAISearch}
-              disabled={!searchQuery.trim() || aiSearchLoading}
-              aria-label="AI Search"
+              <AnimatePresence>
+                {showDeptDropdown && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -4 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -4 }}
+                    transition={{ duration: 0.12 }}
+                    className="absolute left-0 z-40 mt-1 w-60 rounded-xl border border-[var(--color-border-default)] bg-white py-1 shadow-[var(--shadow-dropdown)]"
+                  >
+                    {DEPARTMENT_LIST.map((d) => (
+                      <button
+                        key={d.id}
+                        onClick={() => { setDepartment(d.id); setShowDeptDropdown(false); }}
+                        className={cn(
+                          'flex w-full items-center gap-2.5 px-3 py-2 text-left text-[var(--text-sm)] transition-colors',
+                          department === d.id
+                            ? 'bg-[var(--color-brand-cardinal-light)] text-[var(--color-brand-cardinal)] font-semibold'
+                            : 'text-[var(--color-neutral-700)] hover:bg-[var(--color-neutral-50)]',
+                        )}
+                      >
+                        <span className="h-2 w-2 rounded-full shrink-0" style={{ backgroundColor: d.accent }} />
+                        <span className="font-bold shrink-0">{d.code}</span>
+                        <span className="text-[var(--color-neutral-400)] text-[var(--text-xs)] truncate">{d.name}</span>
+                      </button>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            <div className="h-5 w-px bg-[var(--color-border-default)]" />
+
+            {/* Text filter */}
+            <div className="relative flex items-center">
+              <SearchIcon className="absolute left-2.5 h-3.5 w-3.5 text-[var(--color-neutral-400)]" />
+              <input
+                type="text"
+                value={textFilter}
+                onChange={(e) => setTextFilter(e.target.value)}
+                placeholder="Filter courses..."
+                className="h-8 w-[160px] rounded-lg border border-[var(--color-border-default)] bg-white pl-8 pr-7 text-[var(--text-xs)] text-[var(--color-neutral-800)] placeholder:text-[var(--color-neutral-400)] transition-colors focus:border-[var(--color-neutral-400)] focus:outline-none"
+              />
+              {textFilter && (
+                <button
+                  onClick={() => setTextFilter('')}
+                  className="absolute right-2 text-[var(--color-neutral-400)] hover:text-[var(--color-neutral-600)]"
+                >
+                  <X className="h-3 w-3" />
+                </button>
+              )}
+            </div>
+
+            <div className="h-5 w-px bg-[var(--color-border-default)]" />
+
+            {/* Level toggle */}
+            <div className="inline-flex overflow-hidden rounded-full border border-[var(--color-border-default)]">
+              {LEVEL_OPTIONS.map((l) => (
+                <button
+                  key={l}
+                  onClick={() => setLevel(level === l ? 'All' : l)}
+                  className={cn(
+                    'px-3.5 py-1.5 text-[var(--text-xs)] font-medium transition-all duration-200',
+                    level === l
+                      ? 'bg-[var(--color-brand-dark)] text-white'
+                      : 'bg-white text-[var(--color-neutral-500)] hover:bg-[var(--color-neutral-50)]',
+                  )}
+                >
+                  {l}
+                </button>
+              ))}
+            </div>
+
+            {/* Semester pills */}
+            <div className="flex items-center gap-1">
+              {SEMESTER_OPTIONS.map((s) => (
+                <button
+                  key={s}
+                  onClick={() => setSemester(s)}
+                  className={cn(
+                    'rounded-full px-3 py-1.5 text-[var(--text-xs)] font-medium transition-all duration-200',
+                    semester === s
+                      ? 'bg-[var(--color-neutral-100)] text-[var(--color-brand-dark)] font-semibold'
+                      : 'text-[var(--color-neutral-400)] hover:text-[var(--color-neutral-600)]',
+                  )}
+                >
+                  {s}
+                </button>
+              ))}
+            </div>
+
+            <div className="h-5 w-px bg-[var(--color-border-default)]" />
+
+            {/* Advanced filters toggle */}
+            <button
+              onClick={() => setShowAdvanced((v) => !v)}
               className={cn(
-                'flex items-center gap-2 px-5 py-2 rounded-xl text-[var(--text-xs)] font-bold shadow-sm transition-colors',
-                searchQuery.trim() && !aiSearchLoading
-                  ? 'bg-[var(--color-brand-cardinal)] text-white hover:bg-[var(--color-brand-cardinal-hover)]'
-                  : 'bg-[var(--color-neutral-200)] text-[var(--color-neutral-400)] cursor-not-allowed',
+                'inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5',
+                'text-[var(--text-xs)] font-medium transition-all duration-200',
+                showAdvanced || hasAdvancedFilters
+                  ? 'border-[var(--color-brand-dark)] bg-[var(--color-brand-dark)] text-white'
+                  : 'border-[var(--color-border-default)] bg-white text-[var(--color-neutral-500)] hover:border-[var(--color-border-hover)]',
               )}
             >
-              {aiSearchLoading ? (
-                <Loader2 className="w-4 h-4 animate-spin" />
-              ) : (
-                <SearchIcon className="w-4 h-4" />
+              <SlidersHorizontal className="h-3 w-3" />
+              More
+              {hasAdvancedFilters && (
+                <span className="flex h-4 w-4 items-center justify-center rounded-full bg-white text-[9px] font-bold text-[var(--color-brand-dark)]">
+                  {(maxWorkload < 5 ? 1 : 0) + (minRating > 0 ? 1 : 0)}
+                </span>
               )}
-            </motion.button>
+            </button>
+
+            {/* Sort */}
+            <div className="relative ml-auto" ref={sortRef}>
+              <button
+                onClick={() => setShowSortDropdown((v) => !v)}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-[var(--color-border-default)] bg-white text-[var(--text-xs)] font-semibold text-[var(--color-neutral-600)] hover:border-[var(--color-border-hover)] transition-colors"
+              >
+                <ArrowUpDown className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">
+                  {SORT_OPTIONS.find((o) => o.value === sortBy)?.label}
+                </span>
+              </button>
+              <AnimatePresence>
+                {showSortDropdown && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -8, scale: 0.96 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: -8, scale: 0.96 }}
+                    transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+                    className="absolute right-0 z-30 mt-1.5 w-48 rounded-xl border border-[var(--color-border-default)] bg-white py-1 shadow-[var(--shadow-dropdown)]"
+                  >
+                    {SORT_OPTIONS.map((opt) => (
+                      <button
+                        key={opt.value}
+                        onClick={() => { setSortBy(opt.value); setShowSortDropdown(false); }}
+                        className={cn(
+                          'w-full px-4 py-2.5 text-left text-[var(--text-sm)] transition-colors',
+                          sortBy === opt.value
+                            ? 'bg-[var(--color-brand-cardinal-light)] text-[var(--color-brand-cardinal)] font-semibold'
+                            : 'text-[var(--color-neutral-700)] hover:bg-[var(--color-neutral-50)]',
+                        )}
+                      >
+                        {opt.label}
+                      </button>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           </div>
 
-          {/* AI Search Results Banner */}
+          {/* Advanced filters drawer */}
           <AnimatePresence>
-            {aiMatchedCodes !== null && aiSummary && (
+            {showAdvanced && (
               <motion.div
-                initial={{ opacity: 0, y: -8, height: 0 }}
-                animate={{ opacity: 1, y: 0, height: 'auto' }}
-                exit={{ opacity: 0, y: -8, height: 0 }}
-                transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-                className="mt-3"
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                className="overflow-hidden border-t border-[var(--color-border-default)]"
               >
-                <div className="flex items-start gap-3 rounded-xl bg-[var(--color-brand-cardinal-light)] border border-[var(--color-brand-cardinal)]/10 px-4 py-3">
-                  <Bot className="w-4 h-4 text-[var(--color-brand-cardinal)] shrink-0 mt-0.5" />
-                  <div className="flex-1 min-w-0">
-                    <p className="text-[var(--text-sm)] text-[var(--color-neutral-700)] leading-relaxed">
-                      {aiSummary}
-                    </p>
-                    <p className="text-[var(--text-2xs)] text-[var(--color-neutral-400)] mt-1 font-medium">
-                      {aiMatchedCodes.size} {aiMatchedCodes.size === 1 ? 'course' : 'courses'} found by AI
-                    </p>
-                  </div>
-                  <button
-                    onClick={clearAISearch}
-                    className="text-[var(--text-xs)] font-semibold text-[var(--color-brand-cardinal)] hover:text-[var(--color-brand-cardinal-hover)] whitespace-nowrap"
-                  >
-                    Clear
-                  </button>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </motion.div>
-
-        {/* Two-column layout */}
-        <div className="flex gap-6 items-start">
-          {/* Desktop filters sidebar - sticky so it stays visible when scrolling */}
-          <motion.aside
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.15, duration: 0.4 }}
-            className="hidden lg:block sticky top-0 w-[280px] shrink-0 self-start"
-          >
-            <div
-              className="glass-panel rounded-2xl p-5 overflow-y-auto"
-              style={{ maxHeight: 'calc(100vh - 8rem)' }}
-            >
-              <div className="flex items-center justify-between mb-5">
-                <div className="flex items-center gap-2">
-                  <SlidersHorizontal className="w-4 h-4 text-[var(--color-brand-cardinal)]" />
-                  <h2 className="text-[var(--text-md)] font-bold text-[var(--color-brand-dark)]">
-                    Filters
-                  </h2>
-                </div>
-                {hasActiveFilters && (
-                  <button
-                    onClick={resetFilters}
-                    className="text-[var(--text-sm)] font-medium text-[var(--color-brand-cardinal)] hover:underline"
-                  >
-                    Clear All
-                  </button>
-                )}
-              </div>
-              {filterPanel}
-            </div>
-          </motion.aside>
-
-          {/* Mobile filters drawer */}
-          <AnimatePresence>
-            {showMobileFilters && (
-              <>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  className="fixed inset-0 bg-black/30 backdrop-blur-sm z-40 lg:hidden"
-                  onClick={() => setShowMobileFilters(false)}
-                />
-                <motion.aside
-                  initial={{ x: '-100%' }}
-                  animate={{ x: 0 }}
-                  exit={{ x: '-100%' }}
-                  transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                  className="fixed top-0 left-0 bottom-0 w-[300px] z-50 glass-panel-strong overflow-y-auto p-5 lg:hidden"
-                >
-                  <div className="flex items-center justify-between mb-5">
-                    <div className="flex items-center gap-2">
-                      <SlidersHorizontal className="w-4 h-4 text-[var(--color-brand-cardinal)]" />
-                      <h2 className="text-[var(--text-md)] font-bold text-[var(--color-brand-dark)]">
-                        Filters
-                      </h2>
-                    </div>
-                    <button
-                      onClick={() => setShowMobileFilters(false)}
-                      className="p-1.5 rounded-xl hover:bg-[var(--color-neutral-100)] text-[var(--color-neutral-400)] transition-colors"
-                    >
-                      <X className="w-5 h-5" />
-                    </button>
-                  </div>
-                  {filterPanel}
-                </motion.aside>
-              </>
-            )}
-          </AnimatePresence>
-
-          {/* Results area */}
-          <div className="flex-1 min-w-0">
-            {/* Results header: count + mobile filter btn + sort */}
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3">
-                <button
-                  onClick={() => setShowMobileFilters(true)}
-                  className="lg:hidden flex items-center gap-2 px-3 py-2 rounded-xl border border-[var(--color-border-default)] bg-white text-[var(--text-xs)] font-semibold text-[var(--color-neutral-600)] hover:border-[var(--color-border-hover)] transition-colors"
-                >
-                  <SlidersHorizontal className="w-3.5 h-3.5" />
-                  Filters
-                  {hasActiveFilters && (
-                    <span className="w-5 h-5 rounded-full bg-[var(--color-brand-cardinal)] text-white text-[9px] font-bold flex items-center justify-center">
-                      !
+                <div className="flex flex-wrap items-center gap-6 px-4 py-3">
+                  {/* Workload */}
+                  <div className="flex items-center gap-3">
+                    <span className="text-[var(--text-2xs)] font-semibold uppercase tracking-wider text-[var(--color-neutral-400)]">
+                      Max Workload
                     </span>
-                  )}
-                </button>
-                <p className="text-[var(--text-sm)] text-[var(--color-neutral-500)]">
-                  Showing{' '}
-                  <span className="font-bold text-[var(--color-brand-dark)]">
-                    {filteredCourses.length}
-                  </span>{' '}
-                  {filteredCourses.length === 1 ? 'course' : 'courses'}
-                </p>
-              </div>
+                    <div className="flex items-center gap-1">
+                      {[1, 2, 3, 4, 5].map((n) => (
+                        <button
+                          key={n}
+                          onClick={() => setMaxWorkload(n)}
+                          className={cn(
+                            'w-7 h-7 rounded-lg text-[var(--text-xs)] font-semibold transition-all duration-200',
+                            n <= maxWorkload
+                              ? 'bg-[var(--color-brand-cardinal)]/10 text-[var(--color-brand-cardinal)]'
+                              : 'bg-[var(--color-neutral-50)] text-[var(--color-neutral-300)]',
+                          )}
+                        >
+                          {n}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
 
-              {/* Sort dropdown */}
-              <div className="relative" ref={sortRef}>
-                <button
-                  onClick={() => setShowSortDropdown((v) => !v)}
-                  className="flex items-center gap-1.5 px-3 py-2 rounded-xl border border-[var(--color-border-default)] bg-white text-[var(--text-xs)] font-semibold text-[var(--color-neutral-600)] hover:border-[var(--color-border-hover)] transition-colors"
-                >
-                  <ArrowUpDown className="w-3.5 h-3.5" />
-                  <span className="hidden sm:inline">
-                    {SORT_OPTIONS.find((o) => o.value === sortBy)?.label}
-                  </span>
-                </button>
+                  <div className="h-5 w-px bg-[var(--color-border-default)]" />
 
-                <AnimatePresence>
-                  {showSortDropdown && (
-                    <motion.div
-                      initial={{ opacity: 0, y: -8, scale: 0.96 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0, y: -8, scale: 0.96 }}
-                      transition={{
-                        type: 'spring',
-                        stiffness: 500,
-                        damping: 30,
-                      }}
-                      className="absolute right-0 z-30 mt-1.5 w-48 rounded-xl border border-[var(--color-border-default)] bg-white py-1 shadow-[var(--shadow-dropdown)]"
-                    >
-                      {SORT_OPTIONS.map((opt) => (
+                  {/* Rating */}
+                  <div className="flex items-center gap-3">
+                    <span className="text-[var(--text-2xs)] font-semibold uppercase tracking-wider text-[var(--color-neutral-400)]">
+                      Min Rating
+                    </span>
+                    <div className="flex items-center gap-1">
+                      {[
+                        { value: 0, label: 'Any' },
+                        { value: 3, label: '≥ 3.0' },
+                        { value: 4, label: '≥ 4.0' },
+                      ].map((opt) => (
                         <button
                           key={opt.value}
-                          onClick={() => {
-                            setSortBy(opt.value);
-                            setShowSortDropdown(false);
-                          }}
+                          onClick={() => setMinRating(opt.value)}
                           className={cn(
-                            'w-full px-4 py-2.5 text-left text-[var(--text-sm)] transition-colors',
-                            sortBy === opt.value
-                              ? 'bg-[var(--color-brand-cardinal-light)] text-[var(--color-brand-cardinal)] font-semibold'
-                              : 'text-[var(--color-neutral-700)] hover:bg-[var(--color-neutral-50)]',
+                            'px-3 py-1 rounded-lg text-[var(--text-xs)] font-semibold transition-all duration-200',
+                            minRating === opt.value
+                              ? 'bg-[var(--color-brand-cardinal)] text-white'
+                              : 'bg-[var(--color-neutral-50)] text-[var(--color-neutral-500)] hover:bg-[var(--color-neutral-100)]',
                           )}
                         >
                           {opt.label}
                         </button>
                       ))}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            </div>
+                    </div>
+                  </div>
 
-            {/* Course cards */}
-            {filteredCourses.length > 0 && (
-              <motion.div
-                variants={staggerContainer}
-                initial="hidden"
-                animate="visible"
-                className="space-y-3"
-              >
-                {filteredCourses.map((course) => (
-                  <CatalogCard
-                    key={course.id}
-                    course={course}
-                    isSaved={savedCourses.has(course.id)}
-                    onToggleSave={() => toggleSaved(course.id)}
-                    semester={semester}
-                  />
-                ))}
+                  {hasAdvancedFilters && (
+                    <>
+                      <div className="h-5 w-px bg-[var(--color-border-default)]" />
+                      <button
+                        onClick={() => { setMaxWorkload(5); setMinRating(0); }}
+                        className="inline-flex items-center gap-1 text-[var(--text-2xs)] font-medium text-[var(--color-brand-cardinal)]"
+                      >
+                        <X className="h-3 w-3" /> Clear
+                      </button>
+                    </>
+                  )}
+                </div>
               </motion.div>
             )}
+          </AnimatePresence>
 
-            {/* Empty state */}
-            {filteredCourses.length === 0 && (
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
-                className="mt-12 flex flex-col items-center text-center py-16"
+          {/* Category pills */}
+          <div className="flex flex-wrap items-center gap-2 border-t border-[var(--color-border-default)] px-4 py-2.5">
+            {ALL_CATEGORIES.map((cat) => {
+              const config = CATEGORY_CONFIG[cat];
+              const count = categoryCounts[cat] ?? 0;
+              const active = selectedCategories.has(cat);
+              return (
+                <button
+                  key={cat}
+                  onClick={() => toggleCategory(cat)}
+                  className={cn(
+                    'inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[var(--text-2xs)] font-semibold transition-all duration-200',
+                    active
+                      ? cn(config.bgClass, config.textClass)
+                      : 'text-[var(--color-neutral-500)] hover:bg-[var(--color-neutral-50)]',
+                  )}
+                >
+                  <span
+                    className={cn('h-1.5 w-1.5 shrink-0 rounded-full', active && 'ring-2 ring-current/20')}
+                    style={{ backgroundColor: config.color }}
+                  />
+                  {config.label}
+                  <span className={cn('tabular-nums', active ? 'opacity-60' : 'text-[var(--color-neutral-400)]')}>
+                    {count}
+                  </span>
+                </button>
+              );
+            })}
+
+            {hasActiveFilters && (
+              <button
+                onClick={resetFilters}
+                className="ml-auto inline-flex items-center gap-1 text-[var(--text-xs)] font-medium text-[var(--color-brand-cardinal)]"
               >
-                <div className="w-16 h-16 rounded-2xl bg-[var(--color-brand-cardinal)]/6 flex items-center justify-center mb-4">
-                  <SearchIcon className="w-7 h-7 text-[var(--color-brand-cardinal)]" />
-                </div>
-                <h3 className="text-[var(--text-lg)] font-bold text-[var(--color-brand-dark)]">
-                  No courses found
-                </h3>
-                <p className="mt-1.5 text-[var(--text-sm)] text-[var(--color-neutral-400)] max-w-sm">
-                  {department !== 'hci'
-                    ? `Course data for ${DEPARTMENT_LIST.find((d) => d.id === department)?.name ?? department} is coming soon.`
-                    : 'Try adjusting your filters or search query to find what you\'re looking for.'}
-                </p>
-                {hasActiveFilters && department === 'hci' && (
-                  <button
-                    onClick={resetFilters}
-                    className="mt-4 px-5 py-2 rounded-xl bg-[var(--color-brand-cardinal)] text-white text-[var(--text-sm)] font-semibold shadow-sm hover:bg-[var(--color-brand-cardinal-hover)] transition-colors"
-                  >
-                    Reset Filters
-                  </button>
-                )}
-              </motion.div>
+                <X className="h-3 w-3" /> Clear all
+              </button>
             )}
           </div>
         </div>
+
+        {/* ── Results header ─────────────────────────────── */}
+        <div className="flex items-center justify-between mb-4">
+          <p className="text-[var(--text-sm)] text-[var(--color-neutral-500)]">
+            Showing{' '}
+            <span className="font-bold text-[var(--color-brand-dark)]">
+              {filteredCourses.length}
+            </span>{' '}
+            {filteredCourses.length === 1 ? 'course' : 'courses'}
+          </p>
+        </div>
+
+        {/* ── Course cards — grid ─────────────────────────── */}
+        {filteredCourses.length > 0 && (
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
+            className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2"
+          >
+            {filteredCourses.map((course) => (
+              <CatalogCard
+                key={course.id}
+                course={course}
+                isSaved={savedCourses.has(course.id)}
+                onToggleSave={() => toggleSaved(course.id)}
+                semester={semester}
+              />
+            ))}
+          </motion.div>
+        )}
+
+        {/* Empty state */}
+        {filteredCourses.length === 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className="mt-12 flex flex-col items-center text-center py-16"
+          >
+            <div className="w-16 h-16 rounded-2xl bg-[var(--color-brand-cardinal)]/6 flex items-center justify-center mb-4">
+              <SearchIcon className="w-7 h-7 text-[var(--color-brand-cardinal)]" />
+            </div>
+            <h3 className="text-[var(--text-lg)] font-bold text-[var(--color-brand-dark)]">
+              No courses found
+            </h3>
+            <p className="mt-1.5 text-[var(--text-sm)] text-[var(--color-neutral-400)] max-w-sm">
+              {department !== 'hci'
+                ? `Course data for ${DEPARTMENT_LIST.find((d) => d.id === department)?.name ?? department} is coming soon.`
+                : 'Try adjusting your filters or search query to find what you\'re looking for.'}
+            </p>
+            {hasActiveFilters && department === 'hci' && (
+              <button
+                onClick={resetFilters}
+                className="mt-4 px-5 py-2 rounded-xl bg-[var(--color-brand-cardinal)] text-white text-[var(--text-sm)] font-semibold shadow-sm hover:bg-[var(--color-brand-cardinal-hover)] transition-colors"
+              >
+                Reset Filters
+              </button>
+            )}
+          </motion.div>
+        )}
       </motion.div>
     </DashboardLayout>
   );

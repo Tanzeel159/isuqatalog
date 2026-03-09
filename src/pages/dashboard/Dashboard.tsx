@@ -1,5 +1,17 @@
 import { useState, useEffect, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import type { PageSearchEntry } from '@/lib/searchTypes';
+
+export const SEARCH_ENTRIES: PageSearchEntry[] = [
+  { section: 'Greeting', text: 'Ready to plan your academic journey?' },
+  { section: 'Registration Alert', text: 'Fall 2026 Registration Opens Soon. Priority registration opens April 6, 2026. Set Reminder.' },
+  { section: 'Quick Actions', text: 'Build a Semester Plan. AI-assisted scheduling.' },
+  { section: 'Quick Actions', text: 'Search Courses. Browse the full catalog.' },
+  { section: 'Quick Actions', text: 'View Saved Plans. Resume where you left off.' },
+  { section: 'Current Semester', text: 'Spring 2026 Semester. In Progress. Total Credits.' },
+  { section: 'Graduation Progress', text: 'Graduation. Credits. Core Requirements. Electives. Research Credits. View Full Report.' },
+  { section: 'AI Recommendations', text: 'AI-Powered Recommendations. Powered by AI — personalized for your courses. Personalized for your degree plan.' },
+];
 import { motion } from 'motion/react';
 import {
   Clock,
@@ -25,6 +37,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { apiFetch } from '@/lib/api';
 import { staggerContainer, fadeUp } from '@/lib/motion';
 import { CURRENT_COURSES } from '@/lib/student';
+import { HCI_COURSES } from '@/pages/catalog/data';
 
 function getGreeting(): string {
   const h = new Date().getHours();
@@ -109,6 +122,7 @@ function ProgressRing({ value, max, size = 56 }: { value: number; max: number; s
 
 export default function Dashboard() {
   const { user, isLoading } = useAuth();
+  const navigate = useNavigate();
   const { recommendations, loading: recsLoading, isAI, refresh: refreshRecs } = useAIRecommendations();
   const userName = user?.name?.split(' ')[0] ?? user?.email?.split('@')[0] ?? 'Student';
   const totalCredits = CURRENT_COURSES.reduce((sum, c) => sum + c.credits, 0);
@@ -366,6 +380,16 @@ export default function Dashboard() {
                   transition={{ delay: 0.4 + i * 0.08, type: 'spring', stiffness: 300, damping: 25 }}
                   whileHover={{ y: -4, transition: { type: 'spring', stiffness: 400, damping: 20 } }}
                   whileTap={{ scale: 0.98 }}
+                  onClick={() => {
+                    const match = HCI_COURSES.find((c) => c.code === rec.code);
+                    if (match) navigate(`/course/${match.id}`);
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      const match = HCI_COURSES.find((c) => c.code === rec.code);
+                      if (match) navigate(`/course/${match.id}`);
+                    }
+                  }}
                   className="glass-panel rounded-2xl overflow-hidden cursor-pointer group/rec hover:shadow-lg transition-shadow duration-300"
                 >
                   <div className="p-5">

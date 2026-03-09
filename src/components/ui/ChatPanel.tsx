@@ -237,7 +237,7 @@ export function ChatPanel() {
                 <div>
                   <h3 className="text-[var(--text-sm)] font-bold text-[var(--color-neutral-900)]">Qatalog AI</h3>
                   <p className="text-[var(--text-2xs)] text-[var(--color-neutral-400)] font-medium">
-                    {loading ? 'Thinking...' : 'ISU HCI Advisor'}
+                    {loading ? 'Thinking...' : 'Qatalog AI'}
                   </p>
                 </div>
               </div>
@@ -270,7 +270,7 @@ export function ChatPanel() {
                     <Sparkles className="w-6 h-6 text-[var(--color-brand-cardinal)]" />
                   </div>
                   <h4 className="text-[var(--text-base)] font-bold text-[var(--color-neutral-900)] mb-1">
-                    ISU HCI Advisor
+                    Qatalog AI
                   </h4>
                   <p className="text-[var(--text-xs)] text-[var(--color-neutral-400)] mb-6 text-center max-w-[280px] leading-relaxed">
                     Ask about courses, degree requirements, schedules, professors, and more.
@@ -356,7 +356,7 @@ export function ChatPanel() {
                 </motion.button>
               </div>
               <p className="mt-2 text-center text-[var(--text-2xs)] text-[var(--color-neutral-300)]">
-                Powered by OpenAI &middot; ISU HCI program data
+                AI suggestions only &mdash; confirm with your advisor
               </p>
             </div>
           </motion.div>

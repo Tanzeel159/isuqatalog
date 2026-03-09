@@ -15,6 +15,7 @@ import Dashboard from '@/pages/dashboard/Dashboard';
 import CourseCatalog from '@/pages/catalog/CourseCatalog';
 import DepartmentSelect from '@/pages/catalog/DepartmentSelect';
 import DepartmentView from '@/pages/catalog/DepartmentView';
+import CourseDetail from '@/pages/catalog/CourseDetail';
 import SchedulePlanner from '@/pages/schedule/SchedulePlanner';
 import StudentProfile from '@/pages/profile/StudentProfile';
 import GraduationCheck from '@/pages/graduation/GraduationCheck';
@@ -41,6 +42,9 @@ function AnimatedRoutes() {
 
           {/* Course catalog (protected) */}
           <Route path="/catalog" element={<ProtectedRoute><CourseCatalog /></ProtectedRoute>} />
+
+          {/* Course detail (protected) */}
+          <Route path="/course/:id" element={<ProtectedRoute><CourseDetail /></ProtectedRoute>} />
 
           {/* Public catalog */}
           <Route path="/explore" element={<DepartmentSelect />} />

@@ -99,8 +99,6 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
   const navigate = useNavigate();
 
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchFocused, setSearchFocused] = useState(false);
 
   const currentSection = getActiveSection(location.pathname);
 
@@ -289,33 +287,19 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
               <Menu className="w-5 h-5" />
             </button>
 
-            <div className="flex-1 max-w-2xl mx-auto">
-              <div
+            <div className="flex-1 max-w-xl mx-auto">
+              <button
+                onClick={() => document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true, ctrlKey: true }))}
                 className={cn(
-                  'relative flex items-center rounded-2xl border transition-all duration-200',
-                  searchFocused
-                    ? 'border-[var(--color-border-focus)] ring-4 ring-[var(--color-brand-cardinal)]/5 bg-white shadow-[var(--shadow-card)]'
-                    : 'border-[var(--color-border-default)]/70 bg-[var(--color-neutral-50)]/80 hover:border-[var(--color-border-hover)] hover:bg-white',
+                  'relative flex w-full items-center gap-3 rounded-2xl border transition-all duration-200 cursor-text',
+                  'border-[var(--color-border-default)]/70 bg-[var(--color-neutral-50)]/80',
+                  'hover:border-[var(--color-border-hover)] hover:bg-white',
                 )}
               >
                 <Search className="w-4 h-4 text-[var(--color-neutral-400)] ml-4 flex-shrink-0" />
-                <input
-                  type="text"
-                  placeholder="Search courses, plans, professors..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onFocus={() => setSearchFocused(true)}
-                  onBlur={() => setSearchFocused(false)}
-                  className="w-full h-[var(--input-h-md)] bg-transparent px-3 text-[var(--text-sm)] placeholder:text-[var(--color-neutral-400)] focus:outline-none"
-                />
-                {searchQuery && (
-                  <button
-                    onClick={() => setSearchQuery('')}
-                    className="mr-3 p-0.5 rounded-full hover:bg-[var(--color-neutral-200)] text-[var(--color-neutral-400)]"
-                  >
-                    <X className="w-3.5 h-3.5" />
-                  </button>
-                )}
+                <span className="flex-1 h-[var(--input-h-md)] flex items-center text-[var(--text-sm)] text-[var(--color-neutral-400)]">
+                  Search courses, pages...
+                </span>
                 <div className="hidden sm:flex items-center mr-3 gap-1 text-[var(--text-2xs)] text-[var(--color-neutral-300)] select-none">
                   <kbd className="px-1.5 py-0.5 rounded-md bg-[var(--color-neutral-100)] border border-[var(--color-neutral-200)] font-mono text-[10px]">
                     {navigator.platform.includes('Mac') ? '⌘' : 'Ctrl'}
@@ -324,7 +308,7 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
                     K
                   </kbd>
                 </div>
-              </div>
+              </button>
             </div>
 
             <motion.button

@@ -1,5 +1,18 @@
 import { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import type { PageSearchEntry } from '@/lib/searchTypes';
+
+export const SEARCH_ENTRIES: PageSearchEntry[] = [
+  { section: 'Major & Degree', text: 'Major and Degree. Minor. Academic Level. Expected Graduation. Current GPA. Credits Earned.' },
+  { section: 'Enrolled Courses', text: 'Currently Enrolled courses. Course Code. Course Name. Category. Semester. Grade. Credits.' },
+  { section: 'Completed Courses', text: 'Completed Courses. Semester Total. Total Earned.' },
+  { section: 'Advisor', text: 'Advisor Information. Assigned Advisor. Contact. Academic Standing.' },
+  { section: 'AI Preferences', text: 'AI Preferences. AI Assistance. Enable AI-powered features across the portal.', route: '/profile?section=ai' },
+  { section: 'AI Features', text: 'Course Recommendations. Study Plan Generation. AI-powered features.', route: '/profile?section=ai' },
+  { section: 'Data Privacy', text: 'Data Privacy. Do not use my data for training. Anonymize data exports.', route: '/profile?section=ai' },
+  { section: 'Graduation Progress', text: 'Graduation Progress. Degree Completion. Degree Requirements. Remaining credits.', route: '/profile?section=graduation' },
+  { section: 'Degree Progress', text: 'Degree Completion. Edit Profile.' },
+];
 import { motion } from 'motion/react';
 import {
   Pencil,

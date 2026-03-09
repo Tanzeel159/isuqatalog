@@ -13,12 +13,14 @@ interface AuthLayoutProps {
   step?: number;
   totalSteps?: number;
   onBack?: () => void;
+  showFooter?: boolean;
 }
 
-export function AuthLayout({ children, title, subtitle, className, step, totalSteps, onBack }: AuthLayoutProps) {
+export function AuthLayout({ children, title, subtitle, className, step, totalSteps, onBack, showFooter }: AuthLayoutProps) {
   const showProgress = typeof step === 'number' && typeof totalSteps === 'number' && totalSteps > 0;
   const clampedStep = showProgress ? Math.min(Math.max(step!, 1), totalSteps!) : undefined;
   const progressPct = showProgress ? (clampedStep! / totalSteps!) * 100 : 0;
+  const displayFooter = showFooter ?? !showProgress;
 
   return (
     <div className="min-h-screen w-full flex flex-col relative overflow-hidden bg-[var(--color-surface-page)]">
@@ -28,7 +30,7 @@ export function AuthLayout({ children, title, subtitle, className, step, totalSt
         <Logo to="/" size="lg" />
       </header>
 
-      <main className="relative z-10 flex-1 flex items-center justify-center px-4 pb-10">
+      <main className="relative z-10 flex-1 flex items-center justify-center px-4 pb-8">
         <motion.div
           initial={{ opacity: 0, y: 16, filter: 'blur(6px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
@@ -40,22 +42,22 @@ export function AuthLayout({ children, title, subtitle, className, step, totalSt
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.1 }}
-              className="mb-6"
+              className="mb-5"
             >
               <div className="flex items-center justify-between">
-                <span className="text-[var(--text-2xs)] font-bold tracking-widest text-[var(--color-neutral-400)] uppercase">
+                <span className="text-[var(--text-2xs)] font-semibold tracking-[var(--tracking-widest)] text-[var(--color-neutral-400)] uppercase">
                   Step {clampedStep} of {totalSteps}
                 </span>
-                <span className="text-[var(--text-2xs)] font-bold tracking-widest text-[var(--color-neutral-400)] uppercase tabular-nums">
+                <span className="text-[var(--text-2xs)] font-semibold tracking-[var(--tracking-widest)] text-[var(--color-neutral-400)] uppercase tabular-nums">
                   {Math.round(progressPct)}%
                 </span>
               </div>
 
-              <div className="mt-2.5 flex gap-1.5">
+              <div className="mt-2 flex gap-1.5">
                 {Array.from({ length: totalSteps! }).map((_, i) => (
                   <div
                     key={i}
-                    className="h-1.5 flex-1 rounded-[var(--radius-full)] bg-[var(--color-neutral-200)]/60 overflow-hidden"
+                    className="h-1 flex-1 rounded-[var(--radius-full)] bg-[var(--color-neutral-200)]/60 overflow-hidden"
                   >
                     {i < clampedStep! && (
                       <motion.div
@@ -68,7 +70,6 @@ export function AuthLayout({ children, title, subtitle, className, step, totalSt
                   </div>
                 ))}
               </div>
-
             </motion.div>
           )}
 
@@ -76,19 +77,19 @@ export function AuthLayout({ children, title, subtitle, className, step, totalSt
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, delay: 0.15 }}
-            className="glass-panel-strong rounded-[var(--radius-3xl)] p-8"
+            className="glass-panel-strong rounded-[var(--radius-3xl)] px-7 py-6"
           >
             {(onBack || title || subtitle) && (
-              <div className="mb-6">
+              <div className="mb-5">
                 {onBack && (
                   <motion.button
                     type="button"
                     onClick={onBack}
                     whileHover={{ x: -3 }}
                     whileTap={{ scale: 0.95 }}
-                    className="inline-flex items-center gap-1.5 text-[var(--text-sm)] font-medium text-[var(--color-neutral-500)] hover:text-[var(--color-neutral-900)] transition-colors mb-4 group"
+                    className="inline-flex items-center gap-1.5 text-[var(--text-sm)] font-medium text-[var(--color-neutral-400)] hover:text-[var(--color-neutral-800)] transition-colors mb-3 group"
                   >
-                    <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-0.5" />
+                    <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" />
                     Back
                   </motion.button>
                 )}
@@ -97,7 +98,7 @@ export function AuthLayout({ children, title, subtitle, className, step, totalSt
                     initial={{ opacity: 0, y: 8 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
-                    className="text-[var(--text-xl)] font-bold text-[var(--color-neutral-900)] tracking-tight"
+                    className="text-[var(--text-xl)] font-bold text-[var(--color-neutral-900)] tracking-[var(--tracking-tight)]"
                   >
                     {title}
                   </motion.h1>
@@ -107,7 +108,7 @@ export function AuthLayout({ children, title, subtitle, className, step, totalSt
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.25 }}
-                    className="mt-2 text-[var(--text-base)] text-[var(--color-neutral-500)] leading-relaxed"
+                    className="mt-1.5 text-[var(--text-sm)] text-[var(--color-neutral-400)] leading-relaxed"
                   >
                     {subtitle}
                   </motion.p>
@@ -118,16 +119,18 @@ export function AuthLayout({ children, title, subtitle, className, step, totalSt
             {children}
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="mt-8 text-center"
-          >
-            <p className="text-[var(--text-xs)] text-[var(--color-neutral-300)] font-medium tracking-wide uppercase">
-              Iowa State University &bull; Academic Co-pilot
-            </p>
-          </motion.div>
+          {displayFooter && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+              className="mt-6 text-center"
+            >
+              <p className="text-[var(--text-2xs)] text-[var(--color-neutral-300)] font-medium tracking-[var(--tracking-wider)] uppercase">
+                Iowa State University &bull; Academic Co-pilot
+              </p>
+            </motion.div>
+          )}
         </motion.div>
       </main>
     </div>

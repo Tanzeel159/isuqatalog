@@ -25,7 +25,10 @@ export function Toggle({ checked, onChange, label, disabled, className }: Toggle
         aria-checked={checked}
         aria-label={label || undefined}
         disabled={disabled}
-        onClick={(e) => e.stopPropagation()}
+        onClick={(e) => {
+          e.stopPropagation();
+          if (!disabled) onChange(!checked);
+        }}
         onKeyDown={(e) => {
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();

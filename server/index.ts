@@ -10,7 +10,7 @@ import { authenticateUser, createUser, getUserById } from './auth';
 import { getCookie } from './cookies';
 import { jsonError } from './http';
 import { createSession, deleteSession, deleteUserSessions, getUserIdFromSession, sessionCookieName, purgeExpiredSessions } from './sessions';
-import { initAI, isReady, chat, getRecommendations, aiSearch, getAcademicInsights } from './ai';
+import { initAI, isReady, chat, getRecommendations, aiSearch, getAcademicInsights, getCourseAnalysis } from './ai';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -251,6 +251,40 @@ app.post('/api/ai/insights', chatLimiter, async (req, res) => {
     res.json({ ok: true, insights });
   } catch (err: unknown) {
     return aiErrorResponse(res, err, 'Insights');
+  }
+});
+
+// ── AI Course Analysis ────────────────────────────────────────────────
+
+app.post('/api/ai/course-analysis', chatLimiter, async (req, res) => {
+  if (!isReady()) {
+    return jsonError(res, 503, 'AI assistant is still initializing.');
+  }
+
+  const token = getCookie(req.headers.cookie, sessionCookieName());
+  if (!token) return jsonError(res, 401, 'Not authenticated.');
+  const userId = getUserIdFromSession(db, token);
+  if (!userId) return jsonError(res, 401, 'Not authenticated.');
+
+  const { code, name, description, category, credits, delivery, workload, avgRating, wouldTakeAgain, instructor } =
+    (req.body || {}) as Record<string, unknown>;
+
+  try {
+    const analysis = await getCourseAnalysis({
+      code: typeof code === 'string' ? code : '',
+      name: typeof name === 'string' ? name : '',
+      description: typeof description === 'string' ? description : '',
+      category: typeof category === 'string' ? category : '',
+      credits: typeof credits === 'string' ? credits : '3',
+      delivery: typeof delivery === 'string' ? delivery : '',
+      workload: typeof workload === 'number' ? workload : 3,
+      avgRating: typeof avgRating === 'number' ? avgRating : null,
+      wouldTakeAgain: typeof wouldTakeAgain === 'string' ? wouldTakeAgain : null,
+      instructor: typeof instructor === 'string' ? instructor : null,
+    });
+    res.json({ ok: true, analysis });
+  } catch (err: unknown) {
+    return aiErrorResponse(res, err, 'Course analysis');
   }
 });
 

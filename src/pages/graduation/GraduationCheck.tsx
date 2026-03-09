@@ -1,5 +1,14 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
+import type { PageSearchEntry } from '@/lib/searchTypes';
+
+export const SEARCH_ENTRIES: PageSearchEntry[] = [
+  { section: 'Header', text: 'Graduation Check. Track your progress toward degree completion.' },
+  { section: 'Statistics', text: 'Estimated Graduation. Completed Credits. In progress. GPA. On track for graduation.' },
+  { section: 'Degree Requirements', text: 'Degree Requirements. Complete. In progress. Core Requirements. Electives. Research Credits.' },
+  { section: 'Timeline', text: 'Graduation Timeline. Plan semesters in Schedule to keep this timeline in sync. Add from Schedule.' },
+  { section: 'AI Insights', text: 'AI Academic Insights. Powered by AI. Personalized for your plan.' },
+];
 import { motion, AnimatePresence } from 'motion/react';
 import {
   GraduationCap,

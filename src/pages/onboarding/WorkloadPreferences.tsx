@@ -46,7 +46,7 @@ export default function WorkloadPreferences() {
       subtitle="This helps us recommend classes based on your time and workload preferences."
       onBack={() => navigate('/onboarding/interests')}
     >
-      <form onSubmit={handleSubmit} className="space-y-5">
+      <form onSubmit={handleSubmit} className="space-y-4">
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -78,30 +78,40 @@ export default function WorkloadPreferences() {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
+          className="rounded-xl border border-[var(--color-border-default)] bg-[var(--color-neutral-50)]/60 px-4 py-4"
         >
-          <Toggle
-            checked={isInternationalStudent}
-            onChange={setIsInternationalStudent}
-            label="Are you an international student?"
-          />
+          <div className="flex items-start justify-between gap-4">
+            <div className="space-y-1">
+              <p className="text-[var(--text-sm)] font-semibold text-[var(--color-neutral-800)]">International student?</p>
+              <p className="text-[var(--text-xs)] text-[var(--color-neutral-400)] leading-relaxed">
+                Helps us account for visa enrollment requirements and prerequisite guidance for international credentials.
+              </p>
+            </div>
+            <div className="pt-0.5 shrink-0">
+              <Toggle
+                checked={isInternationalStudent}
+                onChange={setIsInternationalStudent}
+              />
+            </div>
+          </div>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25 }}
-          className="flex flex-col items-center gap-3 pt-2"
+          className="flex flex-col items-center gap-3 pt-1"
         >
           <Button type="submit" className="w-full" isLoading={isSaving}>
-            All Set!
+            Complete Setup
           </Button>
 
           <button
             type="button"
             onClick={() => navigate('/dashboard', { replace: true })}
-            className="text-[12px] font-medium text-[var(--color-neutral-300)] hover:text-[var(--color-neutral-500)] transition-colors"
+            className="text-[var(--text-xs)] font-medium text-[var(--color-neutral-400)] hover:text-[var(--color-neutral-600)] transition-colors"
           >
-            Skip &rarr; You can set up later
+            Skip for now
           </button>
         </motion.div>
       </form>

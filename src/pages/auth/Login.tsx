@@ -33,13 +33,13 @@ export default function Login() {
 
   return (
     <AuthLayout title="Welcome back" subtitle="Sign in to your academic portal">
-      <form onSubmit={handleSubmit} className="space-y-5">
+      <form onSubmit={handleSubmit} className="space-y-4">
         {formError && (
           <motion.div
             role="alert"
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
-            className="rounded-2xl border border-red-100 bg-red-50/60 px-4 py-3 text-[var(--text-sm)] font-medium text-red-700 backdrop-blur-sm"
+            className="rounded-xl border border-red-100 bg-red-50/60 px-4 py-3 text-[var(--text-sm)] font-medium text-red-700 backdrop-blur-sm"
           >
             {formError}
           </motion.div>
@@ -68,7 +68,7 @@ export default function Login() {
           <div className="flex justify-end">
             <Link
               to="/forgot-password"
-              className="text-[12px] font-medium text-[var(--color-neutral-400)] hover:text-[var(--color-brand-cardinal)] transition-colors"
+              className="text-[var(--text-xs)] font-medium text-[var(--color-neutral-400)] hover:text-[var(--color-brand-cardinal)] transition-colors"
             >
               Forgot password?
             </Link>
@@ -85,8 +85,14 @@ export default function Login() {
             Sign in
           </Button>
 
-          <Link to="/signup">
-            <Button variant="draw-outline" className="w-full" type="button">
+          <div className="relative flex items-center gap-3 py-1">
+            <div className="flex-1 h-px bg-[var(--color-border-default)]" />
+            <span className="text-[var(--text-2xs)] font-medium text-[var(--color-neutral-300)] uppercase tracking-[var(--tracking-wider)]">or</span>
+            <div className="flex-1 h-px bg-[var(--color-border-default)]" />
+          </div>
+
+          <Link to="/signup" className="block">
+            <Button variant="outline" className="w-full" type="button">
               New student? Create account
             </Button>
           </Link>
@@ -100,9 +106,9 @@ export default function Login() {
         >
           <Link
             to="/explore"
-            className="text-[var(--text-2xs)] text-[var(--color-neutral-300)] transition-colors hover:text-[var(--color-neutral-500)]"
+            className="inline-flex items-center gap-1.5 text-[var(--text-xs)] font-medium text-[var(--color-neutral-400)] hover:text-[var(--color-brand-cardinal)] transition-colors underline underline-offset-4 decoration-[var(--color-neutral-200)] hover:decoration-[var(--color-brand-cardinal)]/30"
           >
-            or browse catalog without signing in
+            Browse catalog without signing in
           </Link>
         </motion.div>
       </form>

@@ -1,5 +1,12 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import type { PageSearchEntry } from '@/lib/searchTypes';
+
+export const SEARCH_ENTRIES: PageSearchEntry[] = [
+  { section: 'Header', text: 'Schedule Planner. Export. Share with Advisor.' },
+  { section: 'Status', text: 'Schedule Status. No time conflicts. Prerequisites. All Met. Not Met.' },
+  { section: 'Graduation', text: 'Graduation Requirements. Schedule Summary. Total Courses. Total Credits. Average Workload.' },
+];
 import {
   ChevronLeft,
   ChevronRight,

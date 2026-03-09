@@ -573,3 +573,75 @@ Be specific — reference actual course codes, credit counts, and requirements.`
 
   return parseJsonArray(reply);
 }
+
+// ─── Course Difficulty Analysis ──────────────────────────────────────
+
+interface CourseInfo {
+  code: string;
+  name: string;
+  description: string;
+  category: string;
+  credits: string;
+  delivery: string;
+  workload: number;
+  avgRating: number | null;
+  wouldTakeAgain: string | null;
+  instructor: string | null;
+}
+
+export async function getCourseAnalysis(
+  course: CourseInfo,
+): Promise<{ difficulty: string; summary: string; points: { label: string; detail: string }[] }> {
+  if (!ready || !openai) throw new Error('AI not available');
+
+  const query = `${course.code} ${course.name} ${course.category} difficulty workload assessment syllabus`;
+  const contextTexts = await findRelevant(query, 15);
+  const contextBlock = contextTexts.map((t, i) => `--- ${i + 1} ---\n${t}`).join('\n\n');
+
+  const reply = await complete([
+    {
+      role: 'system',
+      content: 'You are an academic course analyst for the ISU HCI program. Return ONLY valid JSON, no other text.',
+    },
+    {
+      role: 'user',
+      content: `Analyze the difficulty and overall experience of this course for prospective graduate students.
+
+Course: ${course.code} — ${course.name}
+Category: ${course.category}
+Credits: ${course.credits}
+Delivery: ${course.delivery}
+Workload score: ${course.workload}/5
+${course.avgRating ? `Average rating: ${course.avgRating}/5` : 'No ratings yet'}
+${course.wouldTakeAgain ? `Would take again: ${course.wouldTakeAgain}` : ''}
+${course.instructor ? `Instructor: ${course.instructor}` : ''}
+
+Description: ${course.description}
+
+Program context:
+${contextBlock}
+
+Provide a brief difficulty assessment. The difficulty should be "Easy", "Moderate", or "Challenging".
+
+Return ONLY a valid JSON object:
+{"difficulty":"Moderate","summary":"One concise sentence about the course experience.","points":[{"label":"2-word label","detail":"One short sentence."}]}
+
+Rules:
+- summary: max 20 words
+- points: exactly 3, each detail max 15 words
+- Be specific — reference actual course content and context`,
+    },
+  ], { temperature: 0.3, max_tokens: 800 });
+
+  const parsed = parseJsonObject<{
+    difficulty?: string;
+    summary?: string;
+    points?: { label: string; detail: string }[];
+  }>(reply);
+
+  return {
+    difficulty: parsed?.difficulty ?? (course.workload <= 2 ? 'Easy' : course.workload <= 3 ? 'Moderate' : 'Challenging'),
+    summary: parsed?.summary ?? 'Analysis based on course data and student feedback.',
+    points: Array.isArray(parsed?.points) ? parsed.points.slice(0, 4) : [],
+  };
+}

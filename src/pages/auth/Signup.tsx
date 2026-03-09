@@ -51,19 +51,19 @@ export default function Signup() {
 
   return (
     <AuthLayout
-      className="max-w-[520px]"
+      className="max-w-[var(--card-w-md)]"
       step={1}
       totalSteps={4}
-      title="Start your Path to Academic Success"
-      subtitle="Let's create your unique QatalogID"
+      title="Create your account"
+      subtitle="Set up your QatalogID and credentials to get started"
     >
-      <form onSubmit={handleSubmit} className="space-y-5">
+      <form onSubmit={handleSubmit} className="space-y-4">
         {formError && (
           <motion.div
             role="alert"
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
-            className="rounded-2xl border border-red-100 bg-red-50/60 px-4 py-3 text-[var(--text-sm)] font-medium text-red-700 backdrop-blur-sm"
+            className="rounded-xl border border-red-100 bg-red-50/60 px-4 py-3 text-[var(--text-sm)] font-medium text-red-700 backdrop-blur-sm"
           >
             {formError}
           </motion.div>
@@ -76,7 +76,7 @@ export default function Signup() {
           required
           value={qatalogId}
           onChange={(e) => setQatalogId(e.target.value)}
-          hint="This is your unique identifier in ISU Qatalog"
+          hint="Your unique identifier in ISU Qatalog"
           autoComplete="username"
         />
 
@@ -90,7 +90,7 @@ export default function Signup() {
           autoComplete="email"
         />
 
-        <div className="space-y-2">
+        <div className="space-y-1.5">
           <Input
             label="Password"
             placeholder="••••••••"
@@ -107,9 +107,9 @@ export default function Signup() {
               aria-live="polite"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
-              className="space-y-1.5"
+              className="space-y-1"
             >
-              <div className="flex gap-1">
+              <div className="flex gap-0.5">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <motion.div
                     key={i}
@@ -130,7 +130,7 @@ export default function Signup() {
           )}
         </div>
 
-        <Button type="submit" className="w-full mt-2" isLoading={isLoading}>
+        <Button type="submit" className="w-full" isLoading={isLoading}>
           Continue
         </Button>
       </form>

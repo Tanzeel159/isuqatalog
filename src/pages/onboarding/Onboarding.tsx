@@ -56,7 +56,7 @@ export default function Onboarding() {
       subtitle="Your background helps us match you with cross-disciplinary courses"
       onBack={() => navigate('/signup')}
     >
-      <form onSubmit={handleSubmit} className="space-y-5">
+      <form onSubmit={handleSubmit} className="space-y-4">
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -106,14 +106,14 @@ export default function Onboarding() {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25 }}
-          className="flex items-center justify-between pt-2"
+          className="flex items-center justify-between pt-1"
         >
           <button
             type="button"
             onClick={() => navigate('/onboarding/interests')}
-            className="text-[12px] font-medium text-[var(--color-neutral-400)] hover:text-[var(--color-neutral-700)] transition-colors"
+            className="text-[var(--text-xs)] font-medium text-[var(--color-neutral-400)] hover:text-[var(--color-neutral-600)] transition-colors"
           >
-            Skip &rarr; You can set up later
+            Skip for now
           </button>
 
           <Button type="submit" className="px-8" isLoading={isLoading} disabled={!allFilled}>

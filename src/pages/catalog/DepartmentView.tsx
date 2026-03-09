@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import {
-  ArrowRight,
   Bookmark,
   ChevronDown,
+  Search,
   SlidersHorizontal,
   X,
 } from 'lucide-react';
@@ -38,7 +38,7 @@ export default function DepartmentView() {
   const [selectedCategory, setSelectedCategory] = useState<CourseCategory | 'ALL'>('ALL');
   const [deliveryFilter, setDeliveryFilter] = useState<(typeof DELIVERY_MODES)[number]>('ALL');
   const [showFilters, setShowFilters] = useState(false);
-  const [aiPrompt, setAiPrompt] = useState('');
+  const [textFilter, setTextFilter] = useState('');
   const [showDeptSwitcher, setShowDeptSwitcher] = useState(false);
 
   const courses = id === 'hci' ? HCI_COURSES : [];
@@ -56,14 +56,24 @@ export default function DepartmentView() {
     categoryCounts[cat] = baseFiltered.filter((c) => c.category === cat).length;
   });
 
-  const filteredCourses = baseFiltered.filter(
-    (c) => selectedCategory === 'ALL' || c.category === selectedCategory,
-  );
+  const filteredCourses = baseFiltered.filter((c) => {
+    if (selectedCategory !== 'ALL' && c.category !== selectedCategory) return false;
+    if (textFilter.trim()) {
+      const q = textFilter.trim().toLowerCase();
+      return (
+        c.code.toLowerCase().includes(q) ||
+        c.name.toLowerCase().includes(q) ||
+        c.offerings.some((o) => o.instructor?.toLowerCase().includes(q))
+      );
+    }
+    return true;
+  });
 
   const clearAllFilters = () => {
     setSemester('ALL');
     setSelectedCategory('ALL');
     setDeliveryFilter('ALL');
+    setTextFilter('');
   };
 
   return (
@@ -175,42 +185,35 @@ export default function DepartmentView() {
 
       {/* Main content */}
       <main className="relative z-10 mx-auto w-full max-w-7xl flex-1 px-4 py-6 sm:px-8">
-        {/* AI prompt */}
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className={cn(
-            'relative rounded-2xl border border-[var(--color-border-default)] bg-white/90 backdrop-blur-sm',
-            'transition-all duration-200',
-            'focus-within:border-[var(--color-border-focus)] focus-within:shadow-[0_0_0_4px_rgba(200,16,46,0.05)]',
-            'hover:border-[var(--color-border-hover)]',
-          )}
-        >
-          <textarea
-            value={aiPrompt}
-            onChange={(e) => setAiPrompt(e.target.value)}
-            placeholder='Ask Qatalog — e.g. "graduate HCI courses on cognitive psychology and user research"'
-            rows={2}
-            className="w-full resize-none bg-transparent px-4 pb-11 pt-3.5 text-[var(--text-sm)] leading-relaxed placeholder:text-[var(--color-neutral-400)] focus:outline-none"
-          />
-          <motion.button
-            whileTap={{ scale: 0.85 }}
-            whileHover={{ scale: 1.1 }}
-            className="absolute bottom-2.5 right-2.5 flex h-8 w-8 items-center justify-center rounded-xl bg-[var(--color-brand-cardinal)] text-white shadow-md transition-colors hover:bg-[var(--color-brand-cardinal-hover)]"
-          >
-            <ArrowRight className="h-3.5 w-3.5" />
-          </motion.button>
-        </motion.div>
-
         {/* Filter bar */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mt-6 rounded-2xl border border-[var(--color-border-default)] bg-white/70 backdrop-blur-sm"
+          className="rounded-2xl border border-[var(--color-border-default)] bg-white/70 backdrop-blur-sm"
         >
           <div className="flex flex-wrap items-center gap-3 px-4 py-3">
+            <div className="relative flex items-center">
+              <Search className="absolute left-2.5 h-3.5 w-3.5 text-[var(--color-neutral-400)]" />
+              <input
+                type="text"
+                value={textFilter}
+                onChange={(e) => setTextFilter(e.target.value)}
+                placeholder="Filter courses..."
+                className="h-8 w-[160px] rounded-lg border border-[var(--color-border-default)] bg-white pl-8 pr-7 text-[var(--text-xs)] text-[var(--color-neutral-800)] placeholder:text-[var(--color-neutral-400)] transition-colors focus:border-[var(--color-neutral-400)] focus:outline-none"
+              />
+              {textFilter && (
+                <button
+                  onClick={() => setTextFilter('')}
+                  className="absolute right-2 text-[var(--color-neutral-400)] hover:text-[var(--color-neutral-600)]"
+                >
+                  <X className="h-3 w-3" />
+                </button>
+              )}
+            </div>
+
+            <div className="h-5 w-px bg-[var(--color-border-default)]" />
+
             <div className="inline-flex overflow-hidden rounded-full border border-[var(--color-border-default)]">
               {LEVELS.map((l) => (
                 <button
@@ -347,7 +350,7 @@ export default function DepartmentView() {
               ? <><span className="font-semibold text-[var(--color-brand-dark)]">{courses.length}</span> courses available</>
               : <>Showing <span className="font-semibold text-[var(--color-brand-dark)]">{filteredCourses.length}</span> of {courses.length}</>}
           </p>
-          {(semester !== 'ALL' || selectedCategory !== 'ALL' || deliveryFilter !== 'ALL') && (
+          {(semester !== 'ALL' || selectedCategory !== 'ALL' || deliveryFilter !== 'ALL' || textFilter.trim()) && (
             <button onClick={clearAllFilters} className="inline-flex items-center gap-1 text-[var(--text-xs)] font-medium text-[var(--color-brand-cardinal)]">
               <X className="h-3 w-3" /> Clear filters
             </button>

@@ -61,3 +61,15 @@ After getting the site live, I spent some time cleaning up the repo. Removed a s
 The biggest quality-of-life improvement: a one-command deploy. Instead of SSHing into the server manually every time, `npm run deploy` does everything — pulls the latest code, installs dependencies, rebuilds the frontend, and restarts the server. One line, about 30 seconds, done. I considered setting up auto-deploy via GitHub webhooks but decided against it — for a solo project, having explicit control over when deploys happen is more practical and there's no webhook endpoint to secure.
 
 ---
+
+## March 9, 2026 — The Course Detail Page
+
+One of the most visible gaps in the catalog was the lack of a course detail page. Users could browse and filter courses, but clicking "View Details" did nothing. Today I built it out.
+
+The design started from a mockup that packed a lot into one screen: course header with rating, tabs, an "About" section, workload expectations, assessment breakdown, student reviews, course statistics, an AI difficulty assessment card, and prerequisite listings. One issue in the mockup was that the rating appeared in two separate places — once in the header and again in a standalone reviews section. I consolidated it into a single prominent display in the header, which feels cleaner and avoids the redundancy.
+
+The interesting challenge was data. The existing course dataset has basics — code, name, description, category, credits, delivery mode, and per-offering instructor/rating/difficulty. But the detail page needs richer data: assessment breakdowns, individual reviews, enrollment counts, average grades. Rather than hand-writing mock data for all 28 courses, I wrote a seeded generator that deterministically produces varied but consistent data per course ID. Each course gets its own assessment split, review quotes, and enrollment numbers, and they stay the same across page loads.
+
+The page uses the same design language as the rest of the app — glass panels, the cardinal/gold brand palette, CSS custom property tokens for spacing and typography, and Motion for entrance animations. The sidebar has a purple gradient AI difficulty card that matches the mockup's aesthetic nicely. Added tab navigation (Overview, Reviews, Discussion) with the Discussion tab as a stub for future work.
+
+---
