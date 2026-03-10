@@ -26,7 +26,6 @@
 | Document | Description |
 |----------|-------------|
 | [Design System](docs/DESIGN_SYSTEM.md) | Brand tokens, color system, typography, components |
-| [Journal](docs/JOURNAL.md) | Narrative of the build process |
 
 ## Project Structure
 
