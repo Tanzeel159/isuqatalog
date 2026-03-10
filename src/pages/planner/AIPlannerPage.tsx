@@ -294,15 +294,26 @@ function WorkloadDots({ level }: { level: number }) {
   );
 }
 
-const SLOT_LABELS = ['AM', 'PM', 'EVE'];
+const SLOT_LABELS = ['8–12', '12–5', '5–8'];
+
+const SLOT_TIME_MAP: Record<string, string> = {
+  morning: '8 am – 12 pm',
+  afternoon: '12 – 5 pm',
+  evening: '5 – 8 pm',
+};
 
 function WeeklyPreview({ courses }: { courses: PlanCourse[] }) {
   const grid: (string | null)[][] = Array.from({ length: 3 }, () => Array(5).fill(null));
-  const legend: { color: string; code: string }[] = [];
+  const legend: { color: string; code: string; days: string; time: string }[] = [];
 
   courses.forEach((course, i) => {
     const color = COURSE_COLORS[i % COURSE_COLORS.length];
-    legend.push({ color, code: course.code });
+    legend.push({
+      color,
+      code: course.code,
+      days: course.days.join('/'),
+      time: SLOT_TIME_MAP[course.timeSlot] ?? '',
+    });
     const slotIdx = course.timeSlot === 'morning' ? 0 : course.timeSlot === 'afternoon' ? 1 : 2;
     course.days.forEach((day) => {
       const dayIdx = DAY_MAP[day];
@@ -325,7 +336,7 @@ function WeeklyPreview({ courses }: { courses: PlanCourse[] }) {
       </p>
 
       {/* Day headers */}
-      <div className="grid grid-cols-[22px_repeat(5,1fr)] gap-1.5 mb-1.5">
+      <div className="grid grid-cols-[30px_repeat(5,1fr)] gap-1.5 mb-1.5">
         <div />
         {PREVIEW_DAYS.map((d, i) => (
           <div key={i} className="text-center text-[10px] font-bold text-[var(--color-neutral-500)] tracking-wide select-none">
@@ -337,9 +348,9 @@ function WeeklyPreview({ courses }: { courses: PlanCourse[] }) {
       {/* Grid rows */}
       <div className="space-y-1.5">
         {grid.map((row, slotIdx) => (
-          <div key={slotIdx} className="grid grid-cols-[22px_repeat(5,1fr)] gap-1.5">
+          <div key={slotIdx} className="grid grid-cols-[30px_repeat(5,1fr)] gap-1.5">
             <div className="flex items-center justify-center">
-              <span className="text-[8px] font-bold text-[var(--color-neutral-400)] tracking-wider leading-none select-none">
+              <span className="text-[7px] font-bold text-[var(--color-neutral-400)] leading-none select-none whitespace-nowrap">
                 {SLOT_LABELS[slotIdx]}
               </span>
             </div>
@@ -375,16 +386,21 @@ function WeeklyPreview({ courses }: { courses: PlanCourse[] }) {
       </div>
 
       {/* Color legend */}
-      <div className="mt-3 pt-2.5 border-t border-[var(--color-border-default)]/40 space-y-1.5">
-        {legend.map(({ color, code }) => (
-          <div key={code} className="flex items-center gap-2">
+      <div className="mt-3 pt-2.5 border-t border-[var(--color-border-default)]/40 space-y-2">
+        {legend.map(({ color, code, days, time }) => (
+          <div key={code} className="flex items-start gap-2">
             <span
-              className="w-2.5 h-2.5 rounded-[3px] shrink-0 shadow-sm"
+              className="w-2.5 h-2.5 rounded-[3px] shrink-0 shadow-sm mt-0.5"
               style={{ backgroundColor: color }}
             />
-            <span className="text-[10px] font-semibold text-[var(--color-neutral-600)] leading-none truncate">
-              {code}
-            </span>
+            <div className="min-w-0">
+              <span className="text-[10px] font-semibold text-[var(--color-neutral-600)] leading-none block truncate">
+                {code}
+              </span>
+              <span className="text-[9px] text-[var(--color-neutral-400)] leading-tight block mt-0.5">
+                {days} · {time}
+              </span>
+            </div>
           </div>
         ))}
       </div>
@@ -628,14 +644,14 @@ function PlanSkeleton() {
       <div className="w-52 shrink-0 hidden xl:block">
         <div className="glass-panel rounded-xl p-4 space-y-2">
           <div className={cn('h-3 w-20 rounded bg-[var(--color-neutral-100)]', sk)} />
-          <div className="grid grid-cols-[22px_repeat(5,1fr)] gap-1.5">
+          <div className="grid grid-cols-[30px_repeat(5,1fr)] gap-1.5">
             <div />
             {Array.from({ length: 5 }).map((_, j) => (
               <div key={j} className={cn('h-3 rounded bg-[var(--color-neutral-100)]', sk)} />
             ))}
           </div>
           {Array.from({ length: 3 }).map((_, i) => (
-            <div key={i} className="grid grid-cols-[22px_repeat(5,1fr)] gap-1.5">
+            <div key={i} className="grid grid-cols-[30px_repeat(5,1fr)] gap-1.5">
               <div className={cn('aspect-square w-4 rounded bg-[var(--color-neutral-100)]', sk)} />
               {Array.from({ length: 5 }).map((_, j) => (
                 <div key={j} className={cn('aspect-square rounded-lg bg-[var(--color-neutral-100)]', sk)} />
@@ -968,7 +984,29 @@ export default function AIPlannerPage() {
             {!generated ? (
               <EmptyState />
             ) : loading ? (
-              Array.from({ length: 3 }).map((_, i) => <PlanSkeleton key={i} />)
+              <>
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+                  className="glass-panel rounded-2xl p-8 flex flex-col items-center text-center"
+                >
+                  <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
+                    className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[var(--color-brand-cardinal)]/10 mb-4"
+                  >
+                    <Sparkles className="w-7 h-7 text-[var(--color-brand-cardinal)]" />
+                  </motion.div>
+                  <h3 className="text-[var(--text-lg)] font-bold text-[var(--color-neutral-900)] mb-1.5">
+                    Generating your personalized plan
+                  </h3>
+                  <p className="text-[var(--text-sm)] text-[var(--color-neutral-400)] max-w-xs">
+                    Analyzing your preferences and academic profile to build optimized semester plans...
+                  </p>
+                </motion.div>
+                {Array.from({ length: 3 }).map((_, i) => <PlanSkeleton key={i} />)}
+              </>
             ) : (
               <>
                 {/* Plans header */}

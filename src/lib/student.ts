@@ -68,8 +68,8 @@ export const STUDENT_ACADEMIC_PROFILE: StudentAcademicProfile = {
   degree: 'M.S. in Human-Computer Interaction',
   degreeTrack: 'Creative Component',
   concentration: 'UX Research & Design',
-  year: 'Year 2',
-  expectedGraduation: 'December 2026',
+  year: 'Year 1',
+  expectedGraduation: 'May 2027',
   interests: [
     'UX Research',
     'Interaction Design',
@@ -87,28 +87,23 @@ export const STUDENT_ACADEMIC_PROFILE: StudentAcademicProfile = {
 };
 
 export const COMPLETED_COURSE_HISTORY: CompletedCourseRecord[] = [
-  { code: 'HCI 5210', name: 'Cognitive Psychology of HCI', semester: 'Fall 2024', grade: 'A', credits: 3, category: 'Design Core' },
-  { code: 'ARTGR 5300', name: 'User Engagement', semester: 'Fall 2024', grade: 'A-', credits: 3, category: 'Design Core' },
-  { code: 'HCI 5900', name: 'Managing UX Teams & Design Systems', semester: 'Fall 2024', grade: 'A', credits: 3, category: 'Elective' },
-  { code: 'HCI 5840', name: 'Python Application Development', semester: 'Spring 2025', grade: 'A', credits: 3, category: 'Implementation Core' },
-  { code: 'HCI 5790X', name: 'Methods for Interdisciplinary Research', semester: 'Spring 2025', grade: 'B+', credits: 3, category: 'Evaluation Core' },
-  { code: 'STAT 5010', name: 'Applied Statistics', semester: 'Spring 2025', grade: 'B+', credits: 3, category: 'Elective' },
-  { code: 'HCI 5890', name: 'Design and Ethics', semester: 'Fall 2025', grade: 'A', credits: 3, category: 'Phenomena Core' },
-  { code: 'HCI 5040', name: 'Evaluating Tech-based Learning Env.', semester: 'Fall 2025', grade: 'A-', credits: 3, category: 'Evaluation Core' },
-  { code: 'HCI 5260', name: 'Design Ethnography', semester: 'Fall 2025', grade: 'A', credits: 3, category: 'Elective' },
+  { code: 'HCI 5210', name: 'Cognitive Psychology of HCI', semester: 'Fall 2025', grade: 'A', credits: 3, category: 'Design Core' },
+  { code: 'HCI 5840', name: 'Python Application Development', semester: 'Fall 2025', grade: 'A-', credits: 3, category: 'Implementation Core' },
+  { code: 'HCI 5040', name: 'Evaluating Tech-based Learning Env.', semester: 'Fall 2025', grade: 'A', credits: 3, category: 'Evaluation Core' },
 ];
 
 export const CURRENT_ENROLLMENTS: CurrentCourseRecord[] = [
-  { code: 'HCI 5750', name: 'Computational Perception', credits: 3, category: 'Implementation Core', semester: 'Spring 2026' },
-  { code: 'HCI 5300X', name: 'Perspectives in HCI', credits: 3, category: 'Phenomena Core', semester: 'Spring 2026' },
-  { code: 'HCI 5220', name: 'Scientific Methods in HCI', credits: 3, category: 'Evaluation Core', semester: 'Spring 2026' },
+  { code: 'ARTGR 5300', name: 'User Engagement', credits: 3, category: 'Design Core', semester: 'Spring 2026' },
+  { code: 'HCI 5890', name: 'Design and Ethics', credits: 3, category: 'Phenomena Core', semester: 'Spring 2026' },
+  { code: 'HCI 5260', name: 'Design Ethnography', credits: 3, category: 'Elective', semester: 'Spring 2026' },
 ];
 
 export const SAVED_COURSES: SavedCourseRecord[] = [
+  { code: 'HCI 6550', targetSemester: 'Fall 2026', savedReason: 'Saved from AI suggestion: completes the phenomena core with an organizational HCI focus' },
   { code: 'HCI 5400X', targetSemester: 'Fall 2026', savedReason: 'Saved from AI suggestion: matches your XR & machine learning interest' },
   { code: 'PSYCH 5010', targetSemester: 'Fall 2026', savedReason: 'Saved from catalog: strengthens evaluation methodology' },
-  { code: 'HCI 6030', targetSemester: 'Fall 2026', savedReason: 'Saved from AI suggestion: aligns with learning environments focus' },
-  { code: 'HCI 5100', targetSemester: 'Fall 2026', savedReason: 'Bookmarked: game-based learning for creative component research' },
+  { code: 'HCI 6030', targetSemester: 'Spring 2027', savedReason: 'Saved from AI suggestion: aligns with learning environments focus' },
+  { code: 'HCI 5990', targetSemester: 'Spring 2027', savedReason: 'Capstone placeholder for the creative component semester' },
 ];
 
 export const CURRENT_COURSES: CourseEntry[] = CURRENT_ENROLLMENTS.map(({ code, name, credits }) => ({
@@ -153,24 +148,24 @@ export const COMPLETION_PCT = Math.round((EARNED_CREDITS / TOTAL_REQUIRED) * 100
 export const DEGREE_REQUIREMENTS: DegreeRequirement[] = [
   {
     label: 'Major Core requirements',
-    earned: '15/15 credits',
-    done: true,
+    earned: '6/15 credits',
+    done: false,
     courses: [
       { code: 'HCI 5210', name: 'Cognitive Psychology of HCI', credits: 3 },
       { code: 'ARTGR 5300', name: 'User Engagement', credits: 3 },
       { code: 'HCI 5840', name: 'Python Application Development', credits: 3 },
-      { code: 'HCI 5790X', name: 'Methods for Interdisciplinary Research', credits: 3 },
       { code: 'HCI 5890', name: 'Design and Ethics', credits: 3 },
+      { code: 'HCI 6550', name: 'Organizational and Social Implications of HCI', credits: 3 },
     ],
   },
   {
     label: 'Electives',
-    earned: '9/9 credits',
-    done: true,
+    earned: '0/9 credits',
+    done: false,
     courses: [
-      { code: 'HCI 5900', name: 'Managing UX Teams & Design Systems', credits: 3 },
-      { code: 'STAT 5010', name: 'Applied Statistics', credits: 3 },
       { code: 'HCI 5260', name: 'Design Ethnography', credits: 3 },
+      { code: 'STAT 5010', name: 'Applied Statistics', credits: 3 },
+      { code: 'PSYCH 5010', name: 'Foundations of Behavioral Research', credits: 3 },
     ],
   },
   {
@@ -191,36 +186,29 @@ export const DEGREE_REQUIREMENTS: DegreeRequirement[] = [
 
 export const TIMELINE_SEMESTERS: SemesterPlan[] = [
   {
-    id: 'fall-2024',
-    label: 'Fall 2024',
-    status: 'completed',
-    credits: 9,
-    courses: ['HCI 5210', 'ARTGR 5300', 'HCI 5900'],
-  },
-  {
-    id: 'spring-2025',
-    label: 'Spring 2025',
-    status: 'completed',
-    credits: 9,
-    courses: ['HCI 5840', 'HCI 5790X', 'STAT 5010'],
-  },
-  {
     id: 'fall-2025',
     label: 'Fall 2025',
     status: 'completed',
     credits: 9,
-    courses: ['HCI 5890', 'HCI 5040', 'HCI 5260'],
+    courses: ['HCI 5210', 'HCI 5840', 'HCI 5040'],
   },
   {
     id: 'spring-2026',
     label: 'Spring 2026',
     status: 'current',
     credits: 9,
-    courses: ['HCI 5750', 'HCI 5300X', 'HCI 5220'],
+    courses: ['ARTGR 5300', 'HCI 5890', 'HCI 5260'],
   },
   {
     id: 'fall-2026',
     label: 'Fall 2026',
+    status: 'planned',
+    credits: 9,
+    courses: ['HCI 6550', 'HCI 5400X', 'PSYCH 5010'],
+  },
+  {
+    id: 'spring-2027',
+    label: 'Spring 2027',
     status: 'planned',
     credits: 3,
     courses: ['HCI 5990'],
