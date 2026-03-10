@@ -4,7 +4,7 @@ import type { PageSearchEntry } from '@/lib/searchTypes';
 
 export const SEARCH_ENTRIES: PageSearchEntry[] = [
   { section: 'Header', text: 'Graduation Check. Track your progress toward degree completion.' },
-  { section: 'Statistics', text: 'Estimated Graduation. Completed Credits. In progress. GPA. On track for graduation.' },
+  { section: 'Statistics', text: 'Estimated Graduation. Completed Credits. Courses in progress. GPA. On track for graduation.' },
   { section: 'Degree Requirements', text: 'Degree Requirements. Complete. In progress. Core Requirements. Electives. Research Credits.' },
   { section: 'Timeline', text: 'Graduation Timeline. Plan semesters in Schedule to keep this timeline in sync. Add from Schedule.' },
   { section: 'AI Insights', text: 'AI Academic Insights. Powered by AI. Personalized for your plan.' },
@@ -39,6 +39,7 @@ import {
   COMPLETION_PCT,
   DEGREE_REQUIREMENTS,
   TIMELINE_SEMESTERS,
+  CURRENT_COURSES,
 } from '@/lib/student';
 
 interface AIInsight {
@@ -100,6 +101,8 @@ function ProgressRing({ value, max, size = 72 }: { value: number; max: number; s
 }
 
 function EstimatedGraduationCard() {
+  const creditsToGo = Math.max(0, TOTAL_REQUIRED - EARNED_CREDITS);
+
   return (
     <motion.div
       variants={fadeUp}
@@ -109,7 +112,7 @@ function EstimatedGraduationCard() {
         <Calendar className="w-4 h-4" />
         <span className="text-[var(--text-sm)] font-semibold">Estimated Graduation: {ESTIMATED_GRAD}</span>
       </div>
-      <div className="flex flex-wrap items-center gap-6">
+      <div className="flex flex-wrap items-start gap-6">
         <ProgressRing value={EARNED_CREDITS} max={TOTAL_REQUIRED} />
         <div className="flex flex-col gap-2">
           <div className="rounded-xl border border-[var(--color-border-default)] px-4 py-2.5 bg-white/60">
@@ -117,12 +120,38 @@ function EstimatedGraduationCard() {
             <p className="text-[var(--text-lg)] font-bold text-[var(--color-neutral-800)] tabular-nums">{EARNED_CREDITS}/{TOTAL_REQUIRED}</p>
           </div>
           <div className="rounded-xl border border-[var(--color-border-default)] px-4 py-2.5 bg-white/60">
-            <p className="text-[10px] font-bold text-[var(--color-neutral-400)] uppercase tracking-wider">In progress · GPA</p>
-            <p className="text-[var(--text-lg)] font-bold text-[var(--color-neutral-800)] tabular-nums">{IN_PROGRESS_COUNT} · {GPA.toFixed(1)}</p>
+            <p className="text-[10px] font-bold text-[var(--color-neutral-400)] uppercase tracking-wider">Courses in progress</p>
+            <p className="text-[var(--text-lg)] font-bold text-[var(--color-neutral-800)] tabular-nums">{IN_PROGRESS_COUNT}</p>
+          </div>
+          <div className="rounded-xl border border-[var(--color-border-default)] px-4 py-2.5 bg-white/60">
+            <p className="text-[10px] font-bold text-[var(--color-neutral-400)] uppercase tracking-wider">GPA</p>
+            <p className="text-[var(--text-lg)] font-bold text-[var(--color-neutral-800)] tabular-nums">{GPA.toFixed(1)}</p>
           </div>
         </div>
+        <div className="flex-1 min-w-[180px] flex flex-col gap-3">
+          <div className="rounded-xl border border-[var(--color-border-default)] px-4 py-3 bg-white/60">
+            <p className="text-[10px] font-bold text-[var(--color-neutral-400)] uppercase tracking-wider">Credits remaining</p>
+            <p className="text-[var(--text-xl)] font-bold text-[var(--color-brand-cardinal)] tabular-nums">{creditsToGo}</p>
+            <p className="text-[var(--text-xs)] text-[var(--color-neutral-500)]">{creditsToGo === 0 ? 'All requirements met' : 'credits to graduate'}</p>
+          </div>
+          {CURRENT_COURSES.length > 0 && (
+            <div className="rounded-xl border border-[var(--color-border-default)] px-4 py-3 bg-white/60">
+              <p className="text-[10px] font-bold text-[var(--color-neutral-400)] uppercase tracking-wider mb-2">This semester</p>
+              <ul className="space-y-1">
+                {CURRENT_COURSES.map((c) => (
+                  <li key={c.code} className="text-[var(--text-sm)] text-[var(--color-neutral-700)]">
+                    {c.code} <span className="text-[var(--color-neutral-500)]">· {c.credits} cr</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
-      <p className="mt-4 text-[var(--text-sm)] font-medium text-[var(--color-success)]">On track for graduation.</p>
+      <div className="mt-4 flex items-center gap-2 rounded-xl border border-[var(--color-success)]/40 bg-[var(--color-success)]/10 px-4 py-2.5 w-fit">
+        <CheckCircle2 className="w-5 h-5 text-[var(--color-success)] shrink-0" />
+        <p className="text-[var(--text-sm)] font-semibold text-[var(--color-success)]">On track for graduation.</p>
+      </div>
     </motion.div>
   );
 }

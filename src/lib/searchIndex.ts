@@ -22,15 +22,23 @@ import * as CourseDetail from '@/pages/catalog/CourseDetail';
 import * as Schedule from '@/pages/schedule/SchedulePlanner';
 import * as Graduation from '@/pages/graduation/GraduationCheck';
 import * as Profile from '@/pages/profile/StudentProfile';
+import * as Planner from '@/pages/planner/AIPlannerPage';
+import * as MyCourses from '@/pages/courses/MyCourses';
+import * as Settings from '@/pages/settings/SettingsPage';
+import * as Help from '@/pages/help/HelpSupportPage';
 
 function getRegistry(): { page: string; route: string; entries: PageSearchEntry[] }[] {
   return [
     { page: 'Dashboard', route: '/dashboard', entries: Dashboard.SEARCH_ENTRIES },
     { page: 'Course Catalog', route: '/catalog', entries: Catalog.SEARCH_ENTRIES },
+    { page: 'My Courses', route: '/my-courses', entries: MyCourses.SEARCH_ENTRIES },
     { page: 'Course Detail', route: '/course/hci5210', entries: CourseDetail.SEARCH_ENTRIES },
     { page: 'Schedule Planner', route: '/schedule', entries: Schedule.SEARCH_ENTRIES },
+    { page: 'AI Planner', route: '/planner', entries: Planner.SEARCH_ENTRIES },
     { page: 'Graduation Check', route: '/graduation', entries: Graduation.SEARCH_ENTRIES },
     { page: 'Profile', route: '/profile', entries: Profile.SEARCH_ENTRIES },
+    { page: 'Settings', route: '/settings', entries: Settings.SEARCH_ENTRIES },
+    { page: 'Help & Support', route: '/help', entries: Help.SEARCH_ENTRIES },
   ];
 }
 

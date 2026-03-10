@@ -46,8 +46,7 @@ const NAV_SECTIONS: NavSection[] = [
     icon: BookOpen,
     children: [
       { to: '/catalog', label: 'Browse Catalog' },
-      { to: '/catalog?view=my', label: 'My Courses' },
-      { to: '/catalog?view=saved', label: 'Saved Courses' },
+      { to: '/my-courses', label: 'My Courses' },
     ],
   },
   {
@@ -78,18 +77,19 @@ const NAV_SECTIONS: NavSection[] = [
     icon: UserCircle,
     children: [
       { to: '/profile', label: 'Academic Info' },
-      { to: '/profile?section=ai', label: 'AI Preferences' },
       { to: '/profile?section=graduation', label: 'Graduation Progress' },
     ],
   },
 ];
 
 function getActiveSection(pathname: string): string {
-  if (pathname.startsWith('/catalog')) return 'courses';
+  if (pathname.startsWith('/catalog') || pathname.startsWith('/my-courses')) return 'courses';
   if (pathname.startsWith('/schedule')) return 'schedule';
   if (pathname.startsWith('/planner')) return 'planner';
   if (pathname.startsWith('/graduation')) return 'graduation';
   if (pathname.startsWith('/profile')) return 'profile';
+  if (pathname.startsWith('/settings')) return 'settings';
+  if (pathname.startsWith('/help')) return 'help';
   return 'dashboard';
 }
 
@@ -204,14 +204,32 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
 
       {/* Bottom */}
       <div className="px-3 pb-4 space-y-0.5 border-t border-[var(--color-border-default)]/30 pt-3">
-        <button className="flex w-full items-center gap-3 px-3 py-2.5 rounded-xl text-[var(--text-sm)] font-medium text-[var(--color-neutral-500)] hover:bg-[var(--color-neutral-50)] hover:text-[var(--color-neutral-700)] transition-colors">
+        <NavLink
+          to="/settings"
+          onClick={onNav}
+          className={cn(
+            'flex w-full items-center gap-3 px-3 py-2.5 rounded-xl text-[var(--text-sm)] font-medium transition-colors',
+            currentSection === 'settings'
+              ? 'bg-[var(--color-brand-cardinal)]/8 text-[var(--color-brand-cardinal)]'
+              : 'text-[var(--color-neutral-500)] hover:bg-[var(--color-neutral-50)] hover:text-[var(--color-neutral-700)]',
+          )}
+        >
           <Settings className="w-4 h-4" />
           Settings
-        </button>
-        <button className="flex w-full items-center gap-3 px-3 py-2.5 rounded-xl text-[var(--text-sm)] font-medium text-[var(--color-neutral-500)] hover:bg-[var(--color-neutral-50)] hover:text-[var(--color-neutral-700)] transition-colors">
+        </NavLink>
+        <NavLink
+          to="/help"
+          onClick={onNav}
+          className={cn(
+            'flex w-full items-center gap-3 px-3 py-2.5 rounded-xl text-[var(--text-sm)] font-medium transition-colors',
+            currentSection === 'help'
+              ? 'bg-[var(--color-brand-cardinal)]/8 text-[var(--color-brand-cardinal)]'
+              : 'text-[var(--color-neutral-500)] hover:bg-[var(--color-neutral-50)] hover:text-[var(--color-neutral-700)]',
+          )}
+        >
           <HelpCircle className="w-4 h-4" />
           Help & Support
-        </button>
+        </NavLink>
         <button
           onClick={logout}
           className="flex w-full items-center gap-3 px-3 py-2.5 rounded-xl text-[var(--text-sm)] font-medium text-[var(--color-neutral-500)] hover:bg-red-50 hover:text-red-600 transition-all duration-200"

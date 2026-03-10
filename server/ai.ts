@@ -645,3 +645,80 @@ Rules:
     points: Array.isArray(parsed?.points) ? parsed.points.slice(0, 4) : [],
   };
 }
+
+// ─── Semester Plan Generation ────────────────────────────────────────
+
+interface PlanParameters {
+  major: string;
+  semester: string;
+  targetCredits: number;
+  difficultyTolerance: number;
+  timePreferences: string[];
+  avoidBackToBack: boolean;
+  balanceMix: boolean;
+  lighterFridays: boolean;
+  completedCourses: string[];
+  inProgressCourses: string[];
+}
+
+interface GeneratedPlanOutput {
+  title: string;
+  matchScore: number;
+  courses: { code: string; reason: string }[];
+  explanation: string;
+  requirementsCoverage: string;
+}
+
+export async function generateSemesterPlans(
+  params: PlanParameters,
+): Promise<GeneratedPlanOutput[]> {
+  if (!ready || !openai) throw new Error('AI not available');
+
+  const query = `${params.major} course plan semester ${params.semester} ${params.completedCourses.join(' ')} schedule elective core requirements`;
+  const contextTexts = await findRelevant(query, 25);
+  const contextBlock = contextTexts.map((t, i) => `--- ${i + 1} ---\n${t}`).join('\n\n');
+
+  const reply = await complete([
+    {
+      role: 'system',
+      content: 'You are an academic advisor creating personalized semester plans for ISU HCI graduate students. Return ONLY valid JSON, no other text.',
+    },
+    {
+      role: 'user',
+      content: `Create exactly 3 different semester plan options for this student.
+
+Student preferences:
+- Major: ${params.major}
+- Planning for: ${params.semester}
+- Target credits: ${params.targetCredits}
+- Difficulty tolerance: ${params.difficultyTolerance}/5 (1=easy only, 5=bring it on)
+- Time preferences: ${params.timePreferences.join(', ') || 'no preference'}
+- Avoid back-to-back classes: ${params.avoidBackToBack}
+- Balance core + elective mix: ${params.balanceMix}
+- Lighter Fridays: ${params.lighterFridays}
+
+Already completed: ${params.completedCourses.join(', ') || 'none'}
+Currently taking: ${params.inProgressCourses.join(', ') || 'none'}
+
+Available course information:
+${contextBlock}
+
+Rules:
+- Do NOT include courses the student has completed or is currently taking
+- Each plan should have a different focus/strategy
+- Plan A: Balanced approach matching preferences closely
+- Plan B: Research/challenge-heavy alternative
+- Plan C: Lighter or elective-focused option
+- Use ONLY real course codes from the catalog (e.g. "HCI 5210", "ARTGR 5300", "HCI 5840")
+- matchScore: 70-98 based on how well it fits stated preferences
+- requirementsCoverage: what degree requirements the courses satisfy (e.g. "2 Core + 1 Elective")
+- explanation: 1-2 sentences explaining the rationale
+- Each course reason: 1 sentence on why it was picked
+
+Return ONLY a valid JSON array of exactly 3 objects:
+[{"title":"Short Plan Name","matchScore":94,"courses":[{"code":"HCI XXXX","reason":"Why this course"}],"explanation":"Why this plan","requirementsCoverage":"X Core + Y Elective"}]`,
+    },
+  ], { temperature: 0.5, max_tokens: 1500 });
+
+  return parseJsonArray(reply);
+}

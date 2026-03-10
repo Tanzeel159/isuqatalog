@@ -36,7 +36,7 @@ import { cn } from '@/lib/utils';
 import { useAuth } from '@/contexts/AuthContext';
 import { apiFetch } from '@/lib/api';
 import { staggerContainer, fadeUp } from '@/lib/motion';
-import { CURRENT_COURSES } from '@/lib/student';
+import { COMPLETED_COURSES, CURRENT_COURSES, DEGREE_REQUIREMENTS, EARNED_CREDITS, TOTAL_REQUIRED } from '@/lib/student';
 import { HCI_COURSES } from '@/pages/catalog/data';
 
 function getGreeting(): string {
@@ -73,7 +73,7 @@ function useAIRecommendations() {
           method: 'POST',
           json: {
             currentCourses: CURRENT_COURSES.map((c) => c.code),
-            completedCourses: ['HCI 5210', 'HCI 5840', 'HCI 5790X', 'HCI 5890'],
+            completedCourses: COMPLETED_COURSES,
           },
         },
       );
@@ -126,6 +126,8 @@ export default function Dashboard() {
   const { recommendations, loading: recsLoading, isAI, refresh: refreshRecs } = useAIRecommendations();
   const userName = user?.name?.split(' ')[0] ?? user?.email?.split('@')[0] ?? 'Student';
   const totalCredits = CURRENT_COURSES.reduce((sum, c) => sum + c.credits, 0);
+  const electivesRequirement = DEGREE_REQUIREMENTS.find((r) => r.label === 'Electives');
+  const researchRequirement = DEGREE_REQUIREMENTS.find((r) => r.label === 'Research Methods');
 
   if (isLoading) {
     return (
@@ -273,13 +275,13 @@ export default function Dashboard() {
 
             <div className="px-5 pb-5 flex-1 flex flex-col">
               <div className="flex items-center gap-4 my-3 py-3 rounded-2xl bg-[var(--color-neutral-50)]/80 px-4">
-                <ProgressRing value={25} max={35} size={56} />
+                <ProgressRing value={EARNED_CREDITS} max={TOTAL_REQUIRED} size={56} />
                 <div>
                   <p className="text-[var(--text-2xs)] font-bold tracking-widest text-[var(--color-neutral-400)] uppercase">
                     Credits
                   </p>
                   <p className="text-[var(--text-xl)] font-bold text-[var(--color-neutral-900)] leading-none mt-0.5 tabular-nums">
-                    25<span className="text-[var(--text-sm)] font-medium text-[var(--color-neutral-300)]">/35</span>
+                    {EARNED_CREDITS}<span className="text-[var(--text-sm)] font-medium text-[var(--color-neutral-300)]">/{TOTAL_REQUIRED}</span>
                   </p>
                 </div>
               </div>
@@ -287,8 +289,8 @@ export default function Dashboard() {
               <div className="space-y-3 flex-1">
                 {[
                   { label: 'Core Requirements', value: 'Complete', icon: CheckCircle2 },
-                  { label: 'Electives', value: '6/9', icon: BookOpen },
-                  { label: 'Research Credits', value: '3/6', icon: FlaskConical },
+                  { label: 'Electives', value: electivesRequirement?.earned ?? '—', icon: BookOpen },
+                  { label: 'Research Credits', value: researchRequirement?.earned ?? '—', icon: FlaskConical },
                 ].map(({ label, value, icon: Icon }) => (
                   <div key={label} className="flex items-center justify-between">
                     <div className="flex items-center gap-2">

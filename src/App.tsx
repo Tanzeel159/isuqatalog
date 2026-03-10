@@ -19,6 +19,10 @@ import CourseDetail from '@/pages/catalog/CourseDetail';
 import SchedulePlanner from '@/pages/schedule/SchedulePlanner';
 import StudentProfile from '@/pages/profile/StudentProfile';
 import GraduationCheck from '@/pages/graduation/GraduationCheck';
+import AIPlannerPage from '@/pages/planner/AIPlannerPage';
+import MyCourses from '@/pages/courses/MyCourses';
+import SettingsPage from '@/pages/settings/SettingsPage';
+import HelpSupportPage from '@/pages/help/HelpSupportPage';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -43,6 +47,9 @@ function AnimatedRoutes() {
           {/* Course catalog (protected) */}
           <Route path="/catalog" element={<ProtectedRoute><CourseCatalog /></ProtectedRoute>} />
 
+          {/* My Courses (protected) */}
+          <Route path="/my-courses" element={<ProtectedRoute><MyCourses /></ProtectedRoute>} />
+
           {/* Course detail (protected) */}
           <Route path="/course/:id" element={<ProtectedRoute><CourseDetail /></ProtectedRoute>} />
 
@@ -61,8 +68,15 @@ function AnimatedRoutes() {
           {/* Profile (protected) */}
           <Route path="/profile" element={<ProtectedRoute><StudentProfile /></ProtectedRoute>} />
 
+          {/* Settings + Help (protected) */}
+          <Route path="/settings" element={<ProtectedRoute><SettingsPage /></ProtectedRoute>} />
+          <Route path="/help" element={<ProtectedRoute><HelpSupportPage /></ProtectedRoute>} />
+
           {/* Graduation Check (protected) */}
           <Route path="/graduation" element={<ProtectedRoute><GraduationCheck /></ProtectedRoute>} />
+
+          {/* AI Planner (protected) */}
+          <Route path="/planner" element={<ProtectedRoute><AIPlannerPage /></ProtectedRoute>} />
 
           {/* Dashboard (protected) */}
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />

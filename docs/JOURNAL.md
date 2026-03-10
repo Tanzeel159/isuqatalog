@@ -73,3 +73,13 @@ The interesting challenge was data. The existing course dataset has basics — c
 The page uses the same design language as the rest of the app — glass panels, the cardinal/gold brand palette, CSS custom property tokens for spacing and typography, and Motion for entrance animations. The sidebar has a purple gradient AI difficulty card that matches the mockup's aesthetic nicely. Added tab navigation (Overview, Reviews, Discussion) with the Discussion tab as a stub for future work.
 
 ---
+
+## March 9, 2026 — Making the Student Record Coherent
+
+Today the work shifted from adding isolated screens to making the product feel like one system. I built out the AI planner, a dedicated My Courses workspace, a real Settings page, and a Help & Support page, but the more important decision was architectural: the student record had to become a single shared source of truth. Before that cleanup, Profile, Graduation, My Courses, Dashboard, and the AI layer were all quietly relying on slightly different mock datasets. That kind of inconsistency is especially dangerous in a product like Qatalog because the whole value proposition depends on trust. If the profile says one thing, the planner shows another, and the AI reasons from a third dataset, the experience stops feeling intelligent and starts feeling fake.
+
+The refactor was less glamorous than the UI work, but much more important. I moved the academic identity, course history, current enrollments, saved courses, requirement buckets, and computed metrics into one shared model and then pointed the UI and AI at that same record. That immediately made a lot of the product cleaner: Profile could become a true academic identity page instead of a transcript clone, My Courses could own the operational course table, and Help/Settings could live where users would actually expect to find them. I also corrected the master’s degree total to 30 credits, which simplified the graduation story and made the progress math feel much more believable.
+
+The Help page also got more intentional. Instead of a dead FAQ list, it now behaves more like a lightweight support layer: searchable, focused, and tied back to the workflows students are actually trying to complete. That feels much closer to the product vision than generic documentation would. The overall direction is clearer now: Profile is who you are academically, My Courses is your working record, Settings is where you configure the system, and the AI is finally reasoning over the same student data the rest of the interface shows.
+
+---

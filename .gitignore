@@ -6,6 +6,7 @@ coverage/
 *.log
 .env*
 !.env.example
+en.example
 
 # Runtime data (SQLite DB is auto-created)
 data/
@@ -16,6 +17,7 @@ data/
 
 # Private dev log (contains IPs, server paths, credentials context)
 docs/DEVLOG.md
+docs/JOURNAL.md
 
 # Stale scaffold (not part of the app)
 Update/

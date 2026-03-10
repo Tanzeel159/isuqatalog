@@ -1,3 +1,5 @@
+import { COMPLETED_COURSES, TOTAL_REQUIRED } from '@/lib/student';
+
 export type WorkloadLevel = 'low' | 'moderate' | 'high';
 
 export interface ScheduledCourse {
@@ -116,34 +118,8 @@ export const SEMESTERS: Semester[] = [
         color: 'var(--color-brand-cardinal)',
         prerequisites: ['HCI 5300X', 'HCI 5220'],
       },
-      {
-        id: 'hci6550-fa26',
-        code: 'HCI 6550',
-        name: 'Organizational & Social Implications',
-        credits: 3,
-        instructor: 'Dr. Ronit Nayak',
-        location: 'Ross 0124',
-        workload: 'moderate',
-        days: ['Tue', 'Thu'],
-        startHour: 13, startMin: 0,
-        endHour: 14, endMin: 20,
-        color: 'var(--color-warning)',
-        prerequisites: ['HCI 5210'],
-      },
     ],
   },
-];
-
-export const COMPLETED_COURSES = [
-  'HCI 5210',
-  'ARTGR 5300',
-  'HCI 5900',
-  'HCI 5840',
-  'HCI 5790X',
-  'STAT 5010',
-  'HCI 5890',
-  'HCI 5040',
-  'HCI 5260',
 ];
 
 export function getPrerequisiteStatuses(courses: ScheduledCourse[]): PrerequisiteStatus[] {
@@ -208,13 +184,13 @@ export function getGraduationRequirements(allSemesters: Semester[]): GraduationC
   const allCodes = [...COMPLETED_COURSES, ...allCourses.map((c) => c.code)];
   const uniqueCodes = [...new Set(allCodes)];
 
-  const coreHCI = ['HCI 5210', 'HCI 5840', 'HCI 5890', 'HCI 5790X'];
+  const coreHCI = ['HCI 5210', 'ARTGR 5300', 'HCI 5840', 'HCI 5790X', 'HCI 5890'];
   const coreCompleted = coreHCI.filter((c) => uniqueCodes.includes(c)).length;
 
   const electives = ['HCI 5900', 'STAT 5010', 'HCI 5260'];
   const electivesTaken = electives.filter((c) => uniqueCodes.includes(c)).length;
 
-  const researchCourses = ['HCI 5790X', 'HCI 5220'];
+  const researchCourses = ['HCI 5040', 'HCI 5220'];
   const researchTaken = researchCourses.filter((c) => uniqueCodes.includes(c)).length;
 
   const totalCreditsEarned = COMPLETED_COURSES.length * 3;
@@ -222,10 +198,10 @@ export function getGraduationRequirements(allSemesters: Semester[]): GraduationC
   const total = totalCreditsEarned + totalCreditsPlanned;
 
   return [
-    { label: 'Core HCI Courses', current: coreCompleted, required: 4, complete: coreCompleted >= 4 },
+    { label: 'Core HCI Courses', current: coreCompleted, required: 5, complete: coreCompleted >= 5 },
     { label: 'Technical Electives', current: Math.min(electivesTaken, 3), required: 3, complete: electivesTaken >= 3 },
-    { label: 'Research Credits', current: Math.min(researchTaken * 3, 6), required: 6, complete: researchTaken >= 2 },
-    { label: 'Total Credits', current: Math.min(total, 36), required: 36, complete: total >= 36 },
+    { label: 'Research Credits', current: Math.min(researchTaken * 3, 3), required: 3, complete: researchTaken >= 1 },
+    { label: 'Total Credits', current: Math.min(total, TOTAL_REQUIRED), required: TOTAL_REQUIRED, complete: total >= TOTAL_REQUIRED },
   ];
 }
 

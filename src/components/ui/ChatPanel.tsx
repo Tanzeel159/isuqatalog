@@ -73,7 +73,7 @@ function renderMarkdown(raw: string): string {
 
 // ─── Message Components ──────────────────────────────────────────────
 
-function AssistantMessage({ content }: { content: string }) {
+function AssistantMessage({ content }: { content: string; key?: React.Key }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 6 }}
@@ -93,7 +93,7 @@ function AssistantMessage({ content }: { content: string }) {
   );
 }
 
-function UserMessage({ content }: { content: string }) {
+function UserMessage({ content }: { content: string; key?: React.Key }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 6 }}

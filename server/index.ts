@@ -10,7 +10,7 @@ import { authenticateUser, createUser, getUserById } from './auth';
 import { getCookie } from './cookies';
 import { jsonError } from './http';
 import { createSession, deleteSession, deleteUserSessions, getUserIdFromSession, sessionCookieName, purgeExpiredSessions } from './sessions';
-import { initAI, isReady, chat, getRecommendations, aiSearch, getAcademicInsights, getCourseAnalysis } from './ai';
+import { initAI, isReady, chat, getRecommendations, aiSearch, getAcademicInsights, getCourseAnalysis, generateSemesterPlans } from './ai';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -285,6 +285,43 @@ app.post('/api/ai/course-analysis', chatLimiter, async (req, res) => {
     res.json({ ok: true, analysis });
   } catch (err: unknown) {
     return aiErrorResponse(res, err, 'Course analysis');
+  }
+});
+
+// ── AI Semester Plan Generation ───────────────────────────────────
+
+app.post('/api/ai/generate-plans', chatLimiter, async (req, res) => {
+  if (!isReady()) {
+    return jsonError(res, 503, 'AI assistant is still initializing.');
+  }
+
+  const token = getCookie(req.headers.cookie, sessionCookieName());
+  if (!token) return jsonError(res, 401, 'Not authenticated.');
+  const userId = getUserIdFromSession(db, token);
+  if (!userId) return jsonError(res, 401, 'Not authenticated.');
+
+  const {
+    major, semester, targetCredits, difficultyTolerance,
+    timePreferences, avoidBackToBack, balanceMix, lighterFridays,
+    completedCourses, inProgressCourses,
+  } = (req.body || {}) as Record<string, unknown>;
+
+  try {
+    const plans = await generateSemesterPlans({
+      major: typeof major === 'string' ? major : 'Human-Computer Interaction',
+      semester: typeof semester === 'string' ? semester : 'Fall 2026',
+      targetCredits: typeof targetCredits === 'number' ? targetCredits : 9,
+      difficultyTolerance: typeof difficultyTolerance === 'number' ? difficultyTolerance : 3,
+      timePreferences: Array.isArray(timePreferences) ? timePreferences : [],
+      avoidBackToBack: avoidBackToBack === true,
+      balanceMix: balanceMix !== false,
+      lighterFridays: lighterFridays === true,
+      completedCourses: Array.isArray(completedCourses) ? completedCourses : [],
+      inProgressCourses: Array.isArray(inProgressCourses) ? inProgressCourses : [],
+    });
+    res.json({ ok: true, plans });
+  } catch (err: unknown) {
+    return aiErrorResponse(res, err, 'Plan generation');
   }
 });
 
