@@ -106,16 +106,8 @@ export default function Onboarding() {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25 }}
-          className="flex items-center justify-between pt-1"
+          className="flex justify-end pt-1"
         >
-          <button
-            type="button"
-            onClick={() => navigate('/onboarding/interests')}
-            className="text-[var(--text-xs)] font-medium text-[var(--color-neutral-400)] hover:text-[var(--color-neutral-600)] transition-colors"
-          >
-            Skip for now
-          </button>
-
           <Button type="submit" className="px-8" isLoading={isLoading} disabled={!allFilled}>
             Continue
           </Button>
