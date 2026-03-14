@@ -16,7 +16,7 @@ const CLASS_TIMINGS_ICONS: Record<string, LucideIcon> = {
   'All of the above': Check,
 };
 
-const CREDIT_OPTIONS = ['2', '3', '4', "Doesn't matter"];
+const CREDIT_OPTIONS = ['3', '6', '9', '12', "Doesn't matter"];
 
 export default function WorkloadPreferences() {
   const navigate = useNavigate();

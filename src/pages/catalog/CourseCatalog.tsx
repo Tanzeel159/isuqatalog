@@ -678,6 +678,9 @@ export default function CourseCatalog() {
             </span>{' '}
             {filteredCourses.length === 1 ? 'course' : 'courses'}
           </p>
+          <span className="text-[var(--text-2xs)] text-[var(--color-neutral-400)] bg-[var(--color-neutral-100)] px-2 py-0.5 rounded-full select-none">
+            WL — Workload
+          </span>
         </div>
 
         {/* ── Course cards — grid ─────────────────────────── */}

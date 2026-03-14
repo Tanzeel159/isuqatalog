@@ -25,6 +25,7 @@ import {
 } from 'lucide-react';
 import { DashboardLayout } from '@/components/layouts/DashboardLayout';
 import { Button } from '@/components/ui/Button';
+import { Select } from '@/components/ui/Select';
 import { cn } from '@/lib/utils';
 import { apiFetch } from '@/lib/api';
 import { fadeUp, staggerContainer } from '@/lib/motion';
@@ -715,9 +716,6 @@ function ParametersPanel({
     });
   };
 
-  const selectClass =
-    'w-full h-[var(--input-h-md)] px-3 rounded-xl border border-[var(--color-border-default)] bg-white/80 text-[var(--text-sm)] text-[var(--color-neutral-700)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-cardinal)]/20 focus:border-[var(--color-brand-cardinal)] transition-all appearance-none cursor-pointer';
-
   return (
     <motion.div variants={fadeUp} className="glass-panel rounded-2xl overflow-hidden lg:sticky lg:top-24">
       <div className="px-5 pt-5 pb-4 border-b border-[var(--color-border-default)]">
@@ -725,29 +723,20 @@ function ParametersPanel({
       </div>
       <div className="p-5 space-y-5">
         {/* Major */}
-        <div>
-          <label className="text-[var(--text-xs)] font-semibold text-[var(--color-neutral-500)] mb-1.5 block">Major</label>
-          <select
-            value={params.major}
-            onChange={(e) => onChange({ major: e.target.value })}
-            className={selectClass}
-          >
-            <option>Human-Computer Interaction</option>
-          </select>
-        </div>
+        <Select
+          label="Major"
+          value={params.major}
+          onChange={(val) => onChange({ major: val })}
+          options={['Human-Computer Interaction']}
+        />
 
         {/* Semester */}
-        <div>
-          <label className="text-[var(--text-xs)] font-semibold text-[var(--color-neutral-500)] mb-1.5 block">Semester</label>
-          <select
-            value={params.semester}
-            onChange={(e) => onChange({ semester: e.target.value })}
-            className={selectClass}
-          >
-            <option>Fall 2026</option>
-            <option>Spring 2027</option>
-          </select>
-        </div>
+        <Select
+          label="Semester"
+          value={params.semester}
+          onChange={(val) => onChange({ semester: val })}
+          options={['Fall 2026', 'Spring 2027']}
+        />
 
         {/* Credit Preference */}
         <div>
