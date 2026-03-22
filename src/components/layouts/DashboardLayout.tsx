@@ -83,7 +83,7 @@ const NAV_SECTIONS: NavSection[] = [
 ];
 
 function getActiveSection(pathname: string): string {
-  if (pathname.startsWith('/catalog') || pathname.startsWith('/my-courses')) return 'courses';
+  if (pathname.startsWith('/catalog') || pathname.startsWith('/my-courses') || pathname.startsWith('/course/')) return 'courses';
   if (pathname.startsWith('/schedule')) return 'schedule';
   if (pathname.startsWith('/planner')) return 'planner';
   if (pathname.startsWith('/graduation')) return 'graduation';
